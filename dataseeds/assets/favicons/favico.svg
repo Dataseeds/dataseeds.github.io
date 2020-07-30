@@ -1,0 +1,18 @@
+<svg width="250px" height="250px" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.5607843 0 0 0 0 0.5607843 0 0 0 0 0.5607843 0 0 0 1 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+  </defs>
+  <path d="M16.707 184.718L31.6367 184.718L31.6367 57.2822L16.707 57.2822L16.707 184.718ZM65.1396 184.718L132.679 184.718L132.679 171.21L80.0693 171.21L80.0693 126.599L126.103 126.599L126.103 113.18L80.0693 113.18L80.0693 70.79L129.835 70.79L129.835 57.2822L65.1396 57.2822L65.1396 184.718Z"
+  fill="#E9E9E9" filter="url(#filter_1)" transform="translate(55 4)"/>
+
+  <style>@media (prefers-color-scheme: light){ path { fill: #323130; }}</style>
+</svg>
+

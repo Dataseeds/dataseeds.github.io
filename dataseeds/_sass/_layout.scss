@@ -1,0 +1,450 @@
+/***** Site header ***********************************************************/
+
+.site-header {
+    height: 125px;
+    width: 100%;
+    z-index: 50;
+}
+
+.site-title {
+    font-size: 20px;
+    line-height: $nav-height;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.site-navv-left {
+    float: left;
+    display: inline-flex;
+    h3 {
+        font-weight: 600;
+        @include media-query(450px) {
+            display: none
+        }
+    }
+    a {
+        border-bottom: none;
+        &:hover {
+            border-bottom: none;
+        }
+        img {
+            display: inline;
+            margin-right: 15px;
+            vertical-align: middle;
+            width: 150px;
+        }
+    }
+}
+
+.site-navv-right {
+    float: right;
+    display: inline-flex;
+}
+
+.header-bar {
+    left: 0px;
+    top: 0px;
+    position: relative;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    line-height: 2em;
+    z-index: 25;
+    h1 {
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+    h2 {
+        font-size: 14px;
+        color: #aaa;
+        font-weight: 400;
+    }
+}
+
+.header-image {
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+    cursor: pointer;
+}
+
+.header-image img {
+    width: 175px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 75px;
+}
+
+
+/***** Home navigation ***********************************************************/
+
+.home-mid-nav {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-mid-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.home-mid-nav li {
+    display: inline-block;
+}
+
+
+/***** projects page ***********************************************************/
+
+.projects-hero-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo logo" "img descr";
+}
+
+.projects-hero-logo {
+    grid-area: logo;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 50%;
+}
+
+.projects-hero-img {
+    width: 100%;
+    grid-area: img
+}
+
+.project-hero-descr {
+    grid-area: descr;
+    margin: auto 30px auto 0;
+    img {
+        margin: 0 auto 5% -10px;
+        left: 0px;
+        width: 35vw;
+    }
+    li {
+        font-size: 1rem;
+        line-height: 1.2em;
+        list-style: none;
+        margin: 15px 5px;
+        text-align: justify;
+    }
+    a {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $on-laptop) {
+    .projects-hero-container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "logo" "img" "descr";
+    }
+    .projects-hero-img {
+        width: 100%;
+    }
+    .project-hero-descr {
+        margin: 0 5% 20px;
+    }
+    .projects-hero-logo {
+        width: 80%;
+    }
+}
+
+
+/***** Site footer ***********************************************************/
+
+.site-footer {
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.site-footer p {
+    margin-bottom: 0; // Remove margin set in _sass/_base.scss for vertical rythm
+}
+
+
+/***** Social links (Twitter, Github...) *******************************************/
+
+.social-links {
+    margin: 30px 0;
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        margin: 20px 10px;
+    }
+}
+
+
+/***** Pagination ***********************************************************/
+
+.pagination {
+    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 50px;
+}
+
+.paginationicon {
+    font-size: 50px;
+}
+
+
+/***** Page content ***********************************************************/
+
+.page-content {
+    padding: 10px 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin: 0px 0;
+    list-style: none;
+    >li {
+        margin-bottom: $vertical-spacing-unit;
+    }
+}
+
+.contacticon {
+    font-size: 60px;
+    display: block;
+    margin: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.maxwidth {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/***** Posts ***********************************************************/
+
+.post-header {
+    margin-bottom: $vertical-spacing-unit;
+}
+
+.post-title {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-top: 20px;
+    @include media-query($on-laptop) {
+        font-size: 42px;
+    }
+}
+
+.post-content {
+    h2 {
+        font-size: 42px;
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+    h3 {
+        font-size: 30px;
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: #828282;
+    margin-bottom: 0px;
+}
+
+.post-link {
+    display: block;
+    font-size: 42px;
+}
+
+
+/***** Portfolio grid ***********************************************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.project {
+    width: 33.33%;
+    height: 250px;
+    float: left;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 500px;
+    height: auto;
+    position: relative;
+    left: -25%;
+    top: -5%;
+}
+
+.thumbnail a {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.thumbnail a span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: $grey-color-light;
+    padding: 40px;
+    text-align: center;
+}
+
+.thumbnail a:hover span {
+    display: block;
+}
+
+
+/* ####################################
+			Home
+#################################### */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto, 1fr, auto;
+    gap: 5px 5px;
+    h3 {
+        color: #345c5e;
+        font-family: Gill Sans MT Condesed;
+        font-size: 2.5em;
+        line-height: 1em;
+        margin: auto;
+        text-align: center;
+        word-break: inherit;
+    }
+    img {
+        margin: auto;
+    }
+    a img {
+        opacity: 0;
+    }
+    a:hover {
+        img {
+            opacity: 1;
+        }
+    }
+}
+
+.grid-top {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin: auto;
+    margin-top: 0;
+    img {
+        width: 7em;
+    }
+}
+
+.grid-left {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: auto;
+}
+
+.grid-right {
+    display: grid;
+    grid-area: 3 / 3 / 4 / 4;
+    margin-top: auto;
+}
+
+.grid-center {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 3;
+    margin: auto;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.grid-whole {
+    display: grid;
+    grid-area: 1 / 1 / 4 / 4;
+    img {
+        margin: 120px auto;
+        width: min(50vw, 600px);
+    }
+}
+
+
+/* ####################################
+			About page 
+#################################### */
+
+.about-container {
+    img {
+        border-radius: 50%;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 32px
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 3% 0;
+        line-height: 1.4em;
+    }
+}

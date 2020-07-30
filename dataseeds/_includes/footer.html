@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="social-links">
+            <a href="https://twitter.com/dataseeds"> <span class="fab fa-twitter"></span></a>
+            <a href="https://instagram.com/dataseeds"> <span class="fab fa-instagram"></span></a>
+            <a href="mailto:ismael.em@outlook.com"> <span class="far fa-envelope"></span></a>
+            <a href="https://www.linkedin.com/company/dataseeds-eu/"><span class="fab fa-linkedin-in"></span></a>
+
+            <div style="margin-top: 10px; font-size: 12px">
+                Copyright © <span id="copyyear">2019</span>
+                <script>
+                    document.getElementById("copyyear").innerHTML = new Date().getFullYear();
+                </script> All rights reserved
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    darkModeMediaQuery.addListener((e) => {
+        const darkModeOn = e.matches;
+        // this functions are to be created on each HTML that needs to make changes that CSS can't
+        darkModeOn ? darkTheme() : lightTheme();
+    });
+    darkModeMediaQuery.matches ? darkTheme() : lightTheme();
+</script>

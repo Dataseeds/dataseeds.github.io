@@ -1,0 +1,15 @@
+<header class="site-header">
+    <div class="site-nav">
+        <nav>
+            <div style="display: inline-flex;">
+                <img class="logo" src="/assets/logo-icon.png">
+                <a class="logo-text" href="/">Dataseeds</a>
+            </div>
+            <input type="checkbox" id="nav" /><label for="nav"></label>
+            <div class="site-nav-right">
+                {% for page in site.pages %} {% if page.title and page.visible %}
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> {% endif %} {% endfor %}
+            </div>
+        </nav>
+    </div>
+</header>
