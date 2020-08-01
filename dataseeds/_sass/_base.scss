@@ -174,28 +174,11 @@ body ::-webkit-scrollbar {
     }
 }
 
-.alignright {
-    float: right;
-}
-
 hr {
     border: 0;
     //height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-
-/* ####################################
-			Figures
-#################################### */
-
-figure>img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
 }
 
 
@@ -209,12 +192,31 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: Gill Sans MT Condesed;
     font-weight: 100;
 }
 
 header {
     height: 200px;
-    padding-top: 40px;
+    padding-top: 20px;
+}
+
+// when hovering (or on the phone) apply blur
+a:hover {
+    text-shadow: 0px 0px 20px $main-dark-blue;
+    img {
+        -webkit-filter: drop-shadow(0px 0px 20px $main-dark-blue);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+    }
+}
+
+@media screen and (max-width: $on-laptop) {
+    a img {
+        -webkit-filter: drop-shadow(0px 0px 20px $main-dark-blue);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+    }
 }
 
 .site-nav {
@@ -239,9 +241,6 @@ header {
         &:not(:first-child) {
             margin-left: 5vw;
         }
-        &:hover {
-            text-shadow: 0px 0px 20px $main-dark-blue;
-        }
     }
 }
 
@@ -257,13 +256,15 @@ header {
     font-family: Brush Script MT;
     line-height: 40px;
     margin-left: 10px;
+    &:hover {
+        text-shadow: none;
+    }
 }
 
 h1 {
     text-align: center;
     width: 100%;
     margin-top: 120px;
-    color: #eee;
     font-weight: 800;
     font-size: 40px;
 }
@@ -317,24 +318,70 @@ label {
 #################################### */
 
 .site-footer {
-    padding: 2px;
-    width: 100%;
+    background: #eaeaea;
+    margin-top: 5vw;
+    padding: 2vw 0 5vw;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    width: 100%;
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-shadow: none;
+        }
+    }
 }
 
 .site-footer p {
     margin-bottom: 0;
 }
 
+.footer-grid {
+    display: flex;
+    grid-column-gap: 10px;
+    grid-column-gap: 10px;
+    img {
+        max-width: 420px;
+        max-height: 220px;
+    }
+    @media screen and (max-width: $on-laptop) {
+        flex-direction: column;
+    }
+}
+
+.footer-contact {
+    background: white;
+    margin-left: 10px;
+    width: 100%;
+    h1 {
+        font-weight: 100;
+        font-size: 2.5em;
+        text-align: left;
+        margin: 15px 10px;
+    }
+    @media screen and (max-width: $on-laptop) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
 .social-links {
-    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    align-items: start;
+    margin: 0 10px;
     a {
-        color: $main-dark-blue;
-        font-size: 20px;
+        color: #333;
+        font-size: 18px;
         text-decoration: none;
-        margin: 20px 10px;
+        margin: 10px 10px;
+    }
+}
+
+.footer-notes {
+    margin-top: 15px;
+    span {
+        margin-left: 15px;
     }
 }
 
@@ -356,7 +403,7 @@ article a {
     text-decoration: $main-dark-blue;
     text-shadow: 0px 0px 20px $main-dark-blue;
     &:hover {
-        text-shadow: 0px 0px 25px darken($main-dark-blue, 20%);
+        text-shadow: 0px 0px 20px darken($main-dark-blue, 20%);
     }
 }
 
@@ -385,8 +432,11 @@ blockquote {
     max-width: $max-wrapper-width;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 7%; // small padding on the sides
+    padding: 0 7%;
     @extend %clearfix;
+    @media screen and (max-width: $on-laptop) {
+        padding: 0 3%;
+    }
 }
 
 

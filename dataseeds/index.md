@@ -15,33 +15,32 @@ permalink: /
         </div>
         <img src="/assets/icons/production2.png">
     </a>
-    <img src="/assets/Recycle.png"/>
+    <img src="/assets/RecycleTemp.png"/>
     <a class="home-center" href="/transport">
-        <h3>SUSTAINABLE</h3>
-        <h3>TRANSPORT</h3>
         <div>
-            <img src="/assets/icons/transport.png">
+            <h3>SUSTAINABLE</h3>
+            <h3>TRANSPORT</h3>
         </div>
+        <img src="/assets/icons/transport.png">
     </a>
     <a class="home-left" href="/waste">
-        <h3>WASTE</h3>
-        <h3>MANAGEMENT</h3>
         <div>
-            <img src="/assets/icons/waste1.png">
-            <img src="/assets/icons/waste2.png">
+            <h3>WASTE</h3>
+            <h3>MANAGEMENT</h3>
         </div>
+        <img src="/assets/icons/waste1.png">
+        <img src="/assets/icons/waste2.png">
     </a>
     <a class="home-right" href="/packaging">
-        <h3>PROCESSING</h3>
-        <h3>& PACKAGING</h3>
+        <div>
+            <h3>PROCESSING</h3>
+            <h3>& PACKAGING</h3>
+        </div>
         <img src="/assets/icons/packaging1.png">
         <img src="/assets/icons/packaging2.png">
     </a>
 </div>
 
-<br/>
-<br/>
-<br/>
 
 <script>
     function lightTheme() {
