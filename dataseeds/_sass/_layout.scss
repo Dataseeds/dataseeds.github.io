@@ -16,34 +16,6 @@
     }
 }
 
-.site-navv-left {
-    float: left;
-    display: inline-flex;
-    h3 {
-        font-weight: 600;
-        @include media-query(450px) {
-            display: none
-        }
-    }
-    a {
-        border-bottom: none;
-        &:hover {
-            border-bottom: none;
-        }
-        img {
-            display: inline;
-            margin-right: 15px;
-            vertical-align: middle;
-            width: 150px;
-        }
-    }
-}
-
-.site-navv-right {
-    float: right;
-    display: inline-flex;
-}
-
 .header-bar {
     left: 0px;
     top: 0px;
@@ -104,94 +76,6 @@
 }
 
 
-/***** projects page ***********************************************************/
-
-.projects-hero-container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "logo logo" "img descr";
-}
-
-.projects-hero-logo {
-    grid-area: logo;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 50%;
-}
-
-.projects-hero-img {
-    width: 100%;
-    grid-area: img
-}
-
-.project-hero-descr {
-    grid-area: descr;
-    margin: auto 30px auto 0;
-    img {
-        margin: 0 auto 5% -10px;
-        left: 0px;
-        width: 35vw;
-    }
-    li {
-        font-size: 1rem;
-        line-height: 1.2em;
-        list-style: none;
-        margin: 15px 5px;
-        text-align: justify;
-    }
-    a {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: $on-laptop) {
-    .projects-hero-container {
-        height: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas: "logo" "img" "descr";
-    }
-    .projects-hero-img {
-        width: 100%;
-    }
-    .project-hero-descr {
-        margin: 0 5% 20px;
-    }
-    .projects-hero-logo {
-        width: 80%;
-    }
-}
-
-
-/***** Site footer ***********************************************************/
-
-.site-footer {
-    padding: 2px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.site-footer p {
-    margin-bottom: 0; // Remove margin set in _sass/_base.scss for vertical rythm
-}
-
-
-/***** Social links (Twitter, Github...) *******************************************/
-
-.social-links {
-    margin: 30px 0;
-    a {
-        font-size: 20px;
-        text-decoration: none;
-        margin: 20px 10px;
-    }
-}
-
-
 /***** Pagination ***********************************************************/
 
 .pagination {
@@ -242,116 +126,6 @@
 }
 
 
-/***** Posts ***********************************************************/
-
-.post-header {
-    margin-bottom: $vertical-spacing-unit;
-}
-
-.post-title {
-    font-size: 50px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    line-height: 1;
-    margin-top: 20px;
-    @include media-query($on-laptop) {
-        font-size: 42px;
-    }
-}
-
-.post-content {
-    h2 {
-        font-size: 42px;
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-    h3 {
-        font-size: 30px;
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-    h4 {
-        font-size: 20px;
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: #828282;
-    margin-bottom: 0px;
-}
-
-.post-link {
-    display: block;
-    font-size: 42px;
-}
-
-
-/***** Portfolio grid ***********************************************************/
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.project {
-    width: 33.33%;
-    height: 250px;
-    float: left;
-    vertical-align: middle;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.thumbnail {
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-}
-
-.thumbnail img {
-    width: 500px;
-    height: auto;
-    position: relative;
-    left: -25%;
-    top: -5%;
-}
-
-.thumbnail a {
-    float: left;
-    position: relative;
-    width: 100%;
-    height: 230px;
-}
-
-.thumbnail a span {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4);
-    color: $grey-color-light;
-    padding: 40px;
-    text-align: center;
-}
-
-.thumbnail a:hover span {
-    display: block;
-}
-
-
 /* ####################################
 			Home
 #################################### */
@@ -364,7 +138,7 @@
     h3 {
         color: #345c5e;
         font-family: Gill Sans MT Condesed;
-        font-size: 2.5em;
+        font-size: min(2.5em, 5vw);
         line-height: 1em;
         margin: auto;
         text-align: center;
@@ -380,6 +154,12 @@
         img {
             opacity: 1;
         }
+    }
+    .grid-double-img {
+        width: min(15vw, 150px);
+    }
+    .grid-single-img {
+        width: min(8vw, 75px);
     }
 }
 
@@ -407,6 +187,20 @@
     margin-top: auto;
 }
 
+@media screen and (max-width: $on-laptop) {
+    .grid-left,
+    .grid-right {
+        margin-bottom: auto;
+        margin-top: 10px;
+    }
+    .grid-top {
+        margin-top: auto;
+    }
+    .grid-container a img {
+        opacity: 1;
+    }
+}
+
 .grid-center {
     display: grid;
     grid-area: 2 / 2 / 3 / 3;
@@ -421,6 +215,67 @@
     img {
         margin: 120px auto;
         width: min(50vw, 600px);
+    }
+}
+
+.home {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    img {
+        text-align: center;
+        vertical-align: middle;
+        max-width: 10vw;
+        max-height: 7vh;
+    }
+    h3 {
+        color: $main-dark-blue;
+        font-family: Gill Sans MT Condesed;
+        font-size: min(2.5em, 5vw);
+        line-height: 1em;
+        margin: auto;
+        text-align: center;
+        word-break: inherit;
+    }
+}
+
+.home>img {
+    margin: 0 auto 13vw auto;
+    max-width: 50vw !important;
+    max-height: 50vh !important;
+}
+
+.home-top {
+    display: inline-flex;
+    div {
+        margin: auto;
+    }
+}
+
+.home-center {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.home-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.home-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home-left,
+.home-right {
+    display: inline;
+    div {
+        margin: auto;
     }
 }
 

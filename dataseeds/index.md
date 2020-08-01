@@ -5,8 +5,9 @@ visible: false
 permalink: /
 ---
 
-<div class="grid-container">
-    <a class="grid-top" href="/production">
+
+<div class="home">
+    <a class="home-top" href="/production">
         <img src="/assets/icons/production1.png">
         <div>
             <h3>CLEAN & EFFICIENT</h3>
@@ -14,29 +15,33 @@ permalink: /
         </div>
         <img src="/assets/icons/production2.png">
     </a>
-
-    <a class="grid-left" href="/waste">
-        <h3>WASTE</h3>
-        <h3>MANAGEMENT</h3>
-        <img src="/assets/icons/waste.png">
-    </a>
-
-    <a class="grid-right" href="/packaging">
-        <h3>PROCESSING</h3>
-        <h3>& PACKAGING</h3>
-        <img src="/assets/icons/packaging.png">
-    </a>
-
-    <a class="grid-center" href="/transport">
+    <img src="/assets/Recycle.png"/>
+    <a class="home-center" href="/transport">
         <h3>SUSTAINABLE</h3>
         <h3>TRANSPORT</h3>
-        <img src="/assets/icons/transport.png">
+        <div>
+            <img src="/assets/icons/transport.png">
+        </div>
     </a>
-    <div class="grid-whole">
-        <img src="/assets/Recycle.png">
-    </div>
+    <a class="home-left" href="/waste">
+        <h3>WASTE</h3>
+        <h3>MANAGEMENT</h3>
+        <div>
+            <img src="/assets/icons/waste1.png">
+            <img src="/assets/icons/waste2.png">
+        </div>
+    </a>
+    <a class="home-right" href="/packaging">
+        <h3>PROCESSING</h3>
+        <h3>& PACKAGING</h3>
+        <img src="/assets/icons/packaging1.png">
+        <img src="/assets/icons/packaging2.png">
+    </a>
 </div>
 
+<br/>
+<br/>
+<br/>
 
 <script>
     function lightTheme() {
@@ -46,16 +51,3 @@ permalink: /
 
     function darkTheme() {}
 </script>
-
-<!--
-Datased: Brush Script MT
-Todo lo demas: Gill Sans MT Condesed
-
----
-layout: page
-title:
-visible: false
-permalink: /
----
-
--->
