@@ -185,3 +185,28 @@
 /* ####################################
 			About page 
 #################################### */
+
+.about-row {
+    background: white;
+    box-shadow: 0px 0px 25px #00000033;
+    display: grid;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 1%;
+    div {
+        margin: auto;
+    }
+    img {
+        height: 260px;
+        margin-bottom: 50px;
+        width: 260px;
+        @media screen and (max-width: $on-laptop) {
+            width: 40vw;
+            height: 40vw;
+        }
+    }
+    &:hover {
+        box-shadow: 5px 5px 25px #00A66070;
+        transform: scale(1.05);
+    }
+}
