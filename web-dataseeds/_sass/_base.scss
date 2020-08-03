@@ -31,11 +31,6 @@ a {
     color: $light-theme-fg;
 }
 
-ul {
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
 a {
     word-wrap: break-word;
 }
@@ -242,6 +237,10 @@ a:hover {
             margin-left: 5vw;
         }
     }
+    ul {
+        list-style: none;
+        display: inline-flex;
+    }
 }
 
 .logo {
@@ -329,18 +328,6 @@ label {
             text-shadow: none;
         }
     }
-    button {
-        background: #12D575;
-        border: none;
-        margin: 2px 0;
-        padding: 8px 10px;
-        div {
-            display: flex;
-        }
-        i {
-            margin: auto 2px;
-        }
-    }
 }
 
 .site-footer p {
@@ -388,15 +375,40 @@ label {
         text-decoration: none;
         margin: 10px 10px;
     }
-    span:not:first-child {
-        text-decoration: underline;
+}
+
+.social-links button {
+    background: #12D575;
+    border: none;
+    margin: 2px 0;
+    padding: 8px 10px;
+    div {
+        display: flex;
+    }
+    i {
+        margin: auto 2px;
+    }
+    span {
+        margin-right: 5px;
     }
 }
 
 .footer-notes {
+    font-size: 12px;
     margin-top: 15px;
     span {
         margin-left: 15px;
+    }
+}
+
+.contact-us {
+    display: flex;
+    a {
+        font-size: 24px;
+        margin: auto 5px;
+    }
+    h1 {
+        width: auto;
     }
 }
 

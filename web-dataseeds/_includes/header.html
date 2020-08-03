@@ -7,8 +7,12 @@
             </div>
             <input type="checkbox" id="nav" /><label for="nav"></label>
             <div class="site-nav-right">
-                {% for page in site.pages %} {% if page.title and page.visible %}
-                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> {% endif %} {% endfor %}
+                <ul>
+                    {% for page in site.pages %} {% if page.title and page.visible %}
+                    <li>
+                        <a href="{{ page.url | prepend: site.baseurl }}"></li>
+                    {{ page.title }}</a> {% endif %} {% endfor %}
+                </ul>
             </div>
         </nav>
     </div>

@@ -61,6 +61,7 @@
 
 .home-top {
     display: inline-flex;
+    min-height: 5em;
     margin: 0 auto;
     div {
         margin: auto;
@@ -119,8 +120,9 @@
     h1 {
         color: $main-dark-blue;
         font-size: min(10vw, 4em);
+        line-height: normal;
         margin: auto 0;
-        transform: scale(.85, 1.15);
+        transform: scale(.85, 1.05);
         width: auto;
     }
     img {
@@ -209,4 +211,13 @@
         box-shadow: 5px 5px 25px #00A66070;
         transform: scale(1.05);
     }
+}
+
+
+/* ####################################
+			404 page 
+#################################### */
+
+.img-fill img {
+    width: 100%;
 }

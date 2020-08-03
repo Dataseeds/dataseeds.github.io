@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms, Conditions and Privacy
-permalink: /privacy/
+permalink: /privacy
 ---
 
 This privacy policy governs the use of any of the software applications, web pages and/or services from the developer Ismael Estalayo.

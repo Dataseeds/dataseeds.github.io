@@ -2,7 +2,7 @@
 layout: page
 title: Waste management
 visible: false
-permalink: /waste/
+permalink: /waste
 ---
 
 <div>

@@ -2,7 +2,7 @@
 layout: page
 title: Citizens' opinions
 visible: true
-permalink: /citizens/
+permalink: /citizens
 ---
 
 <div>

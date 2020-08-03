@@ -2,7 +2,7 @@
 layout: page
 title: About
 visible: true
-permalink: /about/
+permalink: /about
 ---
 
 <div>
