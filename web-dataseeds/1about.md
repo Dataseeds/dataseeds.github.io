@@ -22,6 +22,9 @@ permalink: /about/
 		<div class="about-row">
 			<img src="/assets/about-cristina.png">
 		</div>
+		<div class="about-row">
+			<img src="/assets/about-borja.png">
+		</div>
 	</div>
 </div>
 
