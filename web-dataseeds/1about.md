@@ -9,7 +9,7 @@ permalink: /about
 	<div class="centered-title">
 		<h1>ABOUT US</h1>
 	</div>
-	<div class="flex-container">
+	<div class="about-flex-container">
 		<div class="about-row">
 			<img src="/assets/about-andrea.png">
 		</div>

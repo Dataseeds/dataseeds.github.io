@@ -32,6 +32,7 @@
     h3 {
         color: $main-dark-blue;
         font-size: min(2.5em, 5vw);
+        font-weight: 100;
         line-height: 1em;
         margin: auto;
         text-align: center;
@@ -116,7 +117,7 @@
 .centered-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 2vw;
+    margin-bottom: 3vh;
     h1 {
         color: $main-dark-blue;
         font-size: min(10vw, 4em);
@@ -136,14 +137,16 @@
 .flex-container {
     align-items: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
     margin: 0;
     list-style: none;
-    h3 {
-        font-size: 2em;
-        text-align: center;
+    h2 {
+        font-size: 2.5em;
+        font-weight: 600;
+        line-height: 1em;
     }
     img {
         display: flex;
@@ -155,18 +158,27 @@
     background: #00C68015;
     border-radius: 8px;
     box-shadow: 2px 2px 15px #00A66060;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     margin: auto;
     margin-bottom: 50px;
-    padding: 1%;
-    width: 150px;
-    height: 200px;
-    div {
-        margin: auto;
+    @media screen and (max-width: $on-laptop) {
+        flex-direction: column;
+        max-width: 85vw;
     }
-    &:hover {
-        box-shadow: 5px 5px 25px #00A66070;
-        transform: scale(1.05);
+}
+
+.card-img {
+    padding: 2em;
+}
+
+.card-descr {
+    margin: auto 0;
+    padding: 3em;
+    padding-left: 0;
+    @media screen and (max-width: $on-laptop) {
+        padding: 2em;
+        padding-top: 0;
     }
 }
 
@@ -188,19 +200,41 @@
 			About page 
 #################################### */
 
+.about-flex-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    h2 {
+        font-size: 2.5em;
+        font-weight: 600;
+        line-height: 1em;
+    }
+    img {
+        display: flex;
+        margin: auto;
+    }
+}
+
 .about-row {
     background: white;
-    box-shadow: 0px 0px 25px #00000033;
+    box-shadow: 0px 0px 20px #999999;
     display: grid;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 4vh;
     padding: 1%;
+    transition: all .2s ease-in-out;
     div {
         margin: auto;
     }
     img {
         height: 260px;
-        margin-bottom: 50px;
+        margin-bottom: 15%;
         width: 260px;
         @media screen and (max-width: $on-laptop) {
             width: 40vw;
@@ -208,7 +242,7 @@
         }
     }
     &:hover {
-        box-shadow: 5px 5px 25px #00A66070;
+        box-shadow: 0px 0px 40px #999999;
         transform: scale(1.05);
     }
 }
