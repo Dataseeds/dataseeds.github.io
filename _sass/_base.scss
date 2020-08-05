@@ -371,10 +371,11 @@ label {
     margin-bottom: 0;
 }
 
-.footer-grid {
+.footer-flex {
     display: flex;
     grid-column-gap: 10px;
     grid-column-gap: 10px;
+    justify-content: center;
     img {
         max-width: 420px;
         max-height: 220px;
