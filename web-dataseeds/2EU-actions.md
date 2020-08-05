@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EU actions
+title: EU lex actions
 visible: true
 permalink: /actions
 ---
