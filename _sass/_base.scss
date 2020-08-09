@@ -272,9 +272,7 @@ nav>ul>li {
     font-size: 22px;
     font-family: Gill Sans MT Condesed;
     line-height: 40px;
-    &:not(:first-child) {
-        margin-left: 5vw;
-    }
+    margin-left: 4vw;
 }
 
 nav>ul>li>a {
@@ -376,6 +374,7 @@ label {
     grid-column-gap: 10px;
     grid-column-gap: 10px;
     justify-content: center;
+    place-items: center;
     img {
         max-width: 420px;
         max-height: 220px;
