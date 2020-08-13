@@ -47,10 +47,10 @@ permalink: /about
 			<div class="flip-card-inner">
 				<div class="flip-card-front">
 					<img src="/assets/about/cristina.png" alt="Cristina's avatar">
-					<h2>Cristina G</h2>
+					<h2>Aura Cristina G</h2>
 				</div>
 				<div class="flip-card-back">
-					<p>After studying International Relations, Paula has specialized in the intersection of media and culture. Her interests are varied but mostly concern how the media influences our realities. She has previous experience coordinating media outlets for an array of institutions such as universities or social organizations.</p>
+					<p>LLM Candidate in Legal Studies, freelance junior developer and experience as junior researcher on postcolonial studies. Focused on the relation between eurocentrism and securitisation as an infer for (green) militarisation and the breach of indigenous/enviromental rights. Special interest in the geopolitics of the arctic.</p>
 				</div>
 			</div>
 		</div>
@@ -67,7 +67,3 @@ permalink: /about
 		</div>
 	</div>
 </div>
-
-
-
-
