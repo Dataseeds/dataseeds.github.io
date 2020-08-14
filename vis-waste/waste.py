@@ -28,23 +28,23 @@ df.reset_index(inplace=True)
 app.layout = html.Div([
 
     html.H1("Waste", style={'text-align': 'center'}),
-
-    dcc.Dropdown(id="select_year",
-                 options=[{"label": str(year), "value": year} for year in df['TIME'].unique()],
-                 multi=False,
-                 value=2016,
-                 style={'width': "30%"}
-                 ),
-    dcc.Dropdown(id="select_waste",
+    
+    html.Div([
+        dcc.Dropdown(id="select_year",
+                     options=[{"label": str(year), "value": year} for year in df['TIME'].unique()],
+                     multi=False,
+                     value=2016,
+                     style={'width': "30%", 'display': 'inline-block'}),
+        dcc.Dropdown(id="select_waste",
                  options=[{"label": str(waste), "value": waste} for waste in df['WASTE_LABEL'].unique()],
                  multi=False,
                  value="Total waste",
-                 style={'width': "60%"}
-                 ),
+                 style={'width': "70%", 'display': 'inline-block'})  
+    ]),
     
     html.Br(),
 
-    dcc.Graph(id='waste_map', figure={})
+    dcc.Graph(id='waste_map', figure={}, style={"width": "100%", "height": "100%"})
 ])
 
 
@@ -65,11 +65,12 @@ def update_graph(selected_year, selected_waste):
     dff = dff[dff["TIME"] == selected_year]
     dff = dff[dff["HAZARD"] == "HAZ_NHAZ"]
     dff = dff[dff["WASTE_LABEL"] == selected_waste]
+    dff = dff.query('GEO != ["EU27_2020", "EU28"]')
 
     # Plotly Express
     fig = px.choropleth(
-        color_continuous_scale="Viridis",
         color='Value',
+        color_continuous_scale="Reds",
         data_frame=dff,
         hover_data=['Value'],
         locationmode='country names', # "ISO-3" "country names" "geojson-id"
@@ -78,30 +79,38 @@ def update_graph(selected_year, selected_waste):
         scope="europe"
     )
     fig.update_traces(showlegend=False)
-    
+    fig.update_layout(autosize=True)
+    fig.write_html("testt.html")
+
+
     # template='plotly_dark'
 
     # Plotly Graph Objects (GO)
-    # fig = go.Figure(
-    #     data=[go.Choropleth(
-    #         locationmode='USA-states',
-    #         locations=dff['state_code'],
-    #         z=dff["Pct of Colonies Impacted"].astype(float),
-    #         colorscale='Reds',
-    #     )]
-    # )
-    #
-    # fig.update_layout(
-    #     title_text="Bees Affected by Mites in the USA",
-    #     title_xanchor="center",
-    #     title_font=dict(size=24),
-    #     title_x=0.5,
-    #     geo=dict(scope='usa'),
-    # )
+    fig = go.Figure(
+    data=[
+        go.Choropleth(
+            locationmode='country names',
+            locations=dff['GEO_LABEL'],
+            z=dff['Value'].astype(float),
+            colorscale='Reds',
+            marker_line_color='gray',
+        )
+    ])
+    fig.update_layout(
+        height=700,
+        title_text = '2011 US Agriculture Exports by State',
+        title_xanchor="center",
+        title_x=0.5,
+        title_font=dict(size=24),
+        geo=dict(
+            scope='europe'
+        ),
+        margin={"r": 0, "t": 50, "l": 0, "b": 0}
+    )
 
-    return fig
+    return [fig]
 
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False, host="0.0.0.0")
