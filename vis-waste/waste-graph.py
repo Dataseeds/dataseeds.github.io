@@ -1,7 +1,7 @@
 
 import numpy as np
 import pandas as pd
-import plotly.express as px  # (version 4.7.0)
+import plotly.express as px
 import plotly.graph_objects as go
 
 pd.set_option("display.max_columns", 40)
@@ -27,27 +27,27 @@ dff = df.copy().query('TIME == 2016')
 fig = go.Figure(
     data=[
         go.Choropleth(
+            colorscale='Greens',
             locationmode='country names',
             locations=dff['GEO_LABEL'],
-            z=dff['Value'],
-            colorscale='Greens',
             marker_line_color='gray',
             marker_opacity=0.75,
             marker_line_width=0.5
+            z=dff['Value'],
         )
     ],
     layout=dict(
         autosize=True,
-        height=400,
-        width=500,
         geo=dict(
             scope='europe',
             bgcolor="#F0F0F0",
             projection_scale=1.2,
             center=dict(lat=60, lon=15)
         ),
+        height=400,
         margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
-        paper_bgcolor = "#F0F0F0"
+        paper_bgcolor = "#F0F0F0",
+        width=500,
     )
 )
 
