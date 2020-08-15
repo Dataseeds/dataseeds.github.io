@@ -81,7 +81,8 @@ conf = {"autosizable": False,
         "showTips": False,
         "showAxisDragHandles": False,
         "scrollZoom": False,
-        "responsive": True}
+        "responsive": True,
+        "doubleClickDelay": 1000}
 fig.show(config=conf)
 
 
