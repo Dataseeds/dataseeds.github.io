@@ -38,7 +38,8 @@ fig = go.Figure(
     ],
     layout=dict(
         autosize=True,
-        height=500,
+        height=400,
+        width=500,
         geo=dict(
             scope='europe',
             bgcolor="#F0F0F0"
@@ -76,4 +77,7 @@ fig
 
 
 fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\waste-graph.html",
-               config={"displayModeBar": False, "showTips": False})
+               config={"displayModeBar": False,
+                       "showTips": False,
+                       "scrollZoom": False,
+                       "responsive": True})
