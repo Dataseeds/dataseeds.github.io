@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 pd.set_option("display.max_columns", 40)
 pd.set_option("display.max_colwidth", 200)
 
-df = pd.read_csv("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis-waste\\waste_gen-data.csv")
+df = pd.read_csv("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\visualizations\\waste\\waste_gen-data.csv")
 
 df = df.drop(columns=["Flag and Footnotes", "NACE_R2", "NACE_R2_LABEL"])
 df = df.query('GEO != ["EU27_2020", "EU28"]')
@@ -32,7 +32,7 @@ fig = go.Figure(
             locations=dff['GEO_LABEL'],
             marker_line_color='gray',
             marker_opacity=0.75,
-            marker_line_width=0.5
+            marker_line_width=0.5,
             z=dff['Value'],
         )
     ],
@@ -75,11 +75,15 @@ fig.update_layout(updatemenus=[dict(active=3,
                                     xanchor="left",
                                     yanchor="top"
                                     )]);
-fig
+conf = {"autosizable": False,
+        "fillFrame": False,
+        "displayModeBar": False,
+        "showTips": False,
+        "showAxisDragHandles": False,
+        "scrollZoom": False,
+        "responsive": True}
+fig.show(config=conf)
 
 
 fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\waste-graph.html",
-               config={"displayModeBar": False,
-                       "showTips": False,
-                       "scrollZoom": False,
-                       "responsive": True})
+               config=conf)
