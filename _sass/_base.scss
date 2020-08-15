@@ -103,7 +103,6 @@ body {
     --duration: 0.5s;
     --timing: ease;
     color: var(--color);
-    background-color: var(--background-color);
     transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
 }
 
