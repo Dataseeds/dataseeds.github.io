@@ -42,7 +42,9 @@ fig = go.Figure(
         width=500,
         geo=dict(
             scope='europe',
-            bgcolor="#F0F0F0"
+            bgcolor="#F0F0F0",
+            projection_scale=1.2,
+            center=dict(lat=60, lon=15)
         ),
         margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
         paper_bgcolor = "#F0F0F0"
