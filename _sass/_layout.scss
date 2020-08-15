@@ -309,8 +309,11 @@
         font-size: 1.1em;
         line-height: 1.3em;
         padding: 0 10px;
-        text-align: left;
+        text-align: justify;
         word-break: break-all;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
         margin: auto;
     }
 }
