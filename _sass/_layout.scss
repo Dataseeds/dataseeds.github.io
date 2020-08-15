@@ -320,6 +320,83 @@
 
 
 /* ####################################
+			Legislation page 
+#################################### */
+
+.pagination {
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    padding: 5px;
+}
+
+#search-list {
+    width: 100%;
+}
+
+.searchbox {
+    text-align: center;
+    * {
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px #99999988;
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+}
+
+.list {
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.list li {
+    background-color: #e0e0e0;
+    background-color: #12d57550;
+    box-shadow: 0px 4px 10px #99999988;
+    border-radius: 7px;
+    display: block;
+    flex-basis: 250px;
+    flex-grow: 1;
+    height: 100px;
+    margin: 10px;
+    min-width: 150px;
+    position: relative;
+    &:hover {
+        box-shadow: 0px 8px 20px #99999988;
+    }
+}
+
+.link {
+    display: block;
+    height: -webkit-fill-available;
+    padding: 10px;
+    text-shadow: none;
+    &:hover {
+        text-shadow: none;
+    }
+}
+
+.link h3 {
+    display: -webkit-box;
+    line-clamp: 1;
+    font-size: 1.6em;
+    text-overflow: ellipsis;
+}
+
+.link p {
+    bottom: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    font-size: 1em;
+}
+
+
+/* ####################################
 			404 page 
 #################################### */
 
