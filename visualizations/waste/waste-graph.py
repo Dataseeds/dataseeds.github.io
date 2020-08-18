@@ -38,6 +38,7 @@ fig = go.Figure(
     ],
     layout=dict(
         autosize=True,
+        dragmode=False,
         geo=dict(
             scope='europe',
             bgcolor="#F0F0F0",
@@ -66,7 +67,7 @@ button_2014 = dict(method= 'update', label='2014',
 button_2016 = dict(method= 'update', label='2016', 
                args=[{"z": [df.query('TIME == 2016')['Value']]}])
 buttons = [button_2004, button_2006, button_2008, button_2010, button_2012, button_2014, button_2016]
-fig.update_layout(updatemenus=[dict(active=3,
+fig.update_layout(updatemenus=[dict(active=6,
                                     buttons=buttons,
                                     bgcolor="#FFFFFF",
                                     direction="down",
