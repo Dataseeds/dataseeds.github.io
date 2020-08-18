@@ -33,6 +33,7 @@ fig = go.Figure(
             marker_line_color='gray',
             marker_opacity=0.75,
             marker_line_width=0.5,
+            showscale=False,
             z=dff['Value'],
         )
     ],
@@ -45,10 +46,8 @@ fig = go.Figure(
             projection_scale=1.2,
             center=dict(lat=60, lon=15)
         ),
-        height=400,
         margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
         paper_bgcolor = "#F0F0F0",
-        width=500,
     )
 )
 
