@@ -33,7 +33,7 @@ fig = go.Figure(
             marker_line_color='gray',
             marker_opacity=0.75,
             marker_line_width=0.5,
-            showscale=False,
+            showscale=True,
             z=dff['Value'],
         )
     ],
