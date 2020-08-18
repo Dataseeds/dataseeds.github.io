@@ -12,148 +12,178 @@ pd.set_option("display.max_colwidth", 200)
 
 df = pd.read_csv("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\visualizations\\transport\\change-energy-consumption.csv")
 
-df.groupby(["geo", "Transport mode"])["obsValue"].sum()
+dff = df.pivot_table('obsValue', 'geo', 'Transport mode').reset_index()
 
-# Plotly Graph Objects (GO)
-fig = go.Figure(layout=dict(
-                    legend=dict(
-                        xanchor="right",
-                        x=0.9),
-                    margin={"r": 0, "t": 30, "l": 0, "b": 0, "pad": 0},
-                    title="<b>1990-2017 — Change in final energy consumption by transport mode</b>",
-                    title_font=dict(size=16, family='PT Sans Narrow'),
-                    paper_bgcolor = "#F0F0F0",
-                    plot_bgcolor="#F0F0F0",
-                    xaxis={"zerolinecolor": "#FFFFFF",
-                           "showgrid": False,
-                           "ticksuffix": "%"},
-                    yaxis={"showgrid": False,
-                           "categoryorder": "array",
-                           "categoryarray": ["Final consumption - transport sector - road - energy use",
-                           "Air Domestic/International",
-                           "International maritime bunkers",
-                           "Final consumption - transport sector - rail - energy use",
-                           "Final consumption - transport sector - domestic navigation - energy use"]}))
-fig.add_trace(go.Bar(
-    y=df.query('geo == "EEA-33"')["Transport mode"].values,
-    x=df.query('geo == "EEA-33"')["obsValue"].values,
-    name='EEA-33',
-    orientation='h',
-    marker=dict(
-        color='rgba(255, 204, 100, 0.6)',
-        line=dict(color='rgba(255, 204, 100, 1.0)', width=1)
-    )
-))
-fig.add_trace(go.Bar(
-    y=df.query('geo == "EU-13"')["Transport mode"].values,
-    x=df.query('geo == "EU-13"')["obsValue"].values,
-    name='EU-13',
-    orientation='h',
-    marker=dict(
-        color='rgba(51, 153, 255, 0.6)',
-        line=dict(color='rgba(51, 153, 255, 1.0)', width=1)
-    )
-))
-fig.add_trace(go.Bar(
-    y=df.query('geo == "EU-15"')["Transport mode"].values,
-    x=df.query('geo == "EU-15"')["obsValue"].values,
-    name='EU-15',
-    orientation='h',
-    marker=dict(
-        color='rgba(13, 137, 13, 0.6)',
-        line=dict(color='rgba(13, 137, 13, 1.0)', width=1)
-    )
-))
+# #############################################################################
+# variables
+EU13=["Bulgaria", "Czech Republic", "Cyprus", "Estonia", "Croatia", "Hungary",
+      "Lithuania", "Latvia", "Malta", "Poland", "Romania", "Slovenia", "Slovakia"]
+EU15 = ["Austria", "Belgium", "Denmark", "Finland", "France", "Germany",
+        "Greece", "Ireland", "Italy", "Luxembourg", "Netherlands", "Portugal",
+        "Spain", "Sweden", "United Kingdom"]
+EEA33 = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic',
+         'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece',
+         'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Liechtenstein',
+         'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Norway', 'Poland',
+         'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
+         'United Kingdom']
 
-conf = {"autosizable": False,
-        "fillFrame": False,
-        "displayModeBar": False,
-        "showTips": False,
-        "showAxisDragHandles": False,
-        "scrollZoom": False,
-        "responsive": True,
-        "doubleClickDelay": 1000}
-fig.show(config=conf)
+CONF = {"autosizable": True, "fillFrame": False, "displayModeBar": False,
+        "showTips": False, "showAxisDragHandles": False, "scrollZoom": False,
+        "responsive": True, "doubleClickDelay": 1000}
 
+# #############################################################################
+# Map + table with EU-13, EU-15 and EEA-33
 
-fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\transport-graph-change.html",
-               config=conf)
-
-
-
-fig = go.Figure(go.Table(
-    header=dict(values=list(df['Transport mode'].unique()),
-                align='left'),
-    cells=dict(values=df.query('geo == "EEA-33"')['obsValue'],
-               fill_color='lavender',
-               align='center'))
+fig = make_subplots(rows=2, cols=1, shared_xaxes=False,
+    vertical_spacing=0,
+    specs=[[{"type": "choropleth"}], [{"type": "table"}]],
+    row_heights=[0.65, 0.35],
 )
+fig.add_trace(
+    go.Choropleth(colorscale='Greens',
+        hovertext=df.query('geo=="EU-13"')[["Transport mode", "obsValue"]],
+        locationmode='country names', locations=EU13,
+        marker_line_color='gray', marker_opacity=0.75, marker_line_width=0.5,
+        showscale=False, z=[1]*35,
+    ),
+    row=1, col=1
+)
+fig.add_trace(
+    go.Table(
+        header=dict(
+            values=dff.columns.tolist(),
+            font=dict(size=10),
+            align="center"
+        ),
+        cells=dict(
+            values=[dff[k].tolist() for k in dff.columns],
+            align = "center",
+            fill=dict(color=[["#90ce96", "#e5ecf6", "#e5ecf6"]])
+        )
+    ),
+    row=2, col=1
+)
+
+
 button_EU13  = dict(method= 'update', label='EU-13',
-                    args=[{"cells": dict(values=df.query('geo == "EU-13"')['obsValue'])}])
+                    args=[{"locations": [EU13],
+                           "cells":  dict(
+                               values=[dff[k].tolist() for k in dff.columns],
+                               fill=dict(color=[["#90ce96", "#e5ecf6", "#e5ecf6"]])
+                            )}])
 button_EU15  = dict(method= 'update', label='EU-15',
-                    args=[{"cells": dict(values=df.query('geo == "EU-15"')['obsValue'])}])
-button_EEA33 = dict(method= 'update', label='EEA-33', 
-                    args=[{"cells": dict(values=df.query('geo == "EEA-33"')['obsValue'])}])
+                    args=[{"locations": [EU15],
+                           "cells":  dict(
+                               values=[dff[k].tolist() for k in dff.columns],
+                               fill=dict(color=[["#e5ecf6", "#90ce96", "#e5ecf6"]])
+                            )}])
+button_EEA33  = dict(method= 'update', label='EEA-33',
+                    args=[{"locations": [EEA33],
+                           "cells":  dict(
+                               values=[dff[k].tolist() for k in dff.columns],
+                               fill=dict(color=[["#e5ecf6", "#e5ecf6", "#90ce96"]])
+                            )}])
 buttons = [button_EU13, button_EU15, button_EEA33]
 fig.update_layout(updatemenus=[dict(active=0,
                                     buttons=buttons,
-                                    bgcolor="#FFFFFF",
-                                    direction="down",
-                                    pad={"r": 0, "t": 0, "l": 0, "b": 0},
-                                    x=0.1,
+                                    x=0.05,
                                     xanchor="left",
-                                    yanchor="top"
-                                    )]);
-
-
-
-
-map1 = go.Choropleth(
-                colorscale='Greens',
-                locationmode='country names',
-                locations=dff['GEO_LABEL'],
-                marker_line_color='gray',
-                marker_opacity=0.75,
-                marker_line_width=0.5,
-                z=dff['Value'],
-            )
-map1_layout = dict(
+                                    yanchor="top")],
     autosize=True,
+    dragmode=False,
     geo=dict(
         scope='europe',
         bgcolor="#F0F0F0",
         projection_scale=1.2,
         center=dict(lat=60, lon=15)
     ),
-    height=400,
-    margin={"r": 0, "t": 90, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
-    paper_bgcolor = "#F0F0F0",
-    width=500,
-)
+    margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
+    paper_bgcolor = "#F0F0F0");
+
+fig.show()
+fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\transport-graph-change.html",
+               config=CONF)
 
 
-table1 = go.Table(
-    header=dict(values=list(df['Transport mode'].unique()), align='left'),
-    cells=dict(values=df.query('geo == "EEA-33"')['obsValue'],
-               fill_color='lavender', align='center')
+"""
+
+# #############################################################################
+# Map only with EU-13, EU-15 and EEA-33
+fig = go.Figure(
+    data=[go.Choropleth(
+        colorscale='Greens',
+        hovertext=df.query('geo=="EU-13"')[["Transport mode", "obsValue"]],
+        locationmode='country names', locations=EU13,
+        marker_line_color='gray', marker_opacity=0.75, marker_line_width=0.5,
+        showscale=False, z=[1]*35)
+    ],
+    layout=dict(autosize=True, dragmode=False, 
+        geo=dict(scope='europe',
+            bgcolor="#F0F0F0",
+            projection_scale=1.2,
+            center=dict(lat=60, lon=15)),
+        margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
+        paper_bgcolor = "#F0F0F0"
+    )
 )
-go.Figure(data=[map1, table1], layout=map1_layout)
+
+button_EU13  = dict(method= 'update', label='EU-13',  args=[{"locations": [EU13]}])
+button_EU15  = dict(method= 'update', label='EU-15',  args=[{"locations": [EU15]}])
+button_EEA33 = dict(method= 'update', label='EEA-33', args=[{"locations": [EEA33]}])
+buttons = [button_EU13, button_EU15, button_EEA33]
+fig.update_layout(updatemenus=[
+    dict(active=0, buttons=buttons, bgcolor="#FFFFFF", direction="down",
+         pad={"r": 0, "t": 0, "l": 0, "b": 0}, x=0.1, xanchor="left",
+         yanchor="top")]);
+fig.show(conf=conf);
+
+
+# #############################################################################
+# Map + table with EU-13, EU-15 and EEA-33
+fig = make_subplots(rows=2, cols=1, shared_xaxes=True,
+    vertical_spacing=0.03,
+    specs=[[{"type": "choropleth"}], [{"type": "table"}]],
+    row_heights=[0.85, 0.15]
+)
+fig.add_trace(
+    go.Choropleth(colorscale='Greens',
+        hovertext=df.query('geo=="EU-13"')[["Transport mode", "obsValue"]],
+        locationmode='country names', locations=EU13,
+        marker_line_color='gray', marker_opacity=0.75, marker_line_width=0.5,
+        showscale=False, z=[1]*35,
+    ),
+    row=1, col=1
+)
+fig.add_trace(
+    go.Table(
+        header=dict(
+            values=df.query('geo=="EU-13"').pivot_table('obsValue', 'geo', 'Transport mode').columns.tolist(),
+            font=dict(size=10),
+            align="center"
+        ),
+        cells=dict(
+            values=df.query('geo=="EU-13"').pivot_table('obsValue', 'Transport mode'),
+            align = "center"
+        )
+    ),
+    row=2, col=1
+)
+
 
 button_EU13  = dict(method= 'update', label='EU-13',
-                    args=[{"cells": dict(values=df.query('geo == "EU-13"')['obsValue'])}])
+                    args=[{"locations": [EU13], "cells": dict(values=df.query('geo == "EU-13"')['obsValue']) }])
 button_EU15  = dict(method= 'update', label='EU-15',
-                    args=[{"cells": dict(values=df.query('geo == "EU-15"')['obsValue'])}])
-button_EEA33 = dict(method= 'update', label='EEA-33', 
-                    args=[{"cells": dict(values=df.query('geo == "EEA-33"')['obsValue'])}])
+                    args=[{"locations": [EU15], "cells": dict(values=df.query('geo == "EU-15"')['obsValue']) }])
+button_EEA33  = dict(method= 'update', label='EEA-33',
+                    args=[{"locations": [EEA33], "cells": dict(values=df.query('geo == "EEA-33"')['obsValue']) }])
 buttons = [button_EU13, button_EU15, button_EEA33]
-fig.update_layout(updatemenus=[dict(active=0,
-                                    buttons=buttons,
-                                    bgcolor="#FFFFFF",
-                                    direction="down",
-                                    pad={"r": 0, "t": 0, "l": 0, "b": 0},
-                                    x=0.1,
-                                    xanchor="left",
-                                    yanchor="top"
-                                    )]);
-
-fig.show();
+fig.update_layout(updatemenus=[dict(active=0, buttons=buttons)], autosize=True,
+                  dragmode=False,
+                  geo=dict(
+                      scope='europe', bgcolor="#F0F0F0", projection_scale=1.2,
+                      center=dict(lat=60, lon=15)),
+                  margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
+                  paper_bgcolor = "#F0F0F0");
+fig.show()
+"""
