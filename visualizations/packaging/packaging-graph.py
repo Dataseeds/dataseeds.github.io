@@ -20,7 +20,7 @@ df.replace({"Euro per kilogram": "Euro per kg",
             "Index, 2000=100": "Index 2000=100",
             "Germany (until 1990 former territory of the FRG)": "Germany"}, inplace=True)
 df = df.query('GEO != ["EU27_2020", "EU28"]')
-df['Value'] = df['Value'].str.replace(' ', '').replace(':', '0').astype(float).round(2)
+df['Value'] = df['Value'].replace({" ": "", ":": "0"}).astype(float).round(2).replace(0, "n.d.")
 df.reset_index(inplace=True, drop=True)
 
 
@@ -41,10 +41,10 @@ fig.add_trace(
     go.Choropleth(colorscale='Greens', locationmode='country names',
                   locations=dff['Country'], marker_line_color='gray',
                   marker_opacity=0.75, marker_line_width=0.5, showscale=False,
-                  z=dff['Value']
+                  z=dff['Value'], hoverinfo='z+location'
     ), row=1, col=1
 )
-dfp = df.query('TIME==2019').pivot_table('Value', 'Country', 'Unit').reset_index()
+dfp = df.query('TIME==2019').pivot_table('Value', 'Country', 'Unit', lambda x: x.iloc[0]).reset_index()
 fig.add_trace(
     go.Table(
         header=dict(values=dfp.columns.tolist(), font=dict(size=10), align="center"),
@@ -58,7 +58,7 @@ fig.add_trace(
 
 buttons = []
 for year in df['TIME'].unique():
-    dfp = df.query('TIME==@year').pivot_table('Value', 'Country', 'Unit').reset_index()
+    dfp = df.query('TIME==@year').pivot_table('Value', 'Country', 'Unit', lambda x: x.iloc[0]).reset_index()
     buttons.append(
         dict(method= 'update', label=str(year),
              args=[{"cells": dict(values=[dfp[k].tolist() for k in dfp.columns]),
@@ -80,52 +80,3 @@ fig.show(config=conf)
 
 fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\packaging-graph.html",
                config=conf)
-
-
-
-"""
-# Plotly Graph Objects (GO)
-dff = df.copy().query('TIME==2019')
-fig = go.Figure(
-    data=[
-        go.Choropleth(
-            colorscale='Greens',
-            locationmode='country names',
-            locations=dff['Country'],
-            marker_line_color='gray',
-            marker_opacity=0.75,
-            marker_line_width=0.5,
-            showscale=True,
-            z=dff['Value'],
-        )
-    ],
-    layout=dict(
-        autosize=True,
-        dragmode=False,
-        geo=dict(
-            scope='europe',
-            bgcolor="#F0F0F0",
-            projection_scale=1.2,
-            center=dict(lat=60, lon=15)
-        ),
-        margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
-        paper_bgcolor = "#F0F0F0"
-    )
-)
-
-buttons = []
-for year in df['TIME'].unique():
-    buttons.append(
-        dict(method= 'update', label=str(year),
-               args=[{"z": [df.query('TIME==@year')['Value']] }])
-    )
-
-fig.update_layout(updatemenus=[
-    dict(active=len(buttons)-1, buttons=buttons, bgcolor="#FFFFFF",
-         direction="down", pad={"r": 0, "t": 0, "l": 0, "b": 0},
-         x=0.1, xanchor="left", yanchor="top" )
-    ]);
-
-
-fig.show(config=conf)
-"""
