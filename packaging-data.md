@@ -7,9 +7,9 @@ permalink: /packaging/data
 
 <div>
 	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
-		<img src="/assets/icons/waste1.png">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
 		<h1>PROCESSING & PACKAGING</h1>
-		<img src="/assets/icons/waste2.png">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Package.svg">
 	</div>
 	<div class="data-flex-container">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a pharetra orci. Curabitur orci eros, auctor tristique auctor luctus, ultricies sed risus. Phasellus gravida orci in turpis lacinia varius. Mauris consequat erat risus, finibus malesuada diam auctor ac. Aenean non sem ex. Vivamus in libero purus. Morbi blandit, nisl non iaculis ultricies, orci nunc interdum turpis, eu tristique quam nunc ut lorem. Quisque pharetra ac leo et consequat.
