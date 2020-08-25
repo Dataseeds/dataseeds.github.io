@@ -140,4 +140,5 @@ You use the Service and tells You about Your privacy rights and how the law prot
 <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
 
 <h1>Contact Us</h1>
-<p>If you have any questions about this Privacy Policy, do not hesitate to contact us at <a href="mailto:dataseeds@yahoo.com")> </a> </p>
+<p>If you have any questions about this Privacy Policy, do not hesitate to contact us at </p>
+<adress> <a href="mailto:dataseeds@yahoo.com")> </a> </adress>
