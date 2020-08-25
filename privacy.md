@@ -28,7 +28,6 @@ You use the Service and tells You about Your privacy rights and how the law prot
   <li><strong>Company</strong>(referred to as either "the company", "we","us" or "our" in this Agreement) refers to Dataseeds.</li>
 
   <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of the intellectual rights, equity interest or other securities entitled to vote for election of managing matters.</li>
-  </li>
 
   <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
 
@@ -52,9 +51,9 @@ You use the Service and tells You about Your privacy rights and how the law prot
 </ul>
 
 <h1>Collecting and Using Your Personal Data </h1>
-<h2>Types of Data Collected </2>
+<h2>Types of Data Collected </h2>
 
-<h3>Personal Data</3>
+<h3>Personal Data</h3>
 <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is limited to:
 
 <ul>
@@ -141,4 +140,4 @@ You use the Service and tells You about Your privacy rights and how the law prot
 <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
 
 <h1>Contact Us</h1>
-<p>If you have any questions about this Privacy Policy, do not hesitate to contact us at [dataseeds@yahoo.com](mailto:dataseeds@yahoo.com)</p>
+<p>If you have any questions about this Privacy Policy, do not hesitate to contact us at <a href="mailto:dataseeds@yahoo.com")> </a> </p>
