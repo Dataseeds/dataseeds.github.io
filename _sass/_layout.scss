@@ -30,13 +30,34 @@
         max-height: 6vh;
     }
     h3 {
-        color: $main-dark-blue;
+        color: #2f6849;
         font-size: min(2.5em, 5vw);
         font-weight: 100;
         line-height: 1em;
         margin: auto;
         text-align: center;
         word-break: inherit;
+    }
+    // if you hver with the mouse (or you're on phone, enable the shadows
+    a:hover {
+        h3 {
+            text-shadow: 0px 0px 20px #277b4e80;
+        }
+        img {
+            -webkit-filter: drop-shadow(0px 0px 20px #277b4e70);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#277b4e70')";
+            filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#277b4e70')";
+        }
+    }
+    @media (max-width: $on-laptop) {
+        h3 {
+            text-shadow: 0px 0px 20px #277b4e80;
+        }
+        img {
+            -webkit-filter: drop-shadow(0px 0px 20px #277b4e70);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#277b4e70')";
+            filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#277b4e70')";
+        }
     }
     // if the primary input of the device can hover
     @media (hover: hover) and (min-width: $on-laptop) {
