@@ -8,14 +8,12 @@ permalink: /
 
 <div class="home">
     <a class="home-top" href="/production">
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
-        <!-- <img src="/assets/icons/production1.png"> -->
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
         <div>
             <h3>CLEAN & EFFICIENT</h3>
             <h3>PRODUCTION</h3>
         </div>
-        <!-- <img src="/assets/icons/production2.png"> -->
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
     </a>
     <img src="/assets/RecycleTemp.png"/>
     <a class="home-center" href="/transport">
@@ -24,27 +22,23 @@ permalink: /
             <h3>TRANSPORT</h3>
         </div>
         <!-- <img src="/assets/icons/transport.png"> -->
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
     </a>
     <a class="home-left" href="/waste">
         <div>
             <h3>WASTE</h3>
             <h3>MANAGEMENT</h3>
         </div>
-        <!-- <img src="/assets/icons/waste1.png"> -->
-        <!-- <img src="/assets/icons/waste2.png"> -->
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Waste.svg">
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Trash.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Waste.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Trash.svg">
     </a>
     <a class="home-right" href="/packaging">
         <div>
             <h3>PROCESSING</h3>
             <h3>& PACKAGING</h3>
         </div>
-        <!-- <img src="/assets/icons/packaging1.png">
-        <img src="/assets/icons/packaging2.png"> -->
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
-        <img class="svg" src="/assets/icons/DrawKit-Ecology/Color/Package.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Package.svg">
     </a>
 </div>
 
@@ -53,14 +47,10 @@ permalink: /
     function lightTheme() {
         // TODO: modify if neccesary images
         // document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-light.png";
+        console.log("Light theme");
     }
 
-    function darkTheme() {}
+    function darkTheme() {
+        console.log("Dark theme");
+    }
 </script>
-
-<style>
-.svg{
-    width: 100px;
-    filter: grayscale(100%) sepia(100%) hue-rotate(70deg) saturate(1.5) brightness(0.9);
-}
-</style>
