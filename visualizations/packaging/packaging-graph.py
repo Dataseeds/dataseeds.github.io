@@ -24,9 +24,12 @@ df['Value'] = df['Value'].str.replace(' ', '').replace(':', '0').astype(float)
 df.reset_index(inplace=True, drop=True)
 
 
-
-
 dff = df.query('Unit=="Euro per kg CLV (2010)" & TIME==2019')
+
+conf = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
+        "fillFrame": False, "showTips": False, "showAxisDragHandles": False,
+        "scrollZoom": False, "responsive": True}
+
 
 # #############################################################################
 # Map + table
@@ -47,7 +50,7 @@ fig.add_trace(
         header=dict(values=dfp.columns.tolist(), font=dict(size=10), align="center"),
         cells=dict(
             values=[dfp[k].tolist() for k in dfp.columns],
-            align = "center", fill=dict(color=[["#e5ecf6"]])
+            align = "center"
         ),
     ),
     row=2, col=1
@@ -73,9 +76,6 @@ fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, x=0.05,
                   paper_bgcolor = "#F0F0F0",
                   height = 1250)
 
-conf = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
-        "fillFrame": False, "showTips": False, "showAxisDragHandles": False,
-        "scrollZoom": False, "responsive": True}
 fig.show(config=conf)
 
 fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\packaging-graph.html",
