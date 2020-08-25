@@ -20,7 +20,7 @@ df.replace({"Euro per kilogram": "Euro per kg",
             "Index, 2000=100": "Index 2000=100",
             "Germany (until 1990 former territory of the FRG)": "Germany"}, inplace=True)
 df = df.query('GEO != ["EU27_2020", "EU28"]')
-df['Value'] = df['Value'].str.replace(' ', '').replace(':', '0').astype(float)
+df['Value'] = df['Value'].str.replace(' ', '').replace(':', '0').astype(float).round(2)
 df.reset_index(inplace=True, drop=True)
 
 
