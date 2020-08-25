@@ -6,10 +6,11 @@ permalink: /privacy
 
 <h1>Privacy Policy</h1>
 
-<p> Last updated: August 13, 2020 </p>
+<p> Last updated: August 25, 2020 </p>
 
 <p> This privacy policy describes our policies and procedures on the collection, use and disclosure of Your information when
-You use the Service and tells You about Your privacy rights and how the law protects You. </p>
+You use the Service and tells You about Your privacy rights in accordance with Regulation <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504&from=EN#tocId1">(EU) 2016/679 </a>
+of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). </p>
 
 <p> When using this webpage, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
@@ -31,7 +32,7 @@ You use the Service and tells You about Your privacy rights and how the law prot
 
   <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
 
-  <li><strong>Website</strong> refers to Dataseeds, accessible from http://dataseeds.github.io </li>
+  <li><strong>Website</strong> refers to Dataseeds, accessible from <adress> <a href="http://dataseeds.github.io"> </a> </address> </li>
 
   <li><strong>Service</strong> refers to the Website.</li>
 
@@ -118,10 +119,6 @@ You use the Service and tells You about Your privacy rights and how the law prot
 
 <h2>Security of Your Personal Data</h2>
 <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-
-
-
-
 
 
     <h1>Children's Privacy</h1>
