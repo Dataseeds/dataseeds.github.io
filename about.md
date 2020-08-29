@@ -9,6 +9,13 @@ permalink: /about
 	<div class="centered-title">
 		<h1>ABOUT US</h1>
 	</div>
+	<div class="background"  style="background-image:url(/assets/about/misionvisionvalores.png)">
+		<div class="inner-container" style="background:grey; float: left;
+  width: 550px; height: 250px;">
+			<p>Dataseeds is built on the premise to democratize open data information to small holder agriculture. The European Data Portal offers 90,883 datasets on open environment data, which could help SMEs be more competitive, yet sustainable if used well. However, the quantity of data is such that it makes it very complex to find and use. The app aims to provide SMEs in the field of agriculture with direct access to better and more detailed information to help them become part of the green restructuring of EU industry. An online platform where they can (i) understand the past through the EU data, (ii) consider the present EU legislative and non-legislative actions, and (iii) think solutions for the future through research centres working in related aspects. It is a freely and easy to use resource which you are free to share and remix, even for commercial purposes, as long as you share the results under the same license.</p>
+		</div>
+	</div>
+
 	<div class="about-flex-container">
 		<div class="flip-card">
 			<div class="flip-card-inner">
