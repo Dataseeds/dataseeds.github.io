@@ -11,11 +11,15 @@ permalink: /about
 	</div>
 
 	<div class="background-image">
-		<img src= "/assets/about/misionvisionvalores.png" style="height:400px; width:full">
-			<p style="background-color:#eef0f0; float:left; width:550px; height:350px">Dataseeds is built on the premise to democratize open data information to small holder agriculture. The European Data Portal offers 90,883 datasets on open environment data, which could help SMEs be more competitive, yet sustainable if used well. However, the quantity of data is such that it makes it very complex to find and use. The app aims to provide SMEs in the field of agriculture with direct access to better and more detailed information to help them become part of the green restructuring of EU industry. An online platform where they can (i) understand the past through the EU data, (ii) consider the present EU legislative and non-legislative actions, and (iii) think solutions for the future through research centres working in related aspects. It is a freely and easy to use resource which you are free to share and remix, even for commercial purposes, as long as you share the results under the same license.</p>
+		<img src= "/assets/about/misionvisionvalores.png" style="height:400px; width:full;position:relative">
+			<p style="background-color:#eef0f0; float:left; width:550px; height:350px; position:absolute">Dataseeds is built on the premise to democratize open data information to small holder agriculture. The European Data Portal offers 90,883 datasets on open environment data, which could help SMEs be more competitive, yet sustainable if used well. However, the quantity of data is such that it makes it very complex to find and use. The app aims to provide SMEs in the field of agriculture with direct access to better and more detailed information to help them become part of the green restructuring of EU industry. An online platform where they can (i) understand the past through the EU data, (ii) consider the present EU legislative and non-legislative actions, and (iii) think solutions for the future through research centres working in related aspects. It is a freely and easy to use resource which you are free to share and remix, even for commercial purposes, as long as you share the results under the same license. <br>Datasets: EEA, Eurostat, EUR-Lex, EIB, REGIO, INEA, CORDIS, JRC <br></p>
 	</div>
 
-	<div style="height:16px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
+	<div style="height:20px" aria-hidden="true" class="wp-block-spacer desktop-only"></div>
+
+	<div class="team">
+		<p>Dataseeds is a project initiated by Andrea Briones, Aura Cristina Guerrero, Paula Sanz and Borja Ybarra, international relations graduates. Special thanks to Ismael Estalayo for helping us with the back end development of the website. The project is currently sponsored by the EU Publications office as it is one of the three finalists of EU Datathon 2020 at challenge 1: A European Green Deal.</p>
+	</div>
 
 	<div class="about-flex-container">
 		<div class="flip-card">
