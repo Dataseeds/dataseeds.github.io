@@ -53,7 +53,7 @@ permalink: /about
 					<h2>Borja Y</h2>
 				</div>
 				<div class="flip-card-back">
-					<p>After studying International Relations, Paula has specialized in the intersection of media and culture. Her interests are varied but mostly concern how the media influences our realities. She has previous experience coordinating media outlets for an array of institutions such as universities or social organizations.</p>
+					<p>Borja is an International Relations graduate. Currently preparing for competitive exams to access the diplomatic career, he is committed to bringing institutions to all sectors of society and to the generational challenge of the need for a more horizontal and sustainable approach to a European Union that is permanently changing.</p>
 				</div>
 			</div>
 		</div>
