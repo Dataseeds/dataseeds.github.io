@@ -404,10 +404,11 @@ label {
 }
 
 .social-links {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Open Sans';
     align-items: start;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans';
+    justify-content: space-around;
     margin: 0 10px;
     a {
         color: #333;
@@ -418,9 +419,11 @@ label {
 }
 
 .social-links button {
-    background: #12D575;
+    background: #298D56;
     border: none;
     border-radius: 5px;
+    color: white;
+    height: 35px;
     margin: 5px 0;
     padding: 10px 15px;
     div {
@@ -445,11 +448,13 @@ label {
 .contact-us {
     display: flex;
     a {
+        color: $main-dark-blue;
         font-size: 24px;
         margin: auto 0;
         margin-right: 15px;
     }
     h1 {
+        color: $main-dark-blue;
         width: auto;
     }
 }

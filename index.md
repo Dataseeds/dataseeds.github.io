@@ -38,7 +38,7 @@ permalink: /
             <h3>& PACKAGING</h3>
         </div>
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
-        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Package.svg">
+        <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Paper bag.svg">
     </a>
 </div>
 
