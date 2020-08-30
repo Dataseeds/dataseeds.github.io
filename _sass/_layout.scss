@@ -258,6 +258,55 @@
 			About page 
 #################################### */
 
+.about-header {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    clear: left;
+    overflow: hidden;
+    @media (max-width: $on-laptop) {
+        flex-direction: column;
+    }
+}
+
+.about-header-paragraph {
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    width: 55vw;
+    @media (max-width: $on-laptop) {
+        width: auto;
+    }
+}
+
+.about-header-paragraph p {
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0 3% 0 0;
+    @media (max-width: $on-laptop) {
+        padding: 3% 0;
+    }
+}
+
+.about-header-media {
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+    video {
+        width: 35vw;
+        max-width: 370px;
+        @media (max-width: $on-laptop) {
+            width: min(350px, 90vw);
+        }
+    }
+}
+
+.team-descr {
+    display: inline-block;
+    height: auto;
+}
+
 .about-flex-container {
     align-items: center;
     display: flex;
