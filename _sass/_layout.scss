@@ -314,6 +314,7 @@
     display: grid;
     row-gap: 0.5vh;
     margin: 4vh auto;
+    min-width: 30%;
     perspective: 1000px;
     h2 {
         font-weight: 100;
@@ -368,7 +369,7 @@
         line-height: 1.3em;
         padding: 0 10px;
         text-align: justify;
-        word-break: break-all;
+        word-break: break-word;
         hyphens: auto;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;

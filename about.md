@@ -31,7 +31,7 @@ permalink: /about
 					<h2>Andrea B</h2>
 				</div>
 				<div class="flip-card-back">
-					<p>After studying International Relations, Paula has specialized in the intersection of media and culture. Her interests are varied but mostly concern how the media influences our realities. She has previous experience coordinating media outlets for an array of institutions such as universities or social organizations.</p>
+					<p>Andrea holds a double Master’s degree in European Governance as well as a Bachelor’s degree in International Relations. She is currently working as a research assistant at BC3 where she is gaining experience in the areas of climate external and multi-level governance and international cooperation.</p>
 				</div>
 			</div>
 		</div>
