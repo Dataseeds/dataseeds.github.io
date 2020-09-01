@@ -21,7 +21,6 @@ permalink: /
             <h3>SUSTAINABLE</h3>
             <h3>TRANSPORT</h3>
         </div>
-        <!-- <img src="/assets/icons/transport.png"> -->
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
     </a>
     <a class="home-left" href="/waste">

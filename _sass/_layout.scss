@@ -287,10 +287,9 @@
 .about-header-paragraph p {
     float: left;
     height: 100%;
-    margin: 0;
     padding: 0 3% 0 0;
     @media (max-width: $on-laptop) {
-        padding: 3% 0;
+        padding: 0;
     }
 }
 
