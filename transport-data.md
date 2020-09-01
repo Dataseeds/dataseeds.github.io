@@ -7,9 +7,9 @@ permalink: /transport/data
 
 <div>
 	<div class="centered-title" onclick="location.href='/transport'" style="cursor: pointer;">
-		<img src="/assets/icons/transport.png">
-		<h1>SUSTAINABLE TRANSPORT</h1>
-		<img src="/assets/icons/transport.png" style="transform: scaleX(-1);">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
+		<h1>{{ page.title }}</h1>
+		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg" style="transform: scaleX(-1);">
 	</div>
 	<div class="data-flex-container">
 		<p>

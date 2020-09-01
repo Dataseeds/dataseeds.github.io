@@ -8,8 +8,8 @@ permalink: /packaging/data
 <div>
 	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
 		<img src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
-		<h1>PROCESSING & PACKAGING</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Package.svg">
+		<h1>{{ page.title }}</h1>
+		<img src="/assets/icons/DrawKit-Ecology/Color/Paper bag.svg">
 	</div>
 	<div class="data-flex-container">
 		<p>

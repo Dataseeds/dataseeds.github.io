@@ -8,7 +8,7 @@ permalink: /transport
 <div>
 	<div class="centered-title">
 		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
-		<h1>SUSTAINABLE TRANSPORT</h1>
+		<h1>{{ page.title }}</h1>
 		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg" style="transform: scaleX(-1);">
 	</div>
 	<div class="flex-container">
@@ -33,7 +33,7 @@ permalink: /transport
 			<div class="card-descr">
 				<h2>FINANCE, INNOVATION & STAKEHOLDERS</h2>
 				<p>Integer sed ex faucibus, ornare neque quis, sodales nunc. Donec maximus congue pretium. Nullam vitae hendrerit arcu, eget mollis ipsum. Nullam cursus justo ut ultrices euismod. Ut id turpis dolor. Donec vel orci et dui ullamcorper ornare et ac elit. Fusce orci metus, scelerisque quis ultricies eu, rhoncus ac sem.</p>
-				<a href="#">Read more...</a>
+				<a href="/finance_innovation">Read more...</a>
 			</div>
 		</div>
 	</div>

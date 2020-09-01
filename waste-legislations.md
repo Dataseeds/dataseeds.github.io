@@ -9,9 +9,9 @@ permalink: /waste/legislations
 
 <div>
 	<div class="centered-title" onclick="location.href='/waste'" style="cursor: pointer;">
-		<img src="/assets/icons/waste1.png">
-		<h1>WASTE MANAGEMENT</h1>
-		<img src="/assets/icons/waste2.png">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Waste.svg">
+		<h1>{{ page.title }}</h1>
+		<img src="/assets/icons/DrawKit-Ecology/Color/Trash.svg">
 	</div>
 	<div class="flex-container">
 		<div id="search-list">

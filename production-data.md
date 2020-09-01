@@ -7,9 +7,9 @@ permalink: /production/data
 
 <div>
 	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
-		<img src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
 		<h1>{{ page.title }}</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Package.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
 	</div>
 	<div class="data-flex-container">
 		<p>
