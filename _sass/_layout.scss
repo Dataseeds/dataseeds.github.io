@@ -16,11 +16,23 @@
 			Home
 #################################### */
 
+@keyframes slideIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .home {
+    animation: slideIn 1.3s ease-in-out;
     display: grid;
     text-align: center;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 50rem;
     vertical-align: middle;
     position: relative;
     img {
@@ -29,7 +41,7 @@
     }
     h3 {
         color: $main-dark-blue;
-        font-size: min(2.5em, 5vw);
+        font-size: min(2rem, 5vw);
         font-weight: 100;
         line-height: 1em;
         margin: auto;
@@ -103,8 +115,11 @@
     &:hover {
         top: 43%;
     }
+    @media (hover: none) {
+        top: 47%;
+    }
     @media screen and (max-width: $on-laptop) {
-        top: 45%;
+        top: 44%;
     }
 }
 
@@ -148,12 +163,13 @@
     margin: auto;
     padding-bottom: 2em;
     text-align: center;
-    width: 90vw;
+    width: max-content;
+    max-width: 700px;
     h1 {
         color: $main-dark-blue;
         font-size: min(9vw, 4em);
         line-height: normal;
-        margin: auto 0;
+        padding: 0 1rem;
         text-transform: uppercase;
         transform: scale(.95, 1.05);
         width: auto;
@@ -200,10 +216,11 @@
 }
 
 .card-img {
-    padding: 2em;
-    width: 19vw;
+    padding: 2rem 0 1rem;
+    width: min(19vw, 6rem);
     @media screen and (min-width: $on-laptop) {
-        width: 100px;
+        width: 6rem;
+        padding: 1rem;
     }
 }
 
@@ -289,12 +306,14 @@
     flex-direction: row;
     overflow: hidden;
     padding-block-end: 1em;
+    width: 100%;
     @media (max-width: $on-laptop) {
         flex-direction: column;
     }
 }
 
 .about-header-paragraph {
+    flex-basis: 60%;
     height: 100%;
     margin: auto;
     overflow: hidden;
@@ -371,10 +390,6 @@
             height: 62vw;
         }
     }
-    // &:hover {
-    //     box-shadow: 0px 8px 20px #999999;
-    //     transform: scale(1.05);
-    // }
 }
 
 .flip-card {
@@ -449,7 +464,8 @@
 }
 
 .about-sources h2 {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
+    padding-block-end: 0.5rem;
 }
 
 
