@@ -217,12 +217,10 @@ a:hover {
 
 .site-nav {
     max-width: $max-wrapper-width;
-    margin: 0 auto;
     padding: 0px 20px;
     position: relative;
     a {
         color: $main-dark-blue;
-        margin-top: 20px;
     }
 }
 
@@ -245,6 +243,7 @@ a:hover {
 nav>ul {
     float: right;
     list-style: none;
+    margin: revert;
 }
 
 nav>ul>li {
@@ -252,7 +251,7 @@ nav>ul>li {
     font-size: 22px;
     font-family: Gill Sans MT Condesed;
     line-height: 40px;
-    margin-left: 4vw;
+    margin: 0 2vw;
 }
 
 nav>ul>li>a {
@@ -277,10 +276,9 @@ label {
         width: 40px;
         height: 40px;
         cursor: pointer;
-        margin-top: 22px;
         position: absolute;
         right: 20px;
-        top: 0px;
+        top: 13px;
     }
     label:after {
         content: '';
