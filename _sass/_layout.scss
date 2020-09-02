@@ -323,14 +323,15 @@
 
 .about-flex-container {
     align-items: center;
+    column-gap: 2vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 2vw;
     justify-content: center;
-    padding: 0;
-    margin: 0;
     list-style: none;
+    margin: 0;
+    margin-block-end: 1em;
+    padding: 0;
     h2 {
         font-size: 2.5em;
         font-weight: 600;
@@ -438,6 +439,14 @@
         -ms-hyphens: auto;
         margin: auto;
     }
+}
+
+.about-sources {
+    margin-top: 3rem;
+}
+
+.about-sources h2 {
+    font-size: 1.75rem;
 }
 
 
