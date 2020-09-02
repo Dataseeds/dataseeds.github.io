@@ -263,12 +263,29 @@
 			About page 
 #################################### */
 
+.about {
+    padding-block-end: 1em;
+}
+
+.about p {
+    float: left;
+    padding: 0;
+    @media (max-width: $on-laptop) {
+        font-stretch: condensed;
+    }
+}
+
+.highlighted {
+    background-image: linear-gradient(to top, rgba(76, 191, 10, 0.35) 40%, transparent 40%);
+}
+
 .about-header {
+    clear: left;
     display: flex;
     float: left;
     flex-direction: row;
-    clear: left;
     overflow: hidden;
+    padding-block-end: 1em;
     @media (max-width: $on-laptop) {
         flex-direction: column;
     }
@@ -278,18 +295,11 @@
     height: 100%;
     margin: auto;
     overflow: hidden;
+    padding-right: 3%;
     width: 55vw;
     @media (max-width: $on-laptop) {
+        padding-right: 0;
         width: auto;
-    }
-}
-
-.about-header-paragraph p {
-    float: left;
-    height: 100%;
-    padding: 0 3% 0 0;
-    @media (max-width: $on-laptop) {
-        padding: 0;
     }
 }
 
@@ -298,10 +308,10 @@
     height: 100%;
     overflow: hidden;
     video {
-        width: 35vw;
+        width: 28vw;
         max-width: 370px;
         @media (max-width: $on-laptop) {
-            width: min(350px, 90vw);
+            width: min(350px, 85vw);
         }
     }
 }

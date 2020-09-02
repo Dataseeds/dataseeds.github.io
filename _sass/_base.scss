@@ -226,25 +226,6 @@ a:hover {
     }
 }
 
-.site-nav-right {
-    float: right;
-    display: inline-flex;
-    margin-top: 20px;
-    a {
-        font-family: Gill Sans MT Condesed;
-        font-size: 24px;
-        text-align: center;
-        line-height: 40px;
-    }
-    ul {
-        list-style: none;
-        display: inline-flex;
-        li:not(:first-child) {
-            margin-left: 5vw;
-        }
-    }
-}
-
 .logo {
     height: 65px;
     width: 65px;
@@ -317,8 +298,8 @@ label {
         right: 20px;
         left: 20px;
     }
-    nav a {
-        color: #777;
+    .site-nav a {
+        margin: 10px 0;
     }
     nav ul li {
         background: #f8f8f8;
