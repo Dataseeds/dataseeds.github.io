@@ -6,7 +6,7 @@ permalink: /production/data
 ---
 
 <div>
-	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
+	<div class="centered-title" onclick="location.href='/production'" style="cursor: pointer;">
 		<img src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
 		<h1>{{ page.title }}</h1>
 		<img src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
@@ -24,7 +24,7 @@ permalink: /production/data
 			</i>
 		</p>
 	</div>
-	{% include_relative vis/packaging.html %}
+	{% include_relative vis/production.html %}
 
 </div>
 
