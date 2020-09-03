@@ -16,7 +16,7 @@
 			Home
 #################################### */
 
-@keyframes slideIn {
+@keyframes popIn {
     0% {
         transform: scale(0.8);
         opacity: 0.1;
@@ -28,7 +28,7 @@
 }
 
 .home {
-    animation: slideIn 1.3s ease-in-out;
+    animation: popIn 1.3s ease-in-out;
     display: grid;
     text-align: center;
     margin: 0 auto;

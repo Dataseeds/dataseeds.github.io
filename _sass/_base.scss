@@ -84,7 +84,7 @@ $grey-color-light: #ddd;
 
 /* navigation bar border */
 
-$max-wrapper-width: 1000px;
+$max-wrapper-width: 65rem; //about 1000px
 
 /*************** Basic styling
 ***********************************************************/
@@ -215,14 +215,19 @@ a:hover {
     }
 }
 
-.site-nav {
-    max-width: $max-wrapper-width;
+.site-nav-div {
+    max-width: $max-wrapper-width+6rem;
     margin: auto;
     padding: 0px 20px;
     position: relative;
     a {
         color: $main-dark-blue;
     }
+}
+
+.site-nav {
+    display: flex;
+    place-items: center;
 }
 
 .logo {
@@ -245,7 +250,8 @@ a:hover {
 nav>ul {
     float: right;
     list-style: none;
-    margin: revert;
+    margin: auto;
+    margin-right: 0;
 }
 
 nav>ul>li {
@@ -298,7 +304,7 @@ label {
         right: 20px;
         left: 20px;
     }
-    .site-nav a {
+    .site-nav-div a {
         margin: 10px 0;
     }
     nav ul li {
