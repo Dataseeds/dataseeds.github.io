@@ -15,7 +15,7 @@ permalink: /
         </div>
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
     </a>
-    <img class="home-recycle-huge" src="/assets/RecycleTemp.png"/>
+    <img class="home-recycle-huge" src="/assets/Recycle.triangle.svg"/>
     <a class="home-center" href="/transport">
         <div>
             <h3>SUSTAINABLE</h3>
