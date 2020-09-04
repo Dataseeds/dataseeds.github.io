@@ -35,7 +35,7 @@ conf = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
 # #############################################################################
 # Map + table
 fig = make_subplots(rows=2, cols=1, shared_xaxes=False,
-                    vertical_spacing=0, row_heights=[0.3, 0.7],
+                    vertical_spacing=0, row_heights=[0.35, 0.6],
                     specs=[[{"type": "choropleth"}], [{"type": "table"}]],
                     shared_yaxes=False)
 fig.add_trace(
@@ -67,7 +67,9 @@ for year in df['TIME'].unique():
     )
 
 fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF",
-                                    x=0.05, xanchor="left", yanchor="top")],
+                                    direction="down",
+                                    pad={"r": 0, "t": 0, "l": 0, "b": 0},
+                                    x=0.03, xanchor="left", yanchor="top")],
                   autosize=True, dragmode=False,
                   geo=dict(
                       scope='europe', bgcolor="#F0F0F0", projection_scale=1.2,
@@ -75,7 +77,7 @@ fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF"
                     ),
                   margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
                   paper_bgcolor = "#F0F0F0",
-                  height = 1250)
+                  height = 1300)
 
 fig.show(config=conf)
 
