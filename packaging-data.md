@@ -19,9 +19,9 @@ permalink: /packaging/data
 			Morbi consequat eros sit amet lacus bibendum rhoncus. Proin eros neque, volutpat a massa vel, iaculis sagittis purus. Phasellus leo nunc, ultricies eu enim sit amet, rutrum sagittis lacus.
 		</p>
 		<p>
-			<i>Dataset:
-				<href src="https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&plugin=0&language=en&pcode=t2020_rl100&tableSelection=1">ec.europa.eu</href>
-			</i>
+			<span>Dataset:
+				<a href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">eea.europa.eu - Packaging waste recycling</a>
+			</span>
 		</p>
 	</div>
 	{% include_relative vis/packaging.html %}
