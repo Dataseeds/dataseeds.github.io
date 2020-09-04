@@ -20,7 +20,7 @@ permalink: /packaging/data
 		</p>
 		<p>
 			<span>Dataset:
-				<a href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">eea.europa.eu - Packaging waste recycling</a>
+				<a href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">Packaging waste recycling (eea.europa.eu)</a>
 			</span>
 		</p>
 	</div>
