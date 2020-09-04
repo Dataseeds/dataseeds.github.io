@@ -24,11 +24,13 @@ permalink: /waste/data
 			</i>
 		</p>
 	</div>
-	{% include_relative vis/waste.html %}
+	<div style="max-width: 700px; margin: auto">
+		{% include_relative vis/waste.html %}
+	</div>
 
 </div>
 
 
-
-
-
+<script>
+graph = document.getElementsByClassName("plotly-graph-div js-plotly-plot")[0]
+</script>

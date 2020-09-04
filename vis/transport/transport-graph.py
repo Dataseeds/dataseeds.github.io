@@ -80,7 +80,7 @@ button_EU15  = dict(method= 'update', label='EU-15',
                                fill=dict(color=[["#e5ecf6", "#e5ecf6", "#90ce96"]]) )}])
 buttons = [button_EEA33, button_EU13, button_EU15]
 fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF",
-                                    x=0.1, xanchor="left", yanchor="top")],
+                                    x=0.03, xanchor="left", yanchor="top")],
                   autosize=True, dragmode=False,
                   geo=dict(
                       scope='europe', bgcolor="#F0F0F0", projection_scale=1.2,
@@ -88,7 +88,7 @@ fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF"
                     ),
                   margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
                   paper_bgcolor = "#F0F0F0",
-                  height = 700, width=900)
+                  height = 700)
 
 fig.show(config=conf)
 fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\transport.html",

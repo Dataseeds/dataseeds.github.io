@@ -24,5 +24,7 @@ permalink: /transport/data
 			</i>
 		</p>
 	</div>
-	{% include_relative vis/transport.html %}
+	<div style="max-width: 900px; margin: auto">
+		{% include_relative vis/transport.html %}
+	</div>
 </div>
