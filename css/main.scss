@@ -17,8 +17,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 
 $on-palm:          600px;
-$on-laptop:        800px;
-
+$on-laptop:        700px;
+$on-desktop:       900px;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

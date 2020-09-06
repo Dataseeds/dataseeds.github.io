@@ -168,17 +168,19 @@
     max-width: 700px;
     h1 {
         color: $main-dark-blue;
-        font-size: min(9vw, 4em);
+        font-size: min(8vw, 3rem);
         line-height: normal;
-        padding: 0 1rem;
+        margin: auto 0;
+        padding: 0 0.7rem;
         text-transform: uppercase;
         transform: scale(.95, 1.05);
         width: auto;
+        max-width: 63vw;
     }
     img {
         margin: auto -10px;
         vertical-align: bottom;
-        width: min(14vw, 5em);
+        width: min(11vw, 4rem);
     }
 }
 
@@ -260,7 +262,7 @@
     justify-content: center;
     padding: 0;
     margin: 0 auto;
-    max-width: 75vw;
+    max-width: 900px;
     p,
     i {
         font-size: 1.1em;
@@ -298,6 +300,13 @@
 
 .highlighted {
     background-image: linear-gradient(to top, rgba(76, 191, 10, 0.35) 40%, transparent 40%);
+}
+
+.underlined {
+    color: #6abe72 !important;
+    text-decoration: underline;
+    text-shadow: none;
+    font-weight: 600;
 }
 
 .about-header {
