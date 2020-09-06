@@ -12,8 +12,8 @@ pd.set_option("display.max_colwidth", 200)
 
 df = pd.read_csv("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\transport\\change-energy-consumption.csv")
 
-df.rename(columns={"geo": "Eurozone",
-                   "share": "Share"}, inplace=True)
+df.rename(columns={"geo": "Eurozone", "share": "Share"}, inplace=True)
+df["Transport mode"] = df["Transport mode"].str.replace("Final consumption - transport sector - ", "").str.title()
 
 dff = df.pivot_table('obsValue', 'Eurozone', 'Transport mode').reset_index()
 
@@ -39,10 +39,10 @@ conf = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
 # Map + table with EU-13, EU-15 and EEA-33
 
 fig = make_subplots(rows=2, cols=1, shared_xaxes=False,
-                    vertical_spacing=0, row_heights=[0.65, 0.35],
+                    vertical_spacing=0, row_heights=[0.7, 0.3],
                     specs=[[{"type": "choropleth"}], [{"type": "table"}]],
                     shared_yaxes=False)
-)
+
 fig.add_trace(
     go.Choropleth(colorscale='Greens', hovertext=[],
         locationmode='country names', locations=EEA33,
