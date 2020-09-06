@@ -24,7 +24,9 @@ permalink: /packaging/data
 			</span>
 		</p>
 	</div>
-	{% include_relative vis/packaging.html %}
+	<div style="max-width: 57rem; margin: auto">
+		{% include_relative vis/packaging.html %}
+	</div>
 
 </div>
 

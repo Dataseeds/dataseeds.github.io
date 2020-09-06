@@ -24,7 +24,7 @@ permalink: /production/data
 			</i>
 		</p>
 	</div>
-	<div style="max-width: 1000px; margin: auto">
+	<div style="max-width: 57rem; margin: auto">
 		{% include_relative vis/production.html %}
 	</div>
 
