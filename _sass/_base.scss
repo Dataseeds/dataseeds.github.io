@@ -74,7 +74,6 @@ $nav-height: 75px;
 /* COLORS  */
 
 $main-dark-blue: #445c5e;
-$main-medium-blue: #4C8E88;
 
 /* navigation bar border */
 
@@ -297,6 +296,7 @@ label {
         position: absolute;
         right: 20px;
         left: 20px;
+        top: 80px;
     }
     .site-nav-div a {
         margin: 10px 0;
@@ -311,6 +311,12 @@ label {
         text-indent: 20px;
         a {
             color: white;
+        }
+        &:first-of-type {
+            border-radius: 7px 7px 0 0;
+        }
+        &:last-of-type {
+            border-radius: 0 0 7px 7px;
         }
     }
     nav>ul li ul li {
@@ -400,7 +406,7 @@ label {
 }
 
 .social-links button {
-    background: $main-medium-blue;
+    background: #62C0A5;
     border: none;
     border-radius: 5px;
     color: white;
