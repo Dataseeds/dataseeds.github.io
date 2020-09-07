@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Clean & Efficient Production
+title: Sustainable transport
 visible: false
-permalink: /production/data
+permalink: /transport/data
 ---
 
 <div>
-	<div class="centered-title" onclick="location.href='/production'" style="cursor: pointer;">
-		<img src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
+	<div class="centered-title" onclick="location.href='/transport'" style="cursor: pointer;">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
 		<h1>{{ page.title }}</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg" style="transform: scaleX(-1);">
 	</div>
 	<div class="data-flex-container">
 		<p>
@@ -18,19 +18,15 @@ permalink: /production/data
 		<p>
 			Morbi consequat eros sit amet lacus bibendum rhoncus. Proin eros neque, volutpat a massa vel, iaculis sagittis purus. Phasellus leo nunc, ultricies eu enim sit amet, rutrum sagittis lacus.
 		</p>
-		<p>
-			<i>Dataset:
-				<href src="https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&plugin=0&language=en&pcode=t2020_rl100&tableSelection=1">eurostat</href>
-			</i>
+		<p style="font-style: italic;">
+			<span>
+				Dataset:
+				<a class="underlined"
+				   href="https://www.eea.europa.eu/data-and-maps/daviz/change-in-final-energy-consumption-5#tab-chart_3">Change in energy consumption by transport mode - eea.europa.eu</a>
+			</span>
 		</p>
 	</div>
 	<div style="max-width: 57rem; margin: auto">
-		{% include_relative vis/production.html %}
+		{% include_relative transport-graph.html %}
 	</div>
-
 </div>
-
-
-
-
-

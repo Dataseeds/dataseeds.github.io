@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Processing & Packaging
+title: Waste management
 visible: false
-permalink: /packaging/data
+permalink: /waste/data
 ---
 
 <div>
-	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
-		<img src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
+	<div class="centered-title" onclick="location.href='/waste'" style="cursor: pointer;">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Waste.svg">
 		<h1>{{ page.title }}</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Paper bag.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Trash.svg">
 	</div>
 	<div class="data-flex-container">
 		<p>
@@ -19,18 +19,15 @@ permalink: /packaging/data
 			Morbi consequat eros sit amet lacus bibendum rhoncus. Proin eros neque, volutpat a massa vel, iaculis sagittis purus. Phasellus leo nunc, ultricies eu enim sit amet, rutrum sagittis lacus.
 		</p>
 		<p>
-			<span>Dataset:
-				<a href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">Packaging waste recycling (eea.europa.eu)</a>
-			</span>
+			<i>Dataset:
+				<href src="#">WIP</href>
+			</i>
 		</p>
 	</div>
-	<div style="max-width: 57rem; margin: auto">
-		{% include_relative vis/packaging.html %}
+	<div style="max-width: 44rem; margin: auto">
+		{% include_relative waste-graph.html %}
 	</div>
 
 </div>
-
-
-
 
 

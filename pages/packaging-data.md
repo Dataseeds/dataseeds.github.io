@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Sustainable transport
+title: Processing & Packaging
 visible: false
-permalink: /transport/data
+permalink: /packaging/data
 ---
 
 <div>
-	<div class="centered-title" onclick="location.href='/transport'" style="cursor: pointer;">
-		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg">
+	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
 		<h1>{{ page.title }}</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg" style="transform: scaleX(-1);">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Paper bag.svg">
 	</div>
 	<div class="data-flex-container">
 		<p>
@@ -18,15 +18,19 @@ permalink: /transport/data
 		<p>
 			Morbi consequat eros sit amet lacus bibendum rhoncus. Proin eros neque, volutpat a massa vel, iaculis sagittis purus. Phasellus leo nunc, ultricies eu enim sit amet, rutrum sagittis lacus.
 		</p>
-		<p style="font-style: italic;">
-			<span>
-				Dataset:
-				<a class="underlined"
-				   href="https://www.eea.europa.eu/data-and-maps/daviz/change-in-final-energy-consumption-5#tab-chart_3">Change in energy consumption by transport mode - eea.europa.eu</a>
+		<p>
+			<span>Dataset:
+				<a href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">Packaging waste recycling (eea.europa.eu)</a>
 			</span>
 		</p>
 	</div>
 	<div style="max-width: 57rem; margin: auto">
-		{% include_relative vis/transport.html %}
+		{% include_relative packaging-graph.html %}
 	</div>
+
 </div>
+
+
+
+
+

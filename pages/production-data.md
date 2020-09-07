@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Waste management
+title: Clean & Efficient Production
 visible: false
-permalink: /waste/data
+permalink: /production/data
 ---
 
 <div>
-	<div class="centered-title" onclick="location.href='/waste'" style="cursor: pointer;">
-		<img src="/assets/icons/DrawKit-Ecology/Color/Waste.svg">
+	<div class="centered-title" onclick="location.href='/production'" style="cursor: pointer;">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
 		<h1>{{ page.title }}</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Trash.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
 	</div>
 	<div class="data-flex-container">
 		<p>
@@ -20,14 +20,17 @@ permalink: /waste/data
 		</p>
 		<p>
 			<i>Dataset:
-				<href src="#">WIP</href>
+				<href src="https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&plugin=0&language=en&pcode=t2020_rl100&tableSelection=1">eurostat</href>
 			</i>
 		</p>
 	</div>
-	<div style="max-width: 44rem; margin: auto">
-		{% include_relative vis/waste.html %}
+	<div style="max-width: 57rem; margin: auto">
+		{% include_relative production-graph.html %}
 	</div>
 
 </div>
+
+
+
 
 
