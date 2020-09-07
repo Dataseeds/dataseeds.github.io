@@ -41,9 +41,9 @@
                 document.getElementById("copyyear").innerHTML = "&#169;" + new Date().getFullYear();
             </script> All rights reserved
             <div style='display: block; width: 250px; margin-left: auto; margin-right: auto;'>
-            <a href='https://ind.ie/ethical-design'>
-              <img style='margin-left: auto; margin-right: auto; margin-bottom: 0;' alt='' src='https://ind.ie/ethical-design/images/ethical-design-badge-tiny.svg'></a>
-              <p>We practice <strong>Ethical</strong> Design.</p>
+                <a href='https://ind.ie/ethical-design'>
+                    <img style='margin-left: auto; margin-right: auto; margin-bottom: 0;' alt='' src='https://ind.ie/ethical-design/images/ethical-design-badge-tiny.svg'></a>
+                <p>We practice <strong>Ethical</strong> Design.</p>
             </div>
         </div>
 
@@ -56,7 +56,7 @@
     darkModeMediaQuery.addListener((e) => {
         const darkModeOn = e.matches;
         // this functions are to be created on each HTML that needs to make changes that CSS can't
-        darkModeOn ? darkTheme() : lightTheme();
+        // darkModeOn ? darkTheme() : lightTheme();
     });
-    darkModeMediaQuery.matches ? darkTheme() : lightTheme();
+    // darkModeMediaQuery.matches ? darkTheme() : lightTheme();
 </script>
