@@ -231,7 +231,7 @@ a:hover {
 
 .logo-text {
     font-weight: 800;
-    font-size: 2.7rem;
+    font-size: clamp(2rem, 13vw, 3rem);
     font-family: Brush Script MT;
     line-height: 40px;
     margin-left: 10px;
@@ -297,6 +297,7 @@ label {
         right: 20px;
         left: 20px;
         top: 80px;
+        box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.1);
     }
     .site-nav-div a {
         margin: 10px 0;

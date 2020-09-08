@@ -169,7 +169,7 @@
     max-width: 700px;
     h1 {
         color: $main-dark-blue;
-        font-size: min(7.5vw, 2.4rem);
+        font-size: min(7.5vw, 2.7rem);
         line-height: normal;
         margin: auto 0;
         padding: 0 0.8rem;
@@ -181,7 +181,7 @@
     img {
         margin: auto -10px;
         vertical-align: bottom;
-        width: min(10vw, 3.2rem);
+        width: min(10vw, 3.5rem);
     }
 }
 
@@ -195,9 +195,10 @@
     margin: 0;
     list-style: none;
     h2 {
-        font-size: 2.5em;
+        font-size: 2.3em;
         font-weight: 600;
         line-height: 1em;
+        text-align: justify;
     }
     img {
         display: flex;
@@ -263,7 +264,6 @@
     justify-content: center;
     padding: 0;
     margin: 0 auto;
-    max-width: 57rem;
     p,
     i {
         font-size: 1.1em;
@@ -301,6 +301,8 @@
 
 .highlighted {
     background-image: linear-gradient(to top, #62C0A576 15%, transparent 40%);
+    color: #1A1A1A;
+    font-weight: 600;
 }
 
 .underlined {
@@ -326,7 +328,7 @@
 .about-header-paragraph {
     flex-basis: 60%;
     height: 100%;
-    margin: auto;
+    margin: auto 0;
     overflow: hidden;
     padding-right: 3%;
     width: 55vw;
@@ -341,8 +343,8 @@
     height: 100%;
     overflow: hidden;
     video {
-        width: 28vw;
-        max-width: 370px;
+        width: 32vw;
+        max-width: 20rem;
         @media (max-width: $on-laptop) {
             width: min(350px, 85vw);
         }
@@ -564,6 +566,30 @@
     word-break: break-all;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+}
+
+
+/* ####################################
+			Finance page 
+#################################### */
+
+.finance-charts {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    .chart1 {
+        width: 40vw;
+    }
+    .chart2 {
+        width: 50vw;
+    }
+    @media screen and (max-width: $on-laptop) {
+        flex-direction: column;
+        .chart1,
+        .chart2 {
+            width: 80vw;
+        }
+    }
 }
 
 
