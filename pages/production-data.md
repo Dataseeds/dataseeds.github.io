@@ -14,7 +14,7 @@ permalink: /production/data
 	<div class="data-flex-container">
 		<p>
 			<span>
-			Cleaner production and resource efficiency is a key element to ensure a greener and more circular economy. Often, agricultural practices, especially in SMEs, do not get to be designed specifically for the type of crop or farming that is taking place, and instead, they use standard systems. In the following graph, we have compiled data from the last few years to see how resources are being used and sometimes wasted because of lack of funds.
+			Cleaner production and resource efficiency is a key element to ensure a greener and more circular economy. Often, agricultural practices, especially in SMEs, do not get to be designed specifically for the type of crop or farming that is taking place, and instead, they use standard systems. In the following map, we have compiled data from the last few years to see how resources are being used and sometimes wasted because of lack of funds.
 			</span>
 		</p>
 		<p>
