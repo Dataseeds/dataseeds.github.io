@@ -35,7 +35,7 @@ conf = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
 # #############################################################################
 # Map + table
 fig = make_subplots(rows=2, cols=1, shared_xaxes=False,
-                    vertical_spacing=0, row_heights=[0.35, 0.6],
+                    vertical_spacing=0, row_heights=[0.35, 0.65],
                     specs=[[{"type": "choropleth"}], [{"type": "table"}]],
                     shared_yaxes=False)
 fig.add_trace(
@@ -81,5 +81,5 @@ fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF"
 
 fig.show(config=conf)
 
-fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\production.html",
+fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\pages\\production-graph.html",
                config=conf)
