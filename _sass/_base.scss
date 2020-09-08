@@ -357,14 +357,14 @@ label {
 }
 
 .footer-flex {
+    column-gap: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
     place-items: center;
+    row-gap: 10px;
     img {
-        // max-width: 420px;
-        // max-height: 220px;
+        max-width: min(420px, 100%);
     }
     // @media screen and (max-width: $on-laptop) {
     //     flex-direction: column;
