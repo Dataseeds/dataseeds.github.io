@@ -305,6 +305,11 @@
     font-weight: 600;
 }
 
+.temp {
+    background-image: linear-gradient(to top, #66666688 80%, transparent 80%);
+    color: transparent;
+}
+
 .underlined {
     color: #62C0A5 !important;
     text-decoration: underline;
@@ -548,7 +553,7 @@
     display: -webkit-box;
     font-size: 1.6em;
     overflow: hidden;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
