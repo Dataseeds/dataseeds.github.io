@@ -13,14 +13,17 @@ permalink: /production/data
 	</div>
 	<div class="data-flex-container">
 		<p>
-			<span class="temp">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a pharetra orci. Curabitur orci eros, auctor tristique auctor luctus, ultricies sed risus. Phasellus gravida orci in turpis lacinia varius. Mauris consequat erat risus, finibus malesuada diam auctor ac. Aenean non sem ex. Vivamus in libero purus. Morbi blandit, nisl non iaculis ultricies, orci nunc interdum turpis, eu tristique quam nunc ut lorem. Quisque pharetra ac leo et consequat.
+			<span>
+			Cleaner production and resource efficiency is a key element to ensure a greener and more circular economy. Often, agricultural practices, especially in SMEs, do not get to be designed specifically for the type of crop or farming that is taking place, and instead, they use standard systems. In the following graph, we have compiled data from the last few years to see how resources are being used and sometimes wasted because of lack of funds.
 			</span>
 		</p>
 		<p>
-			<i>Dataset:
+			The indicator shows the <span class="highlighted">GDP of each country divided by the domestic material consumption.</span> DMC measures the amount of materials directly used by an economy.
+		</p>
+		<p style="font-style: italic;">
+			<span>Dataset:
 				<href src="https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&plugin=0&language=en&pcode=t2020_rl100&tableSelection=1">eurostat</href>
-			</i>
+			</span>
 		</p>
 	</div>
 	<div style="max-width: 57rem; margin: auto">
