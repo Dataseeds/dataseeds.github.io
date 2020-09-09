@@ -535,10 +535,16 @@
     text-align: center;
     * {
         border-radius: 5px;
+        border: solid 1px #333;
         box-shadow: 0px 4px 10px #99999988;
         font-size: 1em;
         padding: 5px 10px;
     }
+}
+
+.searchbox button,
+.searchbox select {
+    background-color: #E8E8E8;
 }
 
 .link {
