@@ -291,13 +291,14 @@ label {
         box-shadow: 0px 10px 0px $main-dark-blue, 0px 20px 0px $main-dark-blue
     }
     [type="checkbox"]:checked~ul {
+        border-radius: 10px;
+        box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.1);
         display: block;
-        z-index: 9999;
         position: absolute;
         right: 20px;
         left: 20px;
         top: 80px;
-        box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.1);
+        z-index: 9999;
     }
     .site-nav-div a {
         margin: 10px 0;
