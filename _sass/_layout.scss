@@ -510,6 +510,7 @@
     flex-wrap: wrap;
     list-style: none;
     padding-top: 20px;
+    place-content: center;
 }
 
 #search-list .list li {
@@ -521,6 +522,7 @@
     flex-grow: 1;
     height: 120px;
     margin: 10px;
+    max-width: 32%;
     min-width: 150px;
     position: relative;
     &:hover {
