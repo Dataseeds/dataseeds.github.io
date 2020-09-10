@@ -18,7 +18,10 @@ permalink: /waste
 				<h2>Data</h2>
 				<p>
 					<span class="temp">
-					We work at the European level to push for ambitious waste policy which drives Europe towards a zero waste future. Out work on this also involves the monitoring and supporting of implementation in various member states. Work which is driven by our members who are actively involved in many projects at a city and national level.
+						We work at the European level to push for ambitious waste policy which drives Europe towards a
+						zero waste future. Out work on this also involves the monitoring and supporting of
+						implementation in various member states. Work which is driven by our members who are actively
+						involved in many projects at a city and national level.
 					</span>
 				</p>
 				<a href="/waste/data">Find out more.</a>
@@ -30,7 +33,12 @@ permalink: /waste
 				<h2>EU LEGISLATIVE & NON-LEGISLATIVE ACTIONS</h2>
 				<p>
 					<span class="temp">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis tortor lacinia, accumsan nunc vel, hendrerit neque. Nunc mauris est, interdum sed erat vel, convallis tempus ligula. Nulla congue magna ipsum, quis malesuada risus ultrices nec. Vestibulum ac dui nec tortor elementum dapibus. Quisque fringilla turpis felis, ut scelerisque sapien laoreet vitae. Aliquam eros magna, egestas semper ligula vel, mollis venenatis ante. Aenean mollis massa vitae neque rutrum laoreet.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis tortor lacinia, accumsan
+						nunc vel, hendrerit neque. Nunc mauris est, interdum sed erat vel, convallis tempus ligula.
+						Nulla congue magna ipsum, quis malesuada risus ultrices nec. Vestibulum ac dui nec tortor
+						elementum dapibus. Quisque fringilla turpis felis, ut scelerisque sapien laoreet vitae. Aliquam
+						eros magna, egestas semper ligula vel, mollis venenatis ante. Aenean mollis massa vitae neque
+						rutrum laoreet.
 					</span>
 				</p>
 				<a href="/waste/legislations">Read more...</a>
@@ -42,7 +50,10 @@ permalink: /waste
 				<h2>FINANCE, INNOVATION & STAKEHOLDERS</h2>
 				<p>
 					<span class="temp">
-					Integer sed ex faucibus, ornare neque quis, sodales nunc. Donec maximus congue pretium. Nullam vitae hendrerit arcu, eget mollis ipsum. Nullam cursus justo ut ultrices euismod. Ut id turpis dolor. Donec vel orci et dui ullamcorper ornare et ac elit. Fusce orci metus, scelerisque quis ultricies eu, rhoncus ac sem.
+						Integer sed ex faucibus, ornare neque quis, sodales nunc. Donec maximus congue pretium. Nullam
+						vitae hendrerit arcu, eget mollis ipsum. Nullam cursus justo ut ultrices euismod. Ut id turpis
+						dolor. Donec vel orci et dui ullamcorper ornare et ac elit. Fusce orci metus, scelerisque quis
+						ultricies eu, rhoncus ac sem.
 					</span>
 				</p>
 				<a href="/finance_innovation">Read more...</a>
@@ -51,8 +62,3 @@ permalink: /waste
 	</div>
 
 </div>
-
-
-
-
-
