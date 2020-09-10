@@ -11,7 +11,6 @@
     min-height: 50vh;
 }
 
-
 /* ####################################
 			Home
 #################################### */
@@ -59,8 +58,7 @@
             filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color=rgba($main-dark-blue, 0.7))";
         }
     }
-    @media (max-width: $on-laptop),
-    (hover: none) {
+    @media (max-width: $on-laptop), (hover: none) {
         h3 {
             text-shadow: 0px 0px 20px rgba($main-dark-blue, 0.7);
         }
@@ -152,7 +150,6 @@
     }
 }
 
-
 /* ####################################
 			Subpage
 #################################### */
@@ -174,7 +171,7 @@
         margin: auto 0;
         padding: 0 0.8rem;
         text-transform: uppercase;
-        transform: scale(.95, 1.05);
+        transform: scale(0.95, 1.05);
         width: auto;
         max-width: 65vw;
     }
@@ -186,7 +183,7 @@
 }
 
 .flex-container {
-    align-items: center;
+    align-items: baseline;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -194,22 +191,33 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    h2 {
-        font-size: 2.3em;
-        font-weight: 600;
-        line-height: 1em;
-        text-align: justify;
+    @media screen and (max-width: $on-laptop) {
+        max-width: 90vw;
     }
-    img {
-        display: flex;
-        margin: auto;
-    }
+}
+.flex-container h2 {
+    font-size: 2.3em;
+    font-weight: 600;
+    line-height: 1em;
+    text-align: justify;
+}
+.flex-container img {
+    display: flex;
+    margin: auto;
+}
+.flex-container p {
+    font-size: 1.1em;
+    line-height: 1.25em;
+    margin: 0;
+    margin-block-end: 1em;
+    text-align: justify;
+    width: fit-content;
 }
 
 .row {
-    background: #4C8E8820;
+    background: #4c8e8820;
     border-radius: 8px;
-    box-shadow: 2px 2px 15px #445C5E60;
+    box-shadow: 2px 2px 15px #445c5e60;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -252,36 +260,13 @@
     text-align: center;
 }
 
-
 /* ####################################
 			Subpage Data
 #################################### */
 
-.data-flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0 auto;
-    p,
-    i {
-        font-size: 1.1em;
-        line-height: 1.25em;
-        margin: 0;
-        margin-block-end: 1em;
-        text-align: justify;
-        width: fit-content;
-    }
-    @media screen and (max-width: $on-laptop) {
-        max-width: 90vw;
-    }
-}
-
 .plotly-graph-div {
     margin: 0 auto;
 }
-
 
 /* ####################################
 			About page 
@@ -300,8 +285,8 @@
 }
 
 .highlighted {
-    background-image: linear-gradient(to top, #62C0A576 15%, transparent 40%);
-    color: #1A1A1A;
+    background-image: linear-gradient(to top, #62c0a576 15%, transparent 40%);
+    color: #1a1a1a;
     font-weight: 600;
 }
 
@@ -311,7 +296,7 @@
 }
 
 .underlined {
-    color: #62C0A5 !important;
+    color: #62c0a5 !important;
     text-decoration: underline;
     text-shadow: none;
     font-weight: 600;
@@ -391,7 +376,7 @@
     margin: auto;
     margin-bottom: 4vh;
     padding: 1vh;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     div {
         margin: auto;
     }
@@ -486,7 +471,6 @@
     padding-block-end: 0.5rem;
 }
 
-
 /* ####################################
 			Legislation page 
 #################################### */
@@ -515,7 +499,7 @@
 }
 
 #search-list .list li {
-    background-color: #62C0A550;
+    background-color: #62c0a550;
     box-shadow: 0px 4px 10px #99999988;
     border-radius: 7px;
     display: block;
@@ -544,7 +528,7 @@
 
 .searchbox button,
 .searchbox select {
-    background-color: #E8E8E8;
+    background-color: #e8e8e8;
 }
 
 .link {
@@ -582,7 +566,6 @@
     -webkit-box-orient: vertical;
 }
 
-
 /* ####################################
 			Finance page 
 #################################### */
@@ -605,7 +588,6 @@
         }
     }
 }
-
 
 /* ####################################
 			404 page 
