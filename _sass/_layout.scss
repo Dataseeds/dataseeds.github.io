@@ -573,20 +573,27 @@
 .finance-charts {
     display: flex;
     flex-direction: row;
-    height: 600px;
+    justify-content: space-between;
+    width: 100%;
     .chart1 {
-        width: 40vw;
+        width: 45%;
     }
     .chart2 {
-        width: 50vw;
+        width: 50%;
     }
     @media screen and (max-width: $on-laptop) {
         flex-direction: column;
         .chart1,
         .chart2 {
-            width: 80vw;
+            width: 100%;
         }
     }
+}
+
+.chart-title div {
+    font-size: 20px;
+    padding-top: 2rem;
+    text-align: justify;
 }
 
 /* ####################################
