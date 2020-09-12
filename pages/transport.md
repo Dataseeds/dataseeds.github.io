@@ -17,12 +17,7 @@ permalink: /transport
 			<div class="card-descr">
 				<h2>Data</h2>
 				<p>
-					<span class="temp">
-						We work at the European level to push for ambitious waste policy which drives Europe towards a
-						zero waste future. Out work on this also involves the monitoring and supporting of
-						implementation in various member states. Work which is driven by our members who are actively
-						involved in many projects at a city and national level.
-					</span>
+					How much do food miles matter when it comes to carbon emissions? The role of transportation and logistics, both crucial in increasing food security and mitigating climate change, is a key element to consider when applying political ecology. Yet, decreasing geographical distance does not always mean better transportation. Other matters as cold storage facilities and transport refrigeration units are crucial parts to consider. At the same time, the more agents are involved between harvest and table, the less incentive there is for each agent to control costs and food losses.
 				</p>
 				<a href="/transport/data">Find out more.</a>
 			</div>
