@@ -15,13 +15,10 @@ permalink: /packaging/legislations
 	</div>
 	<div class="flex-container">
 		<p>
-			<span class="temp">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a pharetra orci. Curabitur orci eros,
-				auctor tristique auctor luctus, ultricies sed risus. Phasellus gravida orci in turpis lacinia varius.
-				Mauris consequat erat risus, finibus malesuada diam auctor ac. Aenean non sem ex. Vivamus in libero
-				purus. Morbi blandit, nisl non iaculis ultricies, orci nunc interdum turpis, eu tristique quam nunc ut
-				lorem. Quisque pharetra ac leo et consequat.
-			</span>
+			The EU has fostered a more efficient agriculture since the introduction of the Common Agricultural
+			Policy in 1962. Today, the EU puts plenty of laws, regulations and directives concerning processing and
+			packaging at your disposal. In Dataseeds, you will find all the communitarian legislation aimed at
+			promoting a greener and more efficient agriculture.
 		</p>
 		<div id="search-list">
 			<div class="searchbox">
@@ -61,6 +58,15 @@ permalink: /packaging/legislations
 			name: "Commission Regulation (EU) 2019/759 laying down transitional measures for the application of public health requirements of imports of food containing both products of plant origin and processed products of animal origin (composite products)",
 			tags: ["public health", "processing", "imports", "agriculture"],
 			link: "https://lexparency.org/eu/32019R0759/"
+		}, {
+			name: "Directive 2008/98/EC on waste (Waste Framework Directive)",
+			tags: ["packaging", "processing", "waste"],
+			link: "https://ec.europa.eu/environment/waste/framework/"
+		},
+		{
+			name: "Regulation(EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013 establishing a common organisation of the markets in agricultural products and repealing Council Regulations (EEC) No 922/72, (EEC) No 234 / 79, (EC) No 1037 / 2001 and(EC) No 1234 / 2007",
+			tags: ["CAP", "common agrary policy", "processing", "repealing products"],
+			link: "https://ec.europa.eu/environment/waste/framework/"
 		}
 	];
 

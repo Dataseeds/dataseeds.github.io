@@ -13,19 +13,10 @@ permalink: /packaging/data
 	</div>
 	<div class="flex-container">
 		<p>
-			<span class="temp">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a pharetra orci. Curabitur orci eros,
-				auctor tristique auctor luctus, ultricies sed risus. Phasellus gravida orci in turpis lacinia varius.
-				Mauris consequat erat risus, finibus malesuada diam auctor ac. Aenean non sem ex. Vivamus in libero
-				purus. Morbi blandit, nisl non iaculis ultricies, orci nunc interdum turpis, eu tristique quam nunc ut
-				lorem. Quisque pharetra ac leo et consequat.
-			</span>
-		</p>
-		<p>
-			<span class="temp">
-				Morbi consequat eros sit amet lacus bibendum rhoncus. Proin eros neque, volutpat a massa vel, iaculis
-				sagittis purus. Phasellus leo nunc, ultricies eu enim sit amet, rutrum sagittis lacus.
-			</span>
+			The European Union is one of the main promoters of the ecological transition, and this is reflected in
+			the data from recent years. The figures show recent statistics of <span class="highlighted">packaging waste
+				in the 26 European Union Member States and the United Kingdom</span>. It summarizes the development of
+			packaging waste production and recycling during the 2005-2016 period.
 		</p>
 		<p>
 			<span>Dataset:
@@ -34,7 +25,7 @@ permalink: /packaging/data
 			</span>
 		</p>
 	</div>
-	<div style="max-width: 57rem; margin: auto">
+	<div style="max-width: 57rem; margin: auto">1
 		{% include_relative packaging-graph.html %}
 	</div>
 
