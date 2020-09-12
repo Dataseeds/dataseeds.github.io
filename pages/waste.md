@@ -36,7 +36,7 @@ permalink: /waste
 				accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
 				actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
 				Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able to
-				find different types of legislative and non-legislative documents
+				find different types of legislative and non-legislative documents.
 				</p>
 				<a href="/waste/legislations">Read more...</a>
 			</div>
