@@ -17,12 +17,10 @@ permalink: /waste
 			<div class="card-descr">
 				<h2>Data</h2>
 				<p>
-					<span class="temp">
 						We work at the European level to push for ambitious waste policy which drives Europe towards a
-						zero waste future. Out work on this also involves the monitoring and supporting of
+						zero waste future. Our work on this also involves the monitoring and supporting of
 						implementation in various member states. Work which is driven by our members who are actively
 						involved in many projects at a city and national level.
-					</span>
 				</p>
 				<a href="/waste/data">Find out more.</a>
 			</div>
@@ -32,14 +30,11 @@ permalink: /waste
 			<div class="card-descr">
 				<h2>EU LEGISLATIVE & NON-LEGISLATIVE ACTIONS</h2>
 				<p>
-					<span class="temp">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis tortor lacinia, accumsan
-						nunc vel, hendrerit neque. Nunc mauris est, interdum sed erat vel, convallis tempus ligula.
-						Nulla congue magna ipsum, quis malesuada risus ultrices nec. Vestibulum ac dui nec tortor
-						elementum dapibus. Quisque fringilla turpis felis, ut scelerisque sapien laoreet vitae. Aliquam
-						eros magna, egestas semper ligula vel, mollis venenatis ante. Aenean mollis massa vitae neque
-						rutrum laoreet.
-					</span>
+				In order for the European Union to reach its climate-neutral objectives, existing goals need to be
+				accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
+				actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
+				Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able to
+				find different types of legislative and non-legislative documents.
 				</p>
 				<a href="/waste/legislations">Read more...</a>
 			</div>
