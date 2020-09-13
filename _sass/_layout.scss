@@ -574,10 +574,15 @@
     padding: 2rem 0;
     margin: auto;
     width: 80%;
+    @media screen and (max-width: $on-laptop) {
+        width: 90%;
+    }
 }
+
 .grid-table {
     display: grid;
     grid-auto-flow: column;
+    margin-bottom: 1rem;
 }
 
 .tablink {
@@ -589,6 +594,27 @@
 
 .tablink-active {
     border-bottom: solid 5px #62c0a5 !important;
+}
+
+.legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.rectangle-container {
+    display: flex;
+    padding: 5px;
+}
+.rectangle-container p {
+    margin: auto;
+    font-size: 0.8rem;
+}
+.rectangle-container div {
+    height: 12px;
+    margin: auto;
+    margin-right: 2px;
+    width: 12px;
 }
 
 .chart-title div {
