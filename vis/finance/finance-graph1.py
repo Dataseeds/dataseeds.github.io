@@ -39,8 +39,10 @@ values = pie.values.tolist()
 
 fig = go.Figure(data=go.Pie(labels=labels, values=values))
 
-fig.update_layout(paper_bgcolor="#F0F0F0")
-fig.update_traces(hoverinfo='label+percent', textinfo='percent',
+fig.update_layout(paper_bgcolor="#F0F0F0", height=400, margin={
+                  "r": 0, "t": 10, "l": 0, "b": 10, "pad": 0, "autoexpand": True},)
+fig.update_traces(hoverinfo='label+percent+value', textinfo='percent',
+                  showlegend=False,
                   marker=dict(colors=colorlist,
                               line=dict(color='rgba(0, 0, 0, 0.2)', width=1)))
 
