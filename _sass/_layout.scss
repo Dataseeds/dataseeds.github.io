@@ -570,24 +570,25 @@
 			Finance page 
 #################################### */
 
-.finance-charts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    .chart1 {
-        width: 45%;
-    }
-    .chart2 {
-        width: 50%;
-    }
-    @media screen and (max-width: $on-laptop) {
-        flex-direction: column;
-        .chart1,
-        .chart2 {
-            width: 100%;
-        }
-    }
+.grid-table-container {
+    padding: 2rem 0;
+    margin: auto;
+    width: 80%;
+}
+.grid-table {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.tablink {
+    border-bottom: solid 5px grey;
+    margin: 0 5px;
+    padding: 8px 16px !important;
+    text-align: center;
+}
+
+.tablink-active {
+    border-bottom: solid 5px #62c0a5 !important;
 }
 
 .chart-title div {
