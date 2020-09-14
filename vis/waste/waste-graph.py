@@ -7,7 +7,8 @@ import plotly.graph_objects as go
 pd.set_option("display.max_columns", 40)
 pd.set_option("display.max_colwidth", 200)
 
-df = pd.read_csv("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\waste\\waste_gen-data.csv")
+df = pd.read_csv(
+    "C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\waste\\waste_gen-data.csv")
 
 df = df.drop(columns=["Flag and Footnotes", "NACE_R2", "NACE_R2_LABEL"])
 df = df.query('GEO != ["EU27_2020", "EU28"]')
@@ -28,25 +29,17 @@ CONF = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
 
 # #############################################################################
 # Map
-fig = go.Figure(
-    data=[
-        go.Choropleth(
-            colorscale='Greens',
-            locationmode='country names',
-            locations=dff['GEO_LABEL'],
-            marker_line_color='gray',
-            marker_opacity=0.75,
-            marker_line_width=0.5,
-            showscale=True,
-            z=dff['Value'],
-        )
-    ]
-)
+fig = go.Figure(go.Choropleth(colorscale='BuGn', locationmode='country names',
+                              locations=dff['GEO_LABEL'],
+                              marker_line_color='gray', marker_opacity=0.75,
+                              marker_line_width=0.5, showscale=True,
+                              z=dff['Value'])
+                )
 
 buttons = []
 for year in df['TIME'].unique():
     buttons.append(
-        dict(method= 'update', label=str(year),
+        dict(method='update', label=str(year),
              args=[{"z": [df.query('TIME == @year')['Value']]}])
     )
 
@@ -57,13 +50,12 @@ fig.update_layout(updatemenus=[dict(active=6, buttons=buttons, bgcolor="#FFFFFF"
                   autosize=True, dragmode=False,
                   geo=dict(
                       scope='europe', bgcolor="#F0F0F0", projection_scale=1.2,
-                      center=dict(lat=60, lon=15)
-                    ),
-                  margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
-                  paper_bgcolor = "#F0F0F0",
-                  height = 450)
+                      center=dict(lat=60, lon=15)),
+                  margin={"r": 0, "t": 20, "l": 0, "b": 0,
+                          "pad": 0, "autoexpand": True},
+                  paper_bgcolor="#F0F0F0", height=450)
 
 fig.show(config=CONF)
 
-fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\waste.html",
+fig.write_html("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\pages\\waste-graph.html",
                config=CONF)
