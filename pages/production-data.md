@@ -27,9 +27,9 @@ permalink: /production/data
 		</p>
 		<p style="font-style: italic;">
 			<span>Dataset:
-				<href
-					src="https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&plugin=0&language=en&pcode=t2020_rl100&tableSelection=1">
-					eurostat</href>
+				<a class="underlined"
+					href="https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&plugin=0&language=en&pcode=t2020_rl100&tableSelection=1">
+					MISSING TITLE (eurostat)</a>
 			</span>
 		</p>
 	</div>

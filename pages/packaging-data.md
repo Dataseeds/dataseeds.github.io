@@ -18,14 +18,15 @@ permalink: /packaging/data
 				in the 26 European Union Member States and the United Kingdom</span>. It summarizes the development of
 			packaging waste production and recycling during the 2005-2016 period.
 		</p>
-		<p>
+		<p style="font-style: italic;">
 			<span>Dataset:
-				<a href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">Packaging
+				<a class="underlined"
+					href="https://www.eea.europa.eu/data-and-maps/daviz/sds/packaging-waste-recycling-2/@@view">Packaging
 					waste recycling (eea.europa.eu)</a>
 			</span>
 		</p>
 	</div>
-	<div style="max-width: 57rem; margin: auto">1
+	<div style="max-width: 57rem; margin: auto">
 		{% include_relative packaging-graph.html %}
 	</div>
 

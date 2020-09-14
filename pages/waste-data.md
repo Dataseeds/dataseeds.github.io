@@ -21,10 +21,10 @@ permalink: /waste/data
 				lorem. Quisque pharetra ac leo et consequat.
 			</span>
 		</p>
-		<p>
-			<i>Dataset:
-				<href src="#">WIP</href>
-			</i>
+		<p style="font-style: italic;">
+			<span>Dataset:
+				<a class="underlined" href="#">WIP</a>
+			</span>
 		</p>
 	</div>
 	<div style="max-width: 44rem; margin: auto">
