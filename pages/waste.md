@@ -17,10 +17,7 @@ permalink: /waste
 			<div class="card-descr">
 				<h2>Data</h2>
 				<p>
-						We work at the European level to push for ambitious waste policy which drives Europe towards a
-						zero waste future. Our work on this also involves the monitoring and supporting of
-						implementation in various member states. Work which is driven by our members who are actively
-						involved in many projects at a city and national level.
+						The European Union is one of the main promoters of the ecological transition, and this is reflected in the data from recent years. The figures show recent statistics of packaging waste in the 26 European Union Member States and the United Kingdom. It summarizes the development of packaging waste production and recycling during the 2005-2016 period.
 				</p>
 				<a href="/waste/data">Find out more.</a>
 			</div>
