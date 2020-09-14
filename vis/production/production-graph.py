@@ -10,7 +10,8 @@ from plotly.subplots import make_subplots
 
 # #############################################################################
 # Read and clean the dataset
-df = pd.read_csv("C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\production\\resources-data.csv")
+df = pd.read_csv(
+    "C:\\Users\\ismae\\Documents\\GitHub\\dataseeds.github.io\\vis\\production\\resources-data.csv")
 
 df.drop(columns=["Flag and Footnotes"], inplace=True)
 df.rename(columns={"GEO_LABEL": "Country",
@@ -21,7 +22,8 @@ df.replace({"Euro per kilogram": "Euro per kg",
             "Index, 2000=100": "Index 2000=100",
             "Germany (until 1990 former territory of the FRG)": "Germany"}, inplace=True)
 df = df.query('GEO != ["EU27_2020", "EU28"]')
-df['Value'] = df['Value'].replace({" ": "", ":": "0"}).astype(float).round(2).replace(0, "n.d.")
+df['Value'] = df['Value'].replace({" ": "", ":": "0"}).astype(
+    float).round(2).replace(0, "n.d.")
 df.reset_index(inplace=True, drop=True)
 
 
@@ -39,31 +41,32 @@ fig = make_subplots(rows=2, cols=1, shared_xaxes=False,
                     specs=[[{"type": "choropleth"}], [{"type": "table"}]],
                     shared_yaxes=False)
 fig.add_trace(
-    go.Choropleth(colorscale='Greens', locationmode='country names',
+    go.Choropleth(colorscale='BuGn', locationmode='country names',
                   locations=dff['Country'], marker_line_color='gray',
                   marker_opacity=0.75, marker_line_width=0.5, showscale=False,
                   z=dff['Value'], hoverinfo='z+location'
-    ), row=1, col=1
+                  ), row=1, col=1
 )
-dfp = df.query('TIME==2019').pivot_table('Value', 'Country', 'Unit', lambda x: x.iloc[0]).reset_index()
+dfp = df.query('TIME==2019').pivot_table('Value', 'Country',
+                                         'Unit', lambda x: x.iloc[0]).reset_index()
 fig.add_trace(
     go.Table(
-        header=dict(values=dfp.columns.tolist(), font=dict(size=10), align="center"),
-        cells=dict(
-            values=[dfp[k].tolist() for k in dfp.columns],
-            align = "center"
-        ),
+        header=dict(align="center", font_size=10, fill_color="rgba(98, 192, 165, 0.46)",
+                    values=dfp.columns.tolist()),
+        cells=dict(align="center", values=[
+                   dfp[k].tolist() for k in dfp.columns]),
     ),
     row=2, col=1
 )
 
 buttons = []
 for year in df['TIME'].unique():
-    dfp = df.query('TIME==@year').pivot_table('Value', 'Country', 'Unit', lambda x: x.iloc[0]).reset_index()
+    dfp = df.query('TIME==@year').pivot_table('Value', 'Country',
+                                              'Unit', lambda x: x.iloc[0]).reset_index()
     buttons.append(
-        dict(method= 'update', label=str(year),
+        dict(method='update', label=str(year),
              args=[{"cells": dict(values=[dfp[k].tolist() for k in dfp.columns]),
-                    "z": [df.query('TIME==@year & Unit=="Euro per kg CLV (2010)"')['Value']] }])
+                    "z": [df.query('TIME==@year & Unit=="Euro per kg CLV (2010)"')['Value']]}])
     )
 
 fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF",
@@ -74,10 +77,11 @@ fig.update_layout(updatemenus=[dict(active=0, buttons=buttons, bgcolor="#FFFFFF"
                   geo=dict(
                       scope='europe', bgcolor="#F0F0F0", projection_scale=1.2,
                       center=dict(lat=60, lon=15)
-                    ),
-                  margin={"r": 0, "t": 20, "l": 0, "b": 0, "pad": 0, "autoexpand": True},
-                  paper_bgcolor = "#F0F0F0",
-                  height = 1300)
+),
+    margin={"r": 0, "t": 20, "l": 0, "b": 0,
+            "pad": 0, "autoexpand": True},
+    paper_bgcolor="#F0F0F0",
+    height=1300)
 
 fig.show(config=conf)
 
