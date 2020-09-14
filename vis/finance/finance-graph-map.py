@@ -24,9 +24,9 @@ data = df.query('year == 2020').groupby(['Country'])[
 
 data = data.apply(lambda x: x/10e5)
 data["decided"] = data.apply(lambda x: str(
-    int(100*(x.Decided/x.Planned))) + '%', axis=1)
+    int(100*(x.Decided/x.Planned))), axis=1)
 data["spent"] = data.apply(lambda x: str(
-    int(100*(x.Spent/x.Planned))) + '%', axis=1)
+    int(100*(x.Spent/x.Planned))), axis=1)
 data = data.reset_index()
 
 data[["Planned", "Decided", "Spent"]] = data[[
@@ -44,8 +44,8 @@ conf = {"autosizable": False,
 
 def make_hover_text(x):
     txt = "Total planned: {:,d} (100%) <br>".format(x.Planned)
-    txt += "Decided: {:,d} ({}) <br>".format(x.Decided, x.decided)
-    txt += "Spent: {:,d} ({}) <br>".format(x.Spent, x.spent)
+    txt += "Decided: {:,d} ({}%) <br>".format(x.Decided, x.decided)
+    txt += "Spent: {:,d} ({}%) <br>".format(x.Spent, x.spent)
     txt = txt.replace(',', '.')
     return txt
 
@@ -55,11 +55,12 @@ data["text"] = data.apply(lambda x: make_hover_text(x), axis=1)
 
 # Plotly Graph Objects (GO)
 # Map + table
-fig = go.Figure(go.Choropleth(colorscale='Greens', text=data["text"],
+fig = go.Figure(go.Choropleth(colorscale='BuGn', hoverinfo='location+text',
                               locationmode='country names', locations=data['Country'],
                               marker_line_color='gray', marker_opacity=0.75,
                               marker_line_width=0.5, showscale=False,
-                              z=data['Planned'], hoverinfo='location+text'))
+                              text=data["text"], z=data['spent']
+                              ))
 
 fig.update_layout(autosize=True, dragmode=False,
                   geo=dict(
