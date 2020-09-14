@@ -196,10 +196,11 @@
     }
 }
 .flex-container h2 {
-    font-size: 2.3em;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1em;
     text-align: justify;
+    padding-bottom: 1rem;
 }
 .flex-container img {
     display: flex;
@@ -575,25 +576,30 @@
     margin: auto;
     width: 80%;
     @media screen and (max-width: $on-laptop) {
-        width: 90%;
+        width: 100%;
     }
 }
 
 .grid-table {
-    display: grid;
-    grid-auto-flow: column;
+    align-items: stretch;
+    display: flex;
+    justify-content: stretch;
     margin-bottom: 1rem;
+}
+.grid-table a {
+    flex-basis: 25%;
+    margin-top: auto;
 }
 
 .tablink {
-    border-bottom: solid 5px grey;
-    margin: 0 5px;
+    border-bottom: solid 4px grey;
+    margin: 0 3px;
     padding: 8px 16px !important;
     text-align: center;
 }
 
 .tablink-active {
-    border-bottom: solid 5px #62c0a5 !important;
+    border-bottom: solid 4px #62c0a5 !important;
 }
 
 .legend-container {
