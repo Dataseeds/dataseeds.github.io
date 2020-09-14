@@ -63,8 +63,8 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Table(
-        header=dict(values=df.columns[1:].tolist(),
-                    font=dict(size=10), align="center"),
+        header=dict(align="center", fill_color="rgba(98, 192, 165, 0.46)",
+                    font_size=10, values=df.columns[1:].tolist()),
         cells=dict(
             values=[df.query('date==2016')[k].tolist()
                     for k in df.columns[1:]],
