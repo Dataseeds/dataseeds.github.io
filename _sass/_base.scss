@@ -60,12 +60,9 @@ table {
     src: url("/assets/fonts/BrushScript.ttf");
 }
 
-
 /** Variables **********************************************/
 
-$base-font-family: Open Sans,
-Helvetica,
-sans-serif;
+$base-font-family: Open Sans, Helvetica, sans-serif;
 $base-line-height: 1.5em;
 $horizontal-spacing-unit: 50px;
 $vertical-spacing-unit: 40px;
@@ -108,9 +105,8 @@ body {
 
 // Hide scrollbar on Chrome, Safari, Opera
 body ::-webkit-scrollbar {
-    width: 0 !important
+    width: 0 !important;
 }
-
 
 /* ####################################
 			Dark/Light themes
@@ -168,7 +164,6 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-
 /* ####################################
 			Headings and Headers
 #################################### */
@@ -209,7 +204,7 @@ a:hover {
 }
 
 .site-nav-div {
-    max-width: $max-wrapper-width+6rem;
+    max-width: $max-wrapper-width + 6rem;
     margin: auto;
     padding: 0px 20px;
     position: relative;
@@ -240,14 +235,14 @@ a:hover {
     }
 }
 
-nav>ul {
+nav > ul {
     float: right;
     list-style: none;
     margin: auto;
     margin-right: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
     float: left;
     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     font-family: Gill Sans MT Condesed;
@@ -255,7 +250,7 @@ nav>ul>li {
     margin: 0 1.5vw;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
     cursor: pointer;
     display: block;
     outline: none;
@@ -282,15 +277,15 @@ label {
         top: 20px;
     }
     label:after {
-        content: '';
+        content: "";
         display: block;
         width: 30px;
         height: 5px;
         background: $main-dark-blue;
         margin: 7px 5px;
-        box-shadow: 0px 10px 0px $main-dark-blue, 0px 20px 0px $main-dark-blue
+        box-shadow: 0px 10px 0px $main-dark-blue, 0px 20px 0px $main-dark-blue;
     }
-    [type="checkbox"]:checked~ul {
+    [type="checkbox"]:checked ~ ul {
         border-radius: 10px;
         box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.1);
         display: block;
@@ -321,11 +316,11 @@ label {
             border-radius: 0 0 7px 7px;
         }
     }
-    nav>ul li ul li {
+    nav > ul li ul li {
         display: block;
         float: none;
     }
-    nav>ul li ul {
+    nav > ul li ul {
         display: block;
         position: relative;
         width: 100%;
@@ -333,7 +328,6 @@ label {
         float: none;
     }
 }
-
 
 /* ####################################
 			Site footer
@@ -400,7 +394,7 @@ label {
     align-items: start;
     display: flex;
     flex-direction: row;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     justify-content: space-around;
     margin: 0 10px 5px;
     a {
@@ -408,25 +402,6 @@ label {
         font-size: 18px;
         text-decoration: none;
         margin: 10px 10px;
-    }
-}
-
-.social-links button {
-    background: #62C0A5;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    height: 35px;
-    margin: 5px 0;
-    padding: 10px 15px;
-    div {
-        display: flex;
-    }
-    i {
-        margin: auto 2px;
-    }
-    span {
-        margin-right: 5px;
     }
 }
 
@@ -452,7 +427,6 @@ label {
     }
 }
 
-
 /* ####################################
 			Links
 #################################### */
@@ -474,6 +448,28 @@ article a {
     }
 }
 
+/* ####################################
+			Buttons
+#################################### */
+
+.accent_button {
+    background: #62c0a5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 35px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    div {
+        display: flex;
+    }
+    i {
+        margin: auto 2px;
+    }
+    span {
+        margin-right: 5px;
+    }
+}
 
 /* ####################################
 			Blockquotes
@@ -490,7 +486,6 @@ blockquote {
     }
 }
 
-
 /* ####################################
 			Wrapper
 #################################### */
@@ -505,7 +500,6 @@ blockquote {
         padding: 0 3%;
     }
 }
-
 
 /* ####################################
 			Clearfix
