@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How it Works
+title: About
 visible: false
 permalink: /about/how-it-works
 ---
