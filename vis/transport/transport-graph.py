@@ -55,8 +55,8 @@ fig.add_trace(
 )
 fig.add_trace(
     go.Table(
-        header=dict(values=dff.columns.tolist(),
-                    font=dict(size=10), align="center"),
+        header=dict(align="center", fill_color="rgba(98, 192, 165, 0.46)",
+                    font_size=10, values=dff.columns.tolist()),
         cells=dict(
             values=[dff[k].tolist() for k in dff.columns],
             align="center", fill=dict(color=[["#86CDB9", "#e5ecf6", "#e5ecf6"]])
