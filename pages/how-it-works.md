@@ -13,10 +13,9 @@ permalink: /about/how-it-works
 <div class='header'>
   <p>How serious are we about addressing the challenge of food security in the face of climate change? Before answering this question, there is a second question to make: <span class="highlighted">How does the food we buy, eat and don’t eat impact the environment?</span> Before reaching our plates, food needs to be produced, processed, packaged, and distributed. Every step uses up resources and generates more and more waste and pollution. </p>
 
-  <img src="/assets/about/EEA.png" alt="EEA how it works"> </img>
-  <p>For instance, the role of transportation and logistics, both crucial in increasing food security, so we can feed 9 billion people by 2050, and mitigating impact on climate change. Just consider these facts:
+  <img src="/assets/about/EEA.jpeg" alt="EEA how it works"> </img>
+  <p>For instance, the role of transportation and logistics crucial in increasing food security, so we can feed 9 billion people by 2050 is responsible for up to 50% of harvest wasted between farm and fork.
   <ul>
-    <li>Up to 50% of harvest is wasted between farm and fork, the moment we actually consume food.</li>
     <li>Transport-related emissions account for about 15% of overall greenhouse gas emissions. And 60% of those emissions are coming from road transport </li>.
     <li>And logistics costs affect small farmers disproportionally (up to 23% of their total costs).</li>
     <li>Agricultural production alone accounts for 10% of greenhouse gas emissions (including 80% of methane emissions) contributing to climate change. </li>
