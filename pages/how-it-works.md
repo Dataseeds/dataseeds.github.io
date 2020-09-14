@@ -19,6 +19,13 @@ permalink: /about/how-it-works
 
     <li>And logistics costs affect small farmers disproportionally (up to 23% of their total costs).</li>
     <li>50 - 80% of nitrogen load in freshwater bodies, affecting water quality and aquatic ecosystems.</li>
+</div>
 
-  <div class="centered-title">
-    <h2>IT IS TIME TO <span class="highlighted">CULTIVATE</SPAN> A BETTER FUTURE</h2>
+<div class="centered-title">
+  <h2>IT IS TIME TO <span class="highlighted">CULTIVATE</SPAN> A BETTER FUTURE</h2>
+</div>
+
+<div class='header'>
+  <p>The aim of dataseeds is to help SMEs working in agriculture to have direct access to better and more detailed information regarding the coming changes in accordance to the European Green Deal and the inevitable climate change.  Do you remember the avatar tree?  A tree that would hold the knowledge of all its community. That is open data today. In this regard, the interface would encompass on the one hand, information and data on the production, packaging, transport, and waste processes, and on the other hand, the opinion of EU citizens as consumers. Multiple datasets are used to help SMEs reduce and control their flows concerning the Green Deal requirements – most of them are dynamic and continuously updated and some have a participatory approach.
+
+  <h2>A connection between the private sector, EU institutions, and EU citizens is essential to undertake such a sustainable restructuring of the economy, and the agriculture sector cannot be left behind.</h2>
