@@ -198,7 +198,15 @@
 .flex-container h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1em;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding-bottom: 0.2rem;
+}
+.flex-container h3 {
+    color: #777;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem;
     text-align: justify;
     padding-bottom: 1rem;
 }
@@ -572,7 +580,7 @@
 #################################### */
 
 .grid-table-container {
-    padding: 2rem 0;
+    padding: 2rem 0 5rem;
     margin: auto;
     width: 80%;
     @media screen and (max-width: $on-laptop) {
