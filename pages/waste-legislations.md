@@ -15,7 +15,11 @@ permalink: /waste/legislations
 	</div>
 	<div class="flex-container">
 		<p>
-		In order for the European Union to reach its climate-neutral objectives, existing goals need to be accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of actions includes <i>inter alia</i> policy proposals and new legal acts – some are binding, others are not. Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able to find legislative and non-legislative documents on <b>waste management</b>.
+			In order for the European Union to reach its climate-neutral objectives, existing goals need to be
+			accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of actions
+			includes <i>inter alia</i> policy proposals and new legal acts – some are binding, others are not. Moreover,
+			not all actions apply to all EU countries, or in the same way. Hereafter you will be able to find
+			legislative and non-legislative documents on <b>waste management</b>.
 		</p>
 		<ul style="margin-left: 15px">
 			<li>
@@ -120,7 +124,12 @@ permalink: /waste/legislations
 			name: "Commission notice on technical guidance on the classification of waste (2018/C 124/01)",
 			tags: ["technical guidance", "classification", "waste", "hazardous waste", "non-hazardous waste"],
 			link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2018.124.01.0001.01.ENG&toc=OJ:C:2018:124:TOC"
-		}];
+		}, {
+			name: "Commission Notice - EU guidelines on food donation (2017/C 361/01)",
+			tags: ["food redistribution", "surplus food", "charity", "food safety", "food donation", "agricultural products"],
+			link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2017.361.01.0001.01.ENG&toc=OJ:C:2017:361:TOC"
+		}
+	];
 
 	var userList = new List('search-list', options, values);
 </script>
