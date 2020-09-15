@@ -10,8 +10,8 @@ permalink: /
     <a class="home-top" href="/production">
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
         <div>
-            <h3>CLEAN & EFFICIENT</h3>
-            <h3>PRODUCTION</h3>
+            <h3>RESOURCE</h3>
+            <h3>EFFICIENCY</h3>
         </div>
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
     </a>
