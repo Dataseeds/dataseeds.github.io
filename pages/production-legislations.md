@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clean & Efficient Production
+title: Resource efficiency
 visible: false
 permalink: /production/legislations
 ---
