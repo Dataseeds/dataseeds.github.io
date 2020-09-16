@@ -27,8 +27,13 @@
 }
 
 .home {
-    animation: popIn 1.3s ease-in-out;
+    animation: popIn 1s ease-in-out;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "top top top"
+        "left center right";
     text-align: center;
     margin: 0 auto;
     max-width: 50rem;
@@ -80,8 +85,8 @@
 }
 
 .home-recycle-huge {
-    margin: 1vw auto 0 auto;
-    width: min(50vw, 50vh);
+    grid-area: center;
+    width: min(30rem, 50vw);
     -webkit-filter: drop-shadow(0px 0px 20px rgba(68, 92, 94, 0.7));
     @media screen and (max-width: $on-laptop) {
         max-width: 65vw;
@@ -93,52 +98,40 @@
 
 .home-svg {
     margin: auto 0;
-    width: min(9vw, 7vh);
+    width: min(4rem, 7vw);
 }
 
 .home-top {
     display: inline-flex;
+    grid-area: top;
     min-height: 5em;
     margin: 0 auto;
 }
 
 .home-top div {
-    margin: auto;
-    min-width: 15px;
+    margin: 0 10px;
 }
 
 .home-center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 50%;
-    &:hover {
-        top: 43%;
-    }
-    @media (hover: none) {
-        top: 47%;
-    }
-    @media screen and (max-width: $on-laptop) {
-        top: 44%;
-    }
+    grid-area: center;
+    margin: auto;
+    z-index: 999;
 }
 
 .home-left {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    grid-area: left;
+    place-self: end;
 }
 
 .home-right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    grid-area: right;
+    place-self: baseline;
 }
 
 .home-left,
 .home-right {
     display: inline;
-    margin-bottom: 2em;
+    margin-top: auto;
     div {
         margin: auto;
     }
