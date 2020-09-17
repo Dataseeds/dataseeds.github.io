@@ -45,7 +45,7 @@
     }
     h3 {
         color: $main-dark-blue;
-        font-size: min(2rem, 5vw);
+        font-size: min(2rem, 4vw);
         font-weight: 100;
         line-height: 1em;
         margin: auto;
@@ -91,8 +91,6 @@
     @media screen and (max-width: $on-laptop) {
         max-width: 65vw;
         max-height: 70vh;
-        margin-bottom: 2em;
-        width: auto;
     }
 }
 
@@ -104,12 +102,12 @@
 .home-top {
     display: inline-flex;
     grid-area: top;
-    min-height: 5em;
+    min-height: 3rem;
     margin: 0 auto;
 }
 
 .home-top div {
-    margin: 0 10px;
+    margin: auto 10px;
 }
 
 .home-center {
