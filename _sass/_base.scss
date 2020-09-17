@@ -216,6 +216,7 @@ a:hover {
 .site-nav {
     display: flex;
     place-items: center;
+    border-bottom: solid 2px $main-dark-blue;
 }
 
 .logo {
