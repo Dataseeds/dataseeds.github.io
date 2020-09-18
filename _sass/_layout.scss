@@ -586,15 +586,20 @@
     margin-bottom: 1rem;
 }
 .grid-table a {
-    flex-basis: 25%;
+    flex-basis: 50%;
     margin-top: auto;
 }
 
 .tablink {
     border-bottom: solid 4px grey;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-variant-caps: all-small-caps;
     margin: 0 3px;
     padding: 8px 16px !important;
     text-align: center;
+    text-shadow: none;
 }
 
 .tablink-active {
