@@ -71,6 +71,7 @@ $nav-height: 75px;
 /* COLORS  */
 
 $main-dark-blue: #445c5e;
+$main-accent: #44ab8d;
 
 /* navigation bar border */
 
@@ -250,12 +251,45 @@ nav > ul > li {
     line-height: 40px;
     margin: 0 1.5vw;
 }
+nav > ul li ul {
+    background: #f0f0f0;
+    border: solid 2px $main-dark-blue;
+    border-radius: 0 0 6px 6px;
+    display: none;
+    position: absolute;
+    right: -18px;
+    padding: 1px 5px;
+    // margin-top: 28px;
+    width: max-content;
+    z-index: 2000;
+}
+nav > ul li ul li {
+    font-size: 1.2rem;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+nav ul li:hover {
+    cursor: pointer;
+    position: relative;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li ul li,
+nav ul li ul li a {
+    display: block;
+    float: none;
+}
 
 nav > ul > li > a {
     cursor: pointer;
     display: block;
     outline: none;
     width: 100%;
+    text-decoration: none;
+}
+nav > ul li ul li > a {
     text-decoration: none;
 }
 
@@ -322,9 +356,13 @@ label {
         float: none;
     }
     nav > ul li ul {
+        background: #f8f8f8;
+        border: none;
         display: block;
         position: relative;
         width: 100%;
+        margin-left: -15px;
+        margin-top: -15px;
         z-index: 9999;
         float: none;
     }
@@ -454,7 +492,7 @@ article a {
 #################################### */
 
 .accent_button {
-    background: #62c0a5;
+    background: $main-accent;
     border: none;
     border-radius: 5px;
     color: white;

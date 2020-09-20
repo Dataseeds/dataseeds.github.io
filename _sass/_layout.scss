@@ -29,10 +29,10 @@
 .home {
     animation: popIn 1s ease-in-out;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
-        "top top top"
+        ". top ."
         "left center right";
     text-align: center;
     margin: 0 auto;
@@ -86,7 +86,7 @@
 
 .home-recycle-huge {
     grid-area: center;
-    width: min(30rem, 50vw);
+    width: min(30rem, 60vw);
     -webkit-filter: drop-shadow(0px 0px 20px rgba(68, 92, 94, 0.7));
     @media screen and (max-width: $on-laptop) {
         max-width: 65vw;
@@ -103,7 +103,7 @@
     display: inline-flex;
     grid-area: top;
     min-height: 3rem;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .home-top div {
