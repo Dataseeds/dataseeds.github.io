@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Waste management
+title: Waste prevention
 visible: false
 permalink: /waste/legislations
 ---
