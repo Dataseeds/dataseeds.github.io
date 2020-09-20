@@ -22,9 +22,9 @@ permalink: /production/data
 
 		<p>
 			The following map offers a representation of the Resource efficiency lead indicator: Resource
-			productivity. Resource productivity quantifies the relation between economic activity – expressed in GDP
-			- and the consumption of material resources - measured as DMC which is an indicator derived from
-			economy-wide material flow accounts.
+			productivity. <span class="highlighted">Resource productivity quantifies the relation between economic
+				activity – expressed in GDP - and the consumption of material resources - measured as DMC which is an
+				indicator derived from economy-wide material flow accounts.</span>
 		</p>
 
 		<p>
@@ -33,7 +33,8 @@ permalink: /production/data
 			the economy or are released back to the environment in form of e.g. emissions to air.
 			Resource Productivity, then, is defined here as GDP divided by DMC. It is important to note that GDP is
 			expressed in different measurement units, of which the following are used to calculate three different
-			resource productivity ratios. Please, ensure you are choosing the correct one for your analysis:
+			resource productivity ratios. <span class="highlighted">Please, ensure you are choosing the correct one for
+				your analysis:</span>
 		</p>
 
 		<ul style="margin-left: 15px">
