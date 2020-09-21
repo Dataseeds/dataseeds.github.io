@@ -16,9 +16,9 @@ highlighter: rouge
 
 
 collections:
-  projects:
+  citizens:
     output: true
-    permalink: /projects/:path/
+    permalink: /citizens/:path/
 
 # This will require each of these plugins automatically.
 plugins:
