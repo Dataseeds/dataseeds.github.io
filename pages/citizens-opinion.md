@@ -16,7 +16,9 @@ permalink: /citizens/
 
 		{% for project in site.citizens %}
 		<div class="citizen-card">
-			<img src="{{ project.img }}">
+			<div class="img-color-overlay">
+				<img src="{{ project.img }}">
+			</div>
 			<br />
 			<h2>{{ project.title }}</h2>
 			<p>{{ project.description }}</p>

@@ -656,9 +656,16 @@
     padding: 10px;
     width: 33%;
 }
+.img-color-overlay {
+    background-color: #44ab8d;
+    background-color: transparent;
+}
 .citizen-card img {
     border-radius: 5px 5px 0 0;
     display: flex;
+    filter: contrast(0.8) saturate(0.8);
+    mix-blend-mode: multiply;
+    opacity: 0.7;
     width: -webkit-fill-available;
 }
 .citizen-card h2 {
