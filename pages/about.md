@@ -42,6 +42,7 @@ permalink: /about
 			Green Deal.
 		</p>
 	</div>
+
 	<div class="about-flex-container">
 		<div class="flip-card">
 			<div class="flip-card-inner">
@@ -124,12 +125,12 @@ permalink: /about
 			</div>
 		</div>
 	</div>
-	<div class="about-sources">
-		<h2>Used sources</h2>
-		<p style="font-style: italic;">
-			Datasets: EEA, Eurostat, EUR-Lex, EIB, REGIO, INEA, CORDIS, JRC. <br>
-			<br>
-			Vectorized icons from <href src="https://www.drawkit.io/free-icons">Drawkit</href>.
+
+	<div class="flex-container">
+		<p>
+			If you are still curious about how this whole website was created, the technologies used for that purpose
+			and the open source material we used, you can learn more about it in our <a class="underlined"
+				href="/about/how-it-works">How It Works</a> section.
 		</p>
 	</div>
 </div>
