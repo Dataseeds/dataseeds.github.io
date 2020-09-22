@@ -221,17 +221,16 @@ a:hover {
 }
 
 .logo {
-    height: 65px;
+    height: clamp(2.5rem, 14vw, 4rem);
     margin-bottom: 10px;
-    width: 65px;
 }
 
 .logo-text {
     font-weight: 800;
-    font-size: clamp(2rem, 13vw, 3rem);
+    font-size: clamp(2rem, 13vw, 2.7rem);
     font-family: Brush Script MT;
     line-height: 40px;
-    margin-left: 10px;
+    margin-left: 5px;
     &:hover {
         text-shadow: none;
     }
