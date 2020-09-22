@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Finance and Innovation
+title: Finance & Innovation
 visible: false
 permalink: /finance_innovation/CORDIS
 ---
