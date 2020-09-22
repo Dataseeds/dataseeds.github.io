@@ -186,24 +186,6 @@ header {
     padding-top: 20px;
 }
 
-// when hovering (or on the phone) apply blur
-a:hover {
-    text-shadow: 0px 0px 20px $main-dark-blue;
-    img {
-        -webkit-filter: drop-shadow(0px 0px 20px $main-dark-blue);
-        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
-        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
-    }
-}
-
-@media screen and (max-width: $on-laptop) {
-    a img {
-        -webkit-filter: drop-shadow(0px 0px 20px $main-dark-blue);
-        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
-        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
-    }
-}
-
 .site-nav-div {
     max-width: $max-wrapper-width + 6rem;
     margin: auto;
@@ -446,10 +428,24 @@ a {
 article a {
     color: $main-dark-blue !important;
     font-weight: 400;
+}
+
+// when hovering (or on the phone) apply blur
+.hover-link:hover {
     text-decoration: $main-dark-blue;
     text-shadow: 0px 0px 20px $main-dark-blue;
-    &:hover {
-        text-shadow: 0px 0px 20px darken($main-dark-blue, 20%);
+    img {
+        -webkit-filter: drop-shadow(0px 0px 20px $main-dark-blue);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+    }
+
+    @media screen and (max-width: $on-laptop) {
+        a img {
+            -webkit-filter: drop-shadow(0px 0px 20px $main-dark-blue);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+            filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='$main-dark-blue')";
+        }
     }
 }
 
