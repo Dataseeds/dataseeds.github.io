@@ -14,16 +14,23 @@ permalink: /citizens/
 
 	<div class="citizens-flex-container">
 
-		{% for project in site.citizens %}
-		<div class="citizen-card">
-			<div class="img-color-overlay">
-				<img src="{{ project.img }}">
-			</div>
-			<br />
-			<h2>{{ project.title }}</h2>
-			<p>{{ project.description }}</p>
-		</div>
-		{% endfor %}
+		<ul class="post-list">
+			{% for post in site.citizens reversed %}
+			{% if post.visible != false  %}
+			<li>
+				<a class="citizen-card-link" href="{{ post.url | prepend: site.baseurl }}">
+					<div class="img-color-overlay">
+						<img src="{{ post.img }}">
+					</div>
+					<div class="citizen-card-info">
+						<h2>{{ post.title }}</h2>
+						<p>{{ post.description }}</p>
+					</div>
+				</a>
+			</li>
+			{% endif  %}
+			{% endfor %}
+		</ul>
 
 	</div>
 
