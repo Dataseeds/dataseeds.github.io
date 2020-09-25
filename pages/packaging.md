@@ -17,12 +17,10 @@ permalink: /packaging
 			<div class="card-descr">
 				<h2>DATA</h2>
 				<p>
-					<span class="temp">
 						We work at the European level to push for ambitious waste policy which drives Europe towards a
 						zero waste future. Out work on this also involves the monitoring and supporting of
 						implementation in various member states. Work which is driven by our members who are actively
 						involved in many projects at a city and national level.
-					</span>
 				</p>
 				<a href="/packaging/data">Find out more.</a>
 			</div>
