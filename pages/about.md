@@ -33,6 +33,11 @@ permalink: /about
 			</video>
 		</div>
 	</div>
+	<div style="place-self: center;">
+		<button class="accent_button" type="button" href="/about/how-it-works">
+			<span class="far">How it Works</span>
+		</button>
+	</div>
 	<div class="team-descr">
 		<p>
 			Dataseeds is a project initiated by Andrea Briones, Aura Cristina Guerrero, Paula Sanz and Borja Ybarra,
