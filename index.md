@@ -15,7 +15,7 @@ permalink: /
         </div>
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
     </a>
-    <img class="home-recycle-huge" src="/assets/Recycle.triangle.svg"/>
+    <img class="home-recycle-huge" src="/assets/Recycle.triangle.svg" />
     <a class="home-center" href="/transport">
         <div>
             <h3>SUSTAINABLE</h3>
@@ -53,3 +53,9 @@ permalink: /
         console.log("Dark theme");
     }
 </script>
+
+<style>
+    .wrapper {
+        padding: 0 3% !important;
+    }
+</style>

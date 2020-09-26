@@ -35,9 +35,8 @@
         ". top ."
         "left center right";
     text-align: center;
-    margin: 0 auto;
+    margin: 4rem auto;
     max-width: 50rem;
-    vertical-align: middle;
     position: relative;
     img {
         text-align: center;
@@ -100,14 +99,13 @@
 }
 
 .home-top {
-    display: inline-flex;
+    display: -webkit-box;
     grid-area: top;
-    min-height: 3rem;
-    margin: 5px auto;
+    margin: auto auto 7px;
 }
 
 .home-top div {
-    margin: auto 10px;
+    margin: auto 5px;
 }
 
 .home-center {
