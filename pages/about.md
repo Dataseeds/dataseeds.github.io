@@ -36,7 +36,7 @@ permalink: /about
 		</div>
 	</div>
 	<div style="place-self: center;">
-		<button class="accent_button" type="button" href="/about/how-it-works">
+		<button class="accent_button" type="button" onclick="href='/about/how-it-works'">
 			<span class="far">How it Works</span>
 		</button>
 	</div>
