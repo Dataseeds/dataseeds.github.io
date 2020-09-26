@@ -9,9 +9,9 @@ permalink: /packaging/legislations
 
 <div>
 	<div class="centered-title" onclick="location.href='/packaging'" style="cursor: pointer;">
-		<img src="/assets/icons/DrawKit-Ecology/Color/Label.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Eco Tag.svg">
 		<h1>{{ page.title }}</h1>
-		<img src="/assets/icons/DrawKit-Ecology/Color/Leaves.svg">
+		<img src="/assets/icons/DrawKit-Ecology/Color/Paper bag.svg">
 	</div>
 	<div class="flex-container">
 		<p>
