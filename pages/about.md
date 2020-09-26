@@ -26,6 +26,8 @@ permalink: /about
 				future through research centres working in related aspects. It is a freely and easy to use resource
 				which you are free to share and remix, even for commercial purposes, as long as you share the results
 				under the same license.
+				<br>
+				If you are still curious about how this whole website was created, the technologies used for that purpose and the open source material we used, you can learn more about it in our How It Works section.
 			</p>
 		</div>
 		<div class="about-header-media">
