@@ -36,17 +36,19 @@ permalink: /packaging/data
 
 	<div class="stakeholders-container">
 		<h1>Stakeholders</h1>
-		<a title="Access and information on materials: Industrial Packaging"
-			href="https://www.industrialpackaging.com/">
-			<img src="/assets/stakeholders/Industrial-Packaging.png" alt="Industrial Packaging" />
-		</a>
-		<a title="FEFCO" href="https://www.fefco.org/">
-			<img src="/assets/stakeholders/fefco.png" alt="FEFCO" />
-		</a>
-		<a title="European Organization for Packaging and the Environment"
-			href="https://europen-packaging.eu/about-us.html">
-			<img src="/assets/stakeholders/europen.png" alt="Europen" />
-		</a>
+		<div style="width: fit-content; margin: auto;">
+			<a title="Access and information on materials: Industrial Packaging"
+				href="https://www.industrialpackaging.com/">
+				<img src="/assets/stakeholders/Industrial-Packaging.png" alt="Industrial Packaging" />
+			</a>
+			<a title="FEFCO" href="https://www.fefco.org/">
+				<img src="/assets/stakeholders/fefco.png" alt="FEFCO" />
+			</a>
+			<a title="European Organization for Packaging and the Environment"
+				href="https://europen-packaging.eu/about-us.html">
+				<img src="/assets/stakeholders/europen.png" alt="Europen" />
+			</a>
+		</div>
 	</div>
 
 	<div class="resources-container">
