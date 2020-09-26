@@ -135,28 +135,28 @@ body ::-webkit-scrollbar {
 //         }
 //     }
 // }
-@media (prefers-color-scheme: light) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    body,
-    a,
-    p,
-    code,
-    ul {
-        color: $light-theme-fg;
-    }
-    body {
-        background-color: $light-theme-bg;
-        pre,
-        code {
-            background-color: $light-theme-bg-semi;
-        }
+// @media (prefers-color-scheme: light) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+a,
+p,
+code,
+ul {
+    color: $light-theme-fg;
+}
+body {
+    background-color: $light-theme-bg;
+    pre,
+    code {
+        background-color: $light-theme-bg-semi;
     }
 }
+// }
 
 hr {
     border: 0;
@@ -179,6 +179,19 @@ h6 {
     font-weight: 100;
     width: 100%;
     font-weight: 800;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 header {

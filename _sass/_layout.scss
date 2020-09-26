@@ -269,6 +269,30 @@
 }
 
 /* ####################################
+			Subpage extra info
+#################################### */
+.stakeholders-container,
+.resources-container {
+    padding-bottom: 1rem;
+}
+
+.stakeholders-container h1,
+.resources-container h1 {
+    padding: 2rem 0 0.5rem;
+    text-align: center;
+}
+
+.stakeholders-container img {
+    height: 55px;
+}
+.resources-container ul {
+    padding-left: 20px;
+}
+.resources-container ul li {
+    padding: 2px 0;
+}
+
+/* ####################################
 			About page 
 #################################### */
 
