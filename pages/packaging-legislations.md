@@ -103,6 +103,26 @@ permalink: /packaging/legislations
 			name: "Regulation(EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013 establishing a common organisation of the markets in agricultural products and repealing Council Regulations (EEC) No 922/72, (EEC) No 234 / 79, (EC) No 1037 / 2001 and(EC) No 1234 / 2007",
 			tags: ["CAP", "common agrary policy", "processing", "repealing products"],
 			link: "https://ec.europa.eu/environment/waste/framework/"
+		},
+		{
+			name: "European Parliament and Council Directive 94/62/EC of 20 December 1994",
+			tags: ["package", "travel", "packaging"],
+			link: "https://lexparency.org/eu/31994L0062/"
+		},
+		{
+			name: "Regulation (EC) No 1935/2004 of the European Parliament and of the Council of 27 October 2004 on materials and articles intended to come into contact with food and repealing Directives 80/590/EEC and 89/109/EEC",
+			tags: ["package", "materials", "packaging"],
+			link: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32004R1935"
+		},
+		{
+			name: "Commission Regulation (EC) No 2023/2006 of 22 December 2006 on good manufacturing practice for materials and articles intended to come into contact with food",
+			tags: ["package", "materials", "packaging"],
+			link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32006R2023"
+		},
+		{
+			name: "Commission Regulation (EC) No 2023/2006 of 22 December 2006 on good manufacturing practice for materials and articles intended to come into contact with food",
+			tags: ["package", "materials", "packaging"],
+			link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32006R2023"
 		}
 	];
 
