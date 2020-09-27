@@ -59,13 +59,41 @@ permalink: /transport/legislations
 </div>
 
 
-
-
 <script>
-	var options = {
-		valueNames: ["name", "tags", { name: "link", attr: "href" }],
-		item: '<li><a class="link"><h3 class="name"></h3><p class="tags"></p></li>',
-		page: 12,
-		pagination: true
-	};
+ var options = {
+   valueNames: ["name", "tags", { name: "link", attr: "href" }],
+   item: '<li><a class="link"><h3 class="name"></h3><p class="tags"></p></li>',
+   page: 12,
+   pagination: true
+ };
+
+ var values = [
+ {
+   name: "Communication from the Commission to the Council, the European Parliament, the European Economic and Social Committee and the Committee of the Regions - Mid-term review of the Programme for the promotion of short sea shipping (COM(2003) 155 final)",
+   tags: ["communication", "transport", "sea shipping", "short"],
+   type: "Policy",
+   link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52006DC0380"
+ }, {
+   name: "Proposal for a Regulation of the European Parliament and of the Council establishing the second 'Marco Polo' programme for the granting of Community financial assistance to improve the environmental performance of the freight transport system ('Marco Polo II')(COM/2004/0478 final - COD 2004/0157)",
+   tags: ["proposal", "transport", "funding", "marco polo", "freight transport"],
+   type: "Policy",
+   link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52004PC0478"
+ }, {
+   name: "Communication from the commission to the European Parliament, the council, the European Economic and Social Committee and the Committee of the regions Towards quality inland waterway transport NAIADES II (COM/2013/0623 final)",
+   tags: ["communication", "transport", "inland waterway transport"],
+   type: "Policy",
+   link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52013DC0623&qid=1599669806396"
+ }, {
+   name: "Proposal for a COUNCIL DIRECTIVE amending Directive 1999/62/EC on the charging of heavy goods vehicles for the use of certain infrastructures, as regards certain provisions on vehicle taxation COM/2017/0276 final - 2017/0115 (CNS)",
+   tags: ["proposal", "transport", "vehicle taxation"],
+   type: "Policy",
+   link: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52017PC0276"
+ }, {
+   name: "Directive 1999/62/EC of the European Parliament and of the Council of 17 June 1999 on the charging of heavy goods vehicles for the use of certain infrastructures",
+   tags: ["1999/62", "heavy goods vehicles", "inland waterway transport"],
+   type: "Directive",
+   link: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A31999L0062"
+ }];
+
+ var legislationsList = new List('search-list', options, values);
 </script>
