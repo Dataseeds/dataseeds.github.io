@@ -46,7 +46,9 @@ permalink: /waste/data
 		</p>
 		<p style="font-style: italic;">
 			<span>Dataset:
-				<a class="underlined" href="#">EEA, Eurostat, EU Publications Office.</a>
+				<a class="underlined"
+					href="https://www.eea.europa.eu/data-and-maps/explore-interactive-maps/country-profiles-on-resource-efficiency/">EEA,
+					Eurostat, EU Publications Office.</a>
 			</span>
 		</p>
 	</div>
