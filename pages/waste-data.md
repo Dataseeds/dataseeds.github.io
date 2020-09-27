@@ -61,4 +61,32 @@ permalink: /waste/data
 		On the right, several partnerships and online networks can be found.
 	</p>
 
+	<div class="extrainfo-container">
+		<div class="centered-title">
+			<h1>Stakeholders</h1>
+		</div>
+		<div class="extrainfo-wrapper">
+			<ul>
+				<li>
+					<img src="/assets/stakeholders/test.png">
+					<div class="extrainfo-text">
+						<h4>Bio-waste in Europe – turning challenges into opportunities (2020)</h4>
+						<p>
+							Bio-waste generation, prevention, collection and treatment have interesting opportunities to
+							turn existing challenges into benefits (of moving towards a circular economy). This report
+							explains the relevance of bio-waste and a quality management of compost and digestate. A
+							section is dedicated to innovation and future related developments in Europe.<br>
+							<br>
+							Source: <a class="underlined" href="https://www.eea.europa.eu/">European Environment
+								Agency</a>.
+						</p>
+						<button href="#">
+							Learn more
+						</button>
+						<a href="#"></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>

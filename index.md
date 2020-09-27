@@ -26,7 +26,7 @@ permalink: /
     <a class="home-left" href="/waste">
         <div>
             <h3>WASTE</h3>
-            <h3>MANAGEMENT</h3>
+            <h3>PREVENTION</h3>
         </div>
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Waste.svg">
         <img class="home-svg" src="/assets/icons/DrawKit-Ecology/Color/Trash.svg">
