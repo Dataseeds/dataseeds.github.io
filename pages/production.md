@@ -23,7 +23,7 @@ permalink: /production
 					following map, we have compiled data from the last few years to see how resources are being used and
 					sometimes wasted because of lack of funds.
 				</p>
-				<a href="/production/data">Find out more...</a>
+				<a class="underlined" href="/production/data">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -37,7 +37,7 @@ permalink: /production
 					Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able
 					to find different types of legislative and non-legislative documents.
 				</p>
-				<a href="/production/legislations">Find out more...</a>
+				<a class="underlined" href="/production/legislations">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -52,7 +52,7 @@ permalink: /production
 						ultricies eu, rhoncus ac sem.
 					<span>
 				</p>
-				<a href="/finance_innovation">Find out more...</a>
+				<a class="underlined" href="/finance_innovation">Find out more...</a>
 			</div>
 		</div>
 	</div>
