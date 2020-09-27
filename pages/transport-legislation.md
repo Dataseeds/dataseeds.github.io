@@ -13,3 +13,5 @@ permalink: /transport/legislations
   <h1>{{ page.title }}</h1>
   <img src="/assets/icons/DrawKit-Ecology/Color/Gas Station.svg" style="transform: scaleX(-1);">
 </div>
+
+</script>
