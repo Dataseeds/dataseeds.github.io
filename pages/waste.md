@@ -15,7 +15,7 @@ permalink: /waste
 		<div class="row">
 			<img class="card-img" src="/assets/icons/DrawKit-SaaS/Color/Hockey stick growth.svg">
 			<div class="card-descr">
-				<h2>Data</h2>
+				<h2>DATA</h2>
 				<p>
 					The European Union is one of the main promoters of the ecological transition, and this is reflected
 					in the data from recent years. The figures show recent statistics of packaging waste in the 26

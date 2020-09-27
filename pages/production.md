@@ -17,7 +17,11 @@ permalink: /production
 			<div class="card-descr">
 				<h2>DATA</h2>
 				<p>
-				Cleaner production and resource efficiency is a key element to ensure a greener and more circular economy. Often, agricultural practices, especially in SMEs, do not get to be designed specifically for the type of crop or farming that is taking place, and instead, they use standard systems. In the following map, we have compiled data from the last few years to see how resources are being used and sometimes wasted because of lack of funds.
+					Cleaner production and resource efficiency is a key element to ensure a greener and more circular
+					economy. Often, agricultural practices, especially in SMEs, do not get to be designed specifically
+					for the type of crop or farming that is taking place, and instead, they use standard systems. In the
+					following map, we have compiled data from the last few years to see how resources are being used and
+					sometimes wasted because of lack of funds.
 				</p>
 				<a href="/production/data">Find out more.</a>
 			</div>
@@ -27,11 +31,12 @@ permalink: /production
 			<div class="card-descr">
 				<h2>EU LEGISLATIVE & NON-LEGISLATIVE ACTIONS</h2>
 				<p>
-				In order for the European Union to reach its climate-neutral objectives, existing goals need to be
-				accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
-				actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
-				Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able to
-				find different types of legislative and non-legislative documents.
+					In order for the European Union to reach its climate-neutral objectives, existing goals need to be
+					accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
+					actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
+					Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able
+					to
+					find different types of legislative and non-legislative documents.
 				</p>
 				<a href="/production/legislations">Read more...</a>
 			</div>
