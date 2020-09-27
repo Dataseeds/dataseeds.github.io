@@ -154,9 +154,10 @@
     width: max-content;
     max-width: 700px;
     h1 {
+        color: #3c5153;
         font-size: min(7.5vw, 2.7rem);
         line-height: normal;
-        margin: auto 0;
+        margin: auto 5px;
         padding: 0 0.8rem;
         text-transform: uppercase;
         transform: scale(0.95, 1.05);
