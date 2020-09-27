@@ -58,4 +58,14 @@ permalink: /transport/legislations
 
 </div>
 
+
+
+
+<script>
+	var options = {
+		valueNames: ["name", "tags", { name: "link", attr: "href" }],
+		item: '<li><a class="link"><h3 class="name"></h3><p class="tags"></p></li>',
+		page: 12,
+		pagination: true
+	};
 </script>
