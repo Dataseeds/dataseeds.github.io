@@ -22,7 +22,7 @@ permalink: /waste
 					European Union Member States and the United Kingdom. It summarizes the development of packaging
 					waste production and recycling during the 2005-2016 period.
 				</p>
-				<a href="/waste/data">Find out more.</a>
+				<a href="/waste/data">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -34,10 +34,9 @@ permalink: /waste
 					accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
 					actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
 					Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able
-					to
-					find different types of legislative and non-legislative documents.
+					to find different types of legislative and non-legislative documents.
 				</p>
-				<a href="/waste/legislations">Read more...</a>
+				<a href="/waste/legislations">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -52,7 +51,7 @@ permalink: /waste
 						ultricies eu, rhoncus ac sem.
 					</span>
 				</p>
-				<a href="/finance_innovation">Read more...</a>
+				<a href="/finance_innovation">Find out more...</a>
 			</div>
 		</div>
 	</div>

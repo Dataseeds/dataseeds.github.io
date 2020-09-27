@@ -23,7 +23,7 @@ permalink: /production
 					following map, we have compiled data from the last few years to see how resources are being used and
 					sometimes wasted because of lack of funds.
 				</p>
-				<a href="/production/data">Find out more.</a>
+				<a href="/production/data">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -35,10 +35,9 @@ permalink: /production
 					accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
 					actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
 					Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able
-					to
-					find different types of legislative and non-legislative documents.
+					to find different types of legislative and non-legislative documents.
 				</p>
-				<a href="/production/legislations">Read more...</a>
+				<a href="/production/legislations">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -51,9 +50,9 @@ permalink: /production
 						vitae hendrerit arcu, eget mollis ipsum. Nullam cursus justo ut ultrices euismod. Ut id turpis
 						dolor. Donec vel orci et dui ullamcorper ornare et ac elit. Fusce orci metus, scelerisque quis
 						ultricies eu, rhoncus ac sem.
-						<span>
+					<span>
 				</p>
-				<a href="/finance_innovation">Read more...</a>
+				<a href="/finance_innovation">Find out more...</a>
 			</div>
 		</div>
 	</div>

@@ -22,7 +22,7 @@ permalink: /packaging
 					implementation in various member states. Work which is driven by our members who are actively
 					involved in many projects at a city and national level.
 				</p>
-				<a href="/packaging/data">Find out more.</a>
+				<a class="underlined" href="/packaging/data">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -34,10 +34,9 @@ permalink: /packaging
 					accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
 					actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
 					Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able
-					to
-					find different types of legislative and non-legislative documents.
+					to find different types of legislative and non-legislative documents.
 				</p>
-				<a href="/packaging/legislations">Read more...</a>
+				<a class="underlined" href="/packaging/legislations">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -52,7 +51,7 @@ permalink: /packaging
 					agricultural innovation projects of interesr being carried out through Europe are shown in an
 					interactive map.
 				</p>
-				<a href="/finance_innovation">Read more...</a>
+				<a class="underlined" href="/finance_innovation">Find out more...</a>
 			</div>
 		</div>
 	</div>

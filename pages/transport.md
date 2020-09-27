@@ -24,7 +24,7 @@ permalink: /transport
 					units are crucial parts to consider. At the same time, the more agents are involved between harvest
 					and table, the less incentive there is for each agent to control costs and food losses.
 				</p>
-				<a href="/transport/data">Find out more.</a>
+				<a href="/transport/data">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -36,10 +36,9 @@ permalink: /transport
 					accompanied by innovative and ambitious legislative and non-legislative actions. This broad scope of
 					actions includes inter alia policy proposals and new legal acts – some are binding, others are not.
 					Moreover, not all actions apply to all EU countries, or in the same way. Hereafter you will be able
-					to
-					find different types of legislative and non-legislative documents.
+					to find different types of legislative and non-legislative documents.
 				</p>
-				<a href="/transport/legislations">Read more...</a>
+				<a href="/transport/legislations">Find out more...</a>
 			</div>
 		</div>
 		<div class="row">
@@ -54,7 +53,7 @@ permalink: /transport
 						ultricies eu, rhoncus ac sem.
 					</span>
 				</p>
-				<a href="/finance_innovation">Read more...</a>
+				<a href="/finance_innovation">Find out more...</a>
 			</div>
 		</div>
 	</div>
