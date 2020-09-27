@@ -13,6 +13,9 @@ permalink: /transport/data
 	</div>
 	<div class="flex-container">
 		<p>
+			Sustainable transport figures at the core of the achievement of the Sustainable Development Goals (SDGs). Although there is not a single goal that concerns transports on its own, cleaner transport is needed to address a range of climate change and sustainability objectives. Related to SDG 2 on Zero Hunger, an indirect target related to sustainable transport is agricultural productivity. In close connection with SDG 3 on Good Health and Well-being, cleaner transport would have a positive impact on air pollution. Hence, energy efficiency (SDG 7) would also have a say in this transition towards sustainability in transport. Finally, cleaner transport obeys also the SDGs 12 and 13 objectives of Responsible Consumption and Production, and Climate Action respectively. A reduction of fossil-fuel subsidies, consistent with a circular economy, is also in line with climate change mitigation strategies.
+		</p>
+		<p>
 			<span class="highlighted">How much do food miles matter when it comes to carbon emissions?</span> The role
 			of transportation and logistics, both crucial in increasing food security and mitigating climate change, is
 			a key element to consider when applying political ecology. Yet, <span class="highlighted">decreasing
