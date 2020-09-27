@@ -36,8 +36,7 @@ permalink: /waste/legislations
 			<li>
 				<p><b>Decisions (Article 288 TFEU)</b>
 					A decision is binding in its entirety. However, it could have one or more addressees (one or several
-					EU
-					countries, companies or even individuals). In this case, it shall be binding on the concerned
+					EU countries, companies or even individuals). In this case, it shall be binding on the concerned
 					parties.
 				</p>
 			</li>

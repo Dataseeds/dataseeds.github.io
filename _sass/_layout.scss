@@ -154,7 +154,6 @@
     width: max-content;
     max-width: 700px;
     h1 {
-        color: $main-dark-blue;
         font-size: min(7.5vw, 2.7rem);
         line-height: normal;
         margin: auto 0;
@@ -330,7 +329,7 @@
     float: left;
     flex-direction: row;
     overflow: hidden;
-    padding-block-end: 1em;
+    padding-bottom: 2rem;
     width: 100%;
     @media (max-width: $on-laptop) {
         flex-direction: column;

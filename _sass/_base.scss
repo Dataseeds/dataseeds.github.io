@@ -9,13 +9,13 @@ $light-theme-fg: #333333;
 
 /***** Reset some basic elements ***********************************************************/
 
-body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+body,
 p,
 blockquote,
 pre,
@@ -28,7 +28,6 @@ figure,
 a {
     margin: 0;
     padding: 0;
-    color: $light-theme-fg;
 }
 
 a {
@@ -142,12 +141,17 @@ h3,
 h4,
 h5,
 h6,
+b,
+strong {
+    color: #1a1a1a;
+}
+
 body,
 a,
 p,
 code,
 ul {
-    color: $light-theme-fg;
+    color: #383838;
 }
 body {
     background-color: $light-theme-bg;
