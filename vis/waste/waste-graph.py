@@ -82,37 +82,6 @@ CONF = {"autosizable": False, "displayModeBar": False, "doubleClickDelay": 1000,
         "scrollZoom": False, "responsive": True}
 
 # #############################################################################
-# Map
-fig = go.Figure(go.Choropleth(colorscale='BuGn', locationmode='country names',
-                              locations=dff['Country'],
-                              marker_line_color='gray', marker_opacity=0.75,
-                              marker_line_width=0.5, showscale=True,
-                              z=dff['Value'])
-                )
-
-buttons = []
-for year in df['TIME'].unique():
-    buttons.append(
-        dict(method='update', label=str(year),
-             args=[{"z": [df.query('TIME == @year')['Value']]}])
-    )
-
-fig.update_layout(updatemenus=[dict(active=6, buttons=buttons, bgcolor="#FFFFFF",
-                                    direction="down",
-                                    pad={"r": 0, "t": 0, "l": 0, "b": 0},
-                                    x=0.03, xanchor="left", yanchor="top")],
-                  autosize=True, dragmode=False,
-                  geo=dict(
-                      scope='europe', bgcolor="#F0F0F0", projection_scale=1.2,
-                      center=dict(lat=60, lon=15)),
-                  margin={"r": 0, "t": 20, "l": 0, "b": 0,
-                          "pad": 0, "autoexpand": True},
-                  paper_bgcolor="#F0F0F0", height=450)
-
-fig.show(config=CONF)
-
-
-# #############################################################################
 # Map + table
 fig = make_subplots(rows=2, cols=1, shared_xaxes=False,
                     vertical_spacing=0, row_heights=[0.3, 0.7],
@@ -125,7 +94,7 @@ fig.add_trace(
                   z=dff['Value'], hoverinfo='z+location'
                   ), row=1, col=1
 )
-dfp = df.query('TIME==2016')[['Country', 'Values', 'Report']]
+dfp = df.query('TIME==2016')[['Report', 'Values']]
 fig.add_trace(
     go.Table(
         header=dict(align="center", font_size=10, fill_color="rgba(98, 192, 165, 0.46)",
@@ -138,7 +107,7 @@ fig.add_trace(
 
 buttons = []
 for year in df['TIME'].unique():
-    dfp = df.query('TIME==@year')[['Country', 'Values', 'Report']]
+    dfp = df.query('TIME==@year')[['Report', 'Values']]
 
     buttons.append(
         dict(method='update', label=str(year),
