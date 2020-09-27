@@ -17,17 +17,21 @@ permalink: /about
 				Dataseeds is built on the premise to <span class="highlighted">democratize open data information to
 					small holder agriculture</span>. The European Data Portal offers 90,883 datasets on open environment
 				data, which could help SMEs be more competitive, yet sustainable if used well. However, the quantity of
-				data is such that it makes it very complex to find and use. <br>
-				<br>
+				data is such that it makes it very complex to find and use.
+			</p>
+			<p>
 				The app aims to provide SMEs in the field of agriculture with <span class="highlighted">direct access to
 					better and more detailed information</span> to help them become part of the green restructuring of
 				EU industry. An online platform where they can (i) understand the past through the EU data, (ii)
 				consider the present EU legislative and non-legislative actions, and (iii) think solutions for the
 				future through research centres working in related aspects. It is a freely and easy to use resource
 				which you are free to share and remix, even for commercial purposes, as long as you share the results
-				under the same license.<br>
-				<br>
-				If you are still curious about how this whole website was created, the technologies used for that purpose and the open source material we used, you can learn more about it in our How It Works section.
+				under the same license.
+			</p>
+			<p>
+				If you are still curious about how this whole website was created, the technologies used for that
+				purpose and the open source material we used, you can learn more about it in our <a class="underlined"
+					href="/about/how-it-works">How It Works</a> section.
 			</p>
 		</div>
 		<div class="about-header-media">
@@ -35,11 +39,7 @@ permalink: /about
 			</video>
 		</div>
 	</div>
-	<div style="place-self: center;">
-		<button class="accent_button" type="button" onclick="href='/about/how-it-works'">
-			<span class="far">How it Works</span>
-		</button>
-	</div>
+	
 	<div class="team-descr">
 		<p>
 			Dataseeds is a project initiated by Andrea Briones, Aura Cristina Guerrero, Paula Sanz and Borja Ybarra,
@@ -132,12 +132,5 @@ permalink: /about
 			</div>
 		</div>
 	</div>
-
-	<div class="flex-container">
-		<p>
-			If you are still curious about how this whole website was created, the technologies used for that purpose
-			and the open source material we used, you can learn more about it in our <a class="underlined"
-				href="/about/how-it-works">How It Works</a> section.
-		</p>
-	</div>
+	
 </div>
