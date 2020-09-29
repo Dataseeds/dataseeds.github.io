@@ -868,8 +868,9 @@
     height: 100%;
     z-index: 1;
     opacity: 0.6;
-    filter: opacity(0.8) saturate(0.7) blur(4px);
+    filter: opacity(0.8) saturate(0.7) blur(2px);
     border-radius: 10px;
+    border: solid 1px #00000033;
 }
 .finance-img-overlay {
     position: relative;
