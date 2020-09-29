@@ -56,39 +56,115 @@ permalink: /waste/data
 		{% include_relative waste-graph.html %}
 	</div>
 
-	<p>
-		Underneath the map, two folders give access to different reports on waste‐related challenges and best
-		practices across the EU. The folder on the left gathers reports made by the European Publications Office,
-		the European Commission, the European Environment Agency and the EU Platform on Food Losses and Food Waste.
-		On the right, several partnerships and online networks can be found.
-	</p>
 
 	<div class="extrainfo-container">
-		<div class="centered-title">
-			<h1>Stakeholders</h1>
-		</div>
+		<p>
+			<span class="temp">
+				Underneath the map, two folders give access to different reports on waste‐related challenges and best
+				practices across the EU. The folder on the left gathers reports made by the European Publications
+				Office, the European Commission, the European Environment Agency and the EU Platform on Food Losses and
+				Food Waste. On the right, several partnerships and online networks can be found.
+			</span>
+		</p>
 		<div class="extrainfo-wrapper">
 			<ul>
 				<li>
-					<img src="/assets/stakeholders/test.png">
+					<div class="extrainfo-text">
+						<h4>Food redistribution in the EU (2020)</h4>
+						<p>
+							Food waste is a global issue that the EU is trying to tackle. A good climate governance not
+							only has environmental benefits, but it can also have economic and social advantages. Look
+							at this <a class="underlined"
+								href="https://op.europa.eu/en/publication-detail/-/publication/189fa4cd-b755-11ea-bb7a-01aa75ed71a1">report</a>
+							for more information on existing regulatory and policy measures impacting food
+							redistribution.<br>
+							<br>
+							Source: <a class="underlined" href="https://op.europa.eu/en/home/">Publications Office of
+								the EU</a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="extrainfo-text">
+						<h4>Biodegradable and composable plastics – challenges and opportunities (2020)</h4>
+						<p>
+							Plastics are a common material nowadays. This <a class="underlined"
+								href="https://www.eea.europa.eu/publications/biodegradable-and-compostable-plastics">report</a>
+							explains the difference between bio-based, compostable and biodegradable. Since plastics
+							pollute during their whole life-cycle, it is interesting to see the differences among types
+							of plastics to improve our understanding of their impacts on nature.<br>
+							<br>
+							Source: <a class="underlined" href="https://www.eea.europa.eu/">European Environment
+								Agency</a>
+						</p>
+					</div>
+				</li>
+				<li>
 					<div class="extrainfo-text">
 						<h4>Bio-waste in Europe – turning challenges into opportunities (2020)</h4>
 						<p>
 							Bio-waste generation, prevention, collection and treatment have interesting opportunities to
-							turn existing challenges into benefits (of moving towards a circular economy). This report
+							turn existing challenges into benefits (of moving towards a circular economy). This <a
+								class="underlined"
+								href="https://www.eea.europa.eu/publications/bio-waste-in-europe">report</a>
 							explains the relevance of bio-waste and a quality management of compost and digestate. A
 							section is dedicated to innovation and future related developments in Europe.<br>
 							<br>
 							Source: <a class="underlined" href="https://www.eea.europa.eu/">European Environment
-								Agency</a>.
+								Agency</a>
 						</p>
-						<button href="#">
-							Learn more
-						</button>
-						<a href="#"></a>
+					</div>
+				</li>
+				<li>
+					<div class="extrainfo-text">
+						<h4>Recommendations for Action in Food Waste Prevention (2019)</h4>
+						<p>
+							The EU is committed to meeting the SDG Target 12.3 on food loss and waste. This report is
+							the result of a thorough consultation process by the EU Platform on Food Losses and Food
+							Waste to suggest interesting recommendations focused on the different stages of the
+							food value chain and thus involving different actors. To find out more about these
+							recommendations, click <a class="underlined"
+								href="https://ec.europa.eu/food/sites/food/files/safety/docs/fs_eu-actions_action_platform_key-recs_en.pdf">here</a>.<br>
+							<br>
+							Source: <a class="underlined" href="https://webgate.ec.europa.eu/flwp/">EU Platform on Food
+								Losses and Food Waste</a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="extrainfo-text">
+						<h4>Estimates of European food waste levels (2016)</h4>
+						<p>
+							Food waste is a global issue to global food security and climate governance. The EU has been
+							collecting data about European food waste levels so as to find adequate measures and
+							solutions to reduce waste and its associated environmental, economic and social costs. If
+							the EU wants to move towards a resource efficient Europe, further actions are needed. This
+							<a class="underlined"
+								href="http://www.eu-fusions.org/phocadownload/Publications/Estimates of European food waste levels.pdf">report</a>
+							combines existing data to obtain an informed picture of the amount and costs of food
+							waste within the EU. <br>
+							<br>
+							Source: <a class="underlined" href="">FUSIONS EU PROJECT</a>
+						</p>
 					</div>
 				</li>
 			</ul>
 		</div>
+
+		<p>
+			The EU has committed to implement the 2030 Agenda and its 17 Sustainable Development Goals (SDGs). The SDG
+			17, i.e. partnerships for the goals, requires effective multilateralism – to revitalise the connections
+			among different types of stakeholders – and cooperation. The EU and different organisations within the EU
+			have made a tremendous effort to keep updated about waste prevention initiatives and actions. Several
+			existing platforms try to bring together different types of stakeholders in order to inspire citizens,
+			companies and EU institutions to strengthen existing efforts on waste prevention and sustainable practices.
+			This section of the website tries to provide a space to find interesting links to platforms, networks and
+			projects with a participative approach within the EU. More interested parties and projects might be found in
+			the <a class="underlined" href="/finance/CORDIS">CORDIS website</a>.
+		</p>
+
+		<p>
+			CARDS
+		</p>
 	</div>
 </div>
