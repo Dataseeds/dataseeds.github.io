@@ -182,6 +182,7 @@
     list-style: none;
     @media screen and (max-width: $on-laptop) {
         max-width: 90vw;
+        margin: 0 auto;
     }
 }
 .flex-container h2 {
@@ -313,7 +314,7 @@
         padding: 7px;
         max-width: 50%;
         @media (max-width: 950px) {
-            width: 80%;
+            max-width: 85%;
         }
         img {
             border-radius: 5px 0 0 5px;
