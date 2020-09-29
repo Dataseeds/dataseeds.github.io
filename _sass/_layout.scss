@@ -664,6 +664,7 @@
     font-size: 1.2rem;
     font-variant-caps: all-small-caps;
     margin: 0 3px;
+    opacity: 0.7;
     padding: 8px 16px !important;
     text-align: center;
     text-shadow: none;
@@ -671,6 +672,7 @@
 
 .tablink-active {
     border-bottom: solid 4px #44ab8d !important;
+    opacity: 1;
 }
 
 .legend-container {

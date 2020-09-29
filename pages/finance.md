@@ -2,7 +2,7 @@
 layout: page
 title: Finance & Innovation
 visible: true
-permalink: /finance_innovation
+permalink: /finance
 ---
 
 <div class="finance">
