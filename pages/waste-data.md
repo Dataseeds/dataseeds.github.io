@@ -33,7 +33,11 @@ permalink: /waste/data
 				href="https://www.eionet.europa.eu/etcs/etc-wmge/products/country-factsheets-on-resource-efficiency-and-circular-economy-in-europe">
 				resource efficiency</a>, which are available by clicking on the country of interest. These reports are
 			based on a revision of existing national and regional waste prevention programmes, and information on
-			resource efficiency, circular economy and raw material supply policies. For more information on the general
+			resource efficiency, circular economy and raw material supply policies.
+		</p>
+
+		<p>
+			For more information on the general
 			progress made towards waste prevention in the EU, take a look at the
 			<a class="underlined" href="https://www.eea.europa.eu/themes/waste/waste-prevention">
 				Annual reviews</a> from the European Environmental Agency (EEA). More details on waste reduction on the
@@ -58,6 +62,9 @@ permalink: /waste/data
 
 
 	<div class="extrainfo-container">
+		<div class="centered-title">
+			<h2>REPORTS</h2>
+		</div>
 		<p>
 			<span class="temp">
 				Underneath the map, two folders give access to different reports on waste‐related challenges and best
@@ -151,6 +158,9 @@ permalink: /waste/data
 			</ul>
 		</div>
 
+		<div class="centered-title">
+			<h2>NETWORKS</h2>
+		</div>
 		<p>
 			The EU has committed to implement the 2030 Agenda and its 17 Sustainable Development Goals (SDGs). The SDG
 			17, i.e. partnerships for the goals, requires effective multilateralism – to revitalise the connections
