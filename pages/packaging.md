@@ -51,7 +51,7 @@ permalink: /packaging
 					agricultural innovation projects of interesr being carried out through Europe are shown in an
 					interactive map.
 				</p>
-				<a class="underlined" href="/finance_innovation">Find out more...</a>
+				<a class="underlined" href="/finance">Find out more...</a>
 			</div>
 		</div>
 	</div>

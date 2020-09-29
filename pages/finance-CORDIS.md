@@ -2,7 +2,7 @@
 layout: page
 title: Finance & Innovation
 visible: false
-permalink: /finance_innovation/CORDIS
+permalink: /finance/CORDIS
 ---
 
 <div class="finance">
