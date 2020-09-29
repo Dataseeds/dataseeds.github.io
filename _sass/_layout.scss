@@ -854,6 +854,37 @@
     text-align: center;
 }
 
+.finance-img-overlay:before {
+    background-image: url("/assets/cordis-overlay.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    filter: opacity(0.8) saturate(0.7);
+}
+.finance-img-overlay {
+    position: relative;
+    display: flex;
+    filter: drop-shadow(2px 4px 6px #00000055);
+    h1 {
+        color: #3c5153;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+        padding: 5rem 0;
+        place-self: center;
+        text-align: center;
+        z-index: 2;
+    }
+}
+
 /* ####################################
 			404 page 
 #################################### */

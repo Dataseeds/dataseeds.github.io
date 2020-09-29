@@ -99,18 +99,19 @@ permalink: /finance
 		</div>
 
 		<p>
-			<span class="temp">
+			<span>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a pharetra orci. Curabitur orci eros,
 				auctor tristique auctor luctus, ultricies sed risus. Phasellus gravida orci in turpis lacinia varius.
 				Mauris consequat erat risus, finibus malesuada diam auctor ac. Aenean non sem ex.
 			</span>
 		</p>
 
-		<div style="place-self: center;">
-			<button class="accent_button" type="button" onclick="document.location.href='CORDIS'">
-				<span class="far">🌍</span>
-				<span class="fas">CORDIS map</span>
-			</button>
+		<div style="place-self: center; height: 300px; width: 100%;">
+			<a href="#">
+				<div class="finance-img-overlay">
+					<h1>CORDIS</h1>
+				</div>
+			</a>
 		</div>
 	</div>
 
