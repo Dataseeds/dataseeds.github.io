@@ -44,12 +44,7 @@ permalink: /waste
 			<div class="card-descr">
 				<h2>FINANCE, INNOVATION & STAKEHOLDERS</h2>
 				<p>
-					<span class="temp">
-						Integer sed ex faucibus, ornare neque quis, sodales nunc. Donec maximus congue pretium. Nullam
-						vitae hendrerit arcu, eget mollis ipsum. Nullam cursus justo ut ultrices euismod. Ut id turpis
-						dolor. Donec vel orci et dui ullamcorper ornare et ac elit. Fusce orci metus, scelerisque quis
-						ultricies eu, rhoncus ac sem.
-					</span>
+				In this section, you will be able to find information about the European funds destined towards agricultural reform and how they have been spent</span> by every Member State. The map showcases the amount agreed to for every state until 2023, what was finally allocated to each state, as well as, how much of it has been spent so far. Through this page you can also, access the CORDIS database where agricultural innovation projects of interest being carried out through Europe are shown in an interactive map.
 				</p>
 				<a class="underlined" href="/finance">Find out more...</a>
 			</div>
