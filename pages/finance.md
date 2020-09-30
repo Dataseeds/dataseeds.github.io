@@ -16,8 +16,8 @@ permalink: /finance
 			In this section, you will be able to find <span class="highlighted">information about the European funds
 				destined towards agricultural reform and how they have been spent</span> by every Member State. The map
 			showcases the amount agreed to for every state until 2023, what was finally allocated to each state, as well
-			as, how much of it has been spent so far. Through this page you can also, access the Cordis database where
-			agricultural innovation projects of interesr being carried out through Europe are shown in an interactive
+			as, how much of it has been spent so far. Through this page you can also, access the CORDIS database where
+			agricultural innovation projects of interest being carried out through Europe are shown in an interactive
 			map.
 		</p>
 		<p style="font-style: italic;">
