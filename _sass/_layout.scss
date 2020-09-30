@@ -750,7 +750,7 @@
 }
 
 .citizen-card-info {
-    padding: 15px 10px;
+    padding: 10px;
     h2 {
         color: #222;
         display: -webkit-box;
@@ -773,7 +773,7 @@
         padding-right: 0.5rem;
         text-overflow: ellipsis;
         word-break: break-word;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
     }
 }
