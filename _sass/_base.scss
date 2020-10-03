@@ -219,7 +219,7 @@ header {
 }
 
 .logo {
-    height: clamp(2.5rem, 14vw, 4rem);
+    height: min(15vw, 4rem);
     margin-bottom: 10px;
 }
 
