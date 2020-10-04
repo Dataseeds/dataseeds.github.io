@@ -13,6 +13,26 @@ permalink: /citizens/
 	</div>
 
 	<div class="citizens-flex-container">
+		<div class="citizen-hero-card"
+			onclick='location.href="https://ec.europa.eu/commfrontoffice/publicopinion/index.cfm"'
+			style="cursor: pointer;"> <img src="/assets/citizens/eurobarometer.png">
+			<div class="citizen-hero-card-info">
+				<h2>Eurobarometer</h2>
+				<p> The distinct advantage of the Eurobarometer is that collected data gives us a general
+					picture of the existing dynamics within the EU regarding several topics.
+					Attitudes and opinions of European citizens figure on these surveys and might
+					be of great interest for SMEs to check the current trends on climate change
+					action or sustainable consumption and production. Click here to go to the official website to find
+					surveys with a broad scope. </p>
+			</div>
+		</div>
+
+		<p>
+			<span class="temp">
+				The first visualisation developed is the Collaboration Network, which shows where organisations are
+				located and who they collaborate with in the context of H2020 research and innovation projects.
+			</span>
+		</p>
 
 		<ul class="post-list">
 			{% for post in site.citizens reversed %}
