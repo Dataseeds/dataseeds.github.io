@@ -316,7 +316,7 @@
         flex-grow: 1;
         margin: 7px 5px;
         padding: 7px;
-        max-width: 50%;
+        max-width: 48%;
         @media (max-width: 950px) {
             max-width: 85%;
         }
@@ -383,6 +383,12 @@
     text-decoration: underline;
     text-shadow: none;
     font-weight: 600;
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #40a085 !important;
+    }
 }
 
 .about-header {
