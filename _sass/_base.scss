@@ -370,14 +370,17 @@ label {
 }
 
 .footer-contact {
-    background: white;
+    background: #b0cfa7;
+    box-shadow: inset 0 10px 0 #445c5e;
     display: flex;
     flex-direction: column;
     flex-basis: 310px;
     flex-grow: 1;
     height: 230px;
     justify-content: space-between;
+    position: relative;
     max-width: 408px;
+    overflow: hidden;
     h1 {
         font-weight: 100;
         font-size: 2.5em;
@@ -388,6 +391,52 @@ label {
     @media screen and (max-width: $on-laptop) {
         margin-left: 0;
         margin-top: 10px;
+    }
+}
+.footer-contact-logo {
+    display: flex;
+    padding: 0.75rem;
+    padding-bottom: 0;
+    h3 {
+        color: #445c5e;
+        font-family: Brush Script MT;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: auto 1rem;
+        text-align: left;
+    }
+    img {
+        width: 4rem;
+    }
+}
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    place-content: space-evenly;
+    margin-bottom: 0.5rem;
+    li {
+        display: flex;
+        width: fit-content;
+        margin: 0.2rem 0.5rem;
+        place-self: flex-end;
+        span {
+            color: $main-dark-blue;
+            font-size: 0.9rem;
+            margin: auto;
+            margin-right: 0.5rem;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            .far,
+            .fab {
+                background: $main-dark-blue;
+                border-radius: 50%;
+                color: #fff;
+                padding: 8px;
+            }
+        }
     }
 }
 
