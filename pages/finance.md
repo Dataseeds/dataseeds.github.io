@@ -99,7 +99,7 @@ permalink: /finance
 		</div>
 
 		<p>
-			<span>
+			<span class="temp">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a pharetra orci. Curabitur orci eros,
 				auctor tristique auctor luctus, ultricies sed risus. Phasellus gravida orci in turpis lacinia varius.
 				Mauris consequat erat risus, finibus malesuada diam auctor ac. Aenean non sem ex.
