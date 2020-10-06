@@ -107,7 +107,7 @@ permalink: /finance
 		</p>
 
 		<div style="place-self: center; height: 300px; width: 100%;">
-			<a href="#">
+			<a href="/finance/CORDIS">
 				<div class="finance-img-overlay">
 					<h1>CORDIS</h1>
 				</div>
