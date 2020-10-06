@@ -28,10 +28,7 @@ permalink: /citizens/
 		</div>
 
 		<p>
-			<span class="temp">
-				The first visualisation developed is the Collaboration Network, which shows where organisations are
-				located and who they collaborate with in the context of H2020 research and innovation projects.
-			</span>
+		EU Datathon event is part of the European Week of Regions and Cities which attracts more than 9,000 participants. This way, we feel it is a great chance to make your voice heard and build better and more substantial bridges between the European Union, European agriculture and citizens. For this reason, we have contacted experts from different areas (business, IT, research and activism) to comment on their views regarding the future of Europe. Is open data a tool or a road towards a stronger European agriculture? What does agriculture need in this difficult times of coronavirus and climate change?
 		</p>
 
 		<ul class="post-list">
