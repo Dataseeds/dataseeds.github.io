@@ -13,10 +13,8 @@ permalink: /finance/CORDIS
 	</div>
 	<div class="flex-container">
 		<p>
-			<span class="temp">
 				The first visualisation developed is the Collaboration Network, which shows where organisations are
 				located and who they collaborate with in the context of H2020 research and innovation projects.
-			</span>
 		</p>
 		<p>
 			It is based on Horizon 2020 project information as published on the EU Open Data Portal
