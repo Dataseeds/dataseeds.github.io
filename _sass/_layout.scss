@@ -379,7 +379,7 @@
 }
 
 .underlined {
-    color: #40a085 !important;
+    color: #3f8572 !important;
     text-decoration: underline;
     text-shadow: none;
     font-weight: 600;
@@ -387,7 +387,7 @@
     h2,
     h3,
     h4 {
-        color: #40a085 !important;
+        color: #3f8572 !important;
     }
 }
 
@@ -450,6 +450,7 @@
         font-size: 2.5em;
         font-weight: 600;
         line-height: 1em;
+        padding: 1rem 0 0.5rem;
     }
     img {
         display: flex;
@@ -495,6 +496,7 @@
         font-family: Brush Script MT;
         font-size: 2em;
         margin: auto;
+        padding: 0;
     }
 }
 
@@ -898,7 +900,7 @@
     }
     h2 {
         color: #333;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 600;
         line-height: 1.4rem;
         padding: 1rem 0 0.5rem;
