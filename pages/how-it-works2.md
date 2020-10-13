@@ -49,8 +49,8 @@ permalink: /about/how-it-works2
 
 		<h2>Used sources</h2>
 		<p>
-			This page wouldn't be the same without all the amazing open source libraries and frameworks used to create
-			and manage both the website and the content. But a special thanks need to be provided to the amazing
+			This page was also created with the help of a set of amazing open source libraries and frameworks used to
+			build and manage both the website and the content. But a special thanks need to be provided to the amazing
 			vectorized icons from <href class="underlined" src="https://www.drawkit.io/free-icons">Drawkit</href>, and
 			the entirety of the datasets and information collected from a variety of sources: <a class="underlined"
 				href="https://www.eea.europa.eu/">EEA</a>, <a class="underlined"
