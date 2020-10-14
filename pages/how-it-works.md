@@ -130,7 +130,6 @@ permalink: /about/how-it-works
       	Datasets: EEA, Eurostat, EUR-Lex, EIB, REGIO, INEA, CORDIS, JRC. <br>
       	<br>
     		Vectorized icons from <href src="https://www.drawkit.io/free-icons">Drawkit</href>.
-      	</p>
         </p>
       </div>
     </div>
