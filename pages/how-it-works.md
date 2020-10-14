@@ -108,14 +108,12 @@ permalink: /about/how-it-works
 		}
 
 		.main-timeline .date-outer {
-			img {
 			width: 125px;
 			height: 125px;
 			font-size: 16px;
 			text-align: center;
 			margin: auto;
 			z-index: 1
-			}
 		}
 
 		.main-timeline .date-outer:before,
@@ -303,7 +301,10 @@ permalink: /about/how-it-works
 					<div class="icon"></div>
 					<div class="date-content">
 						<div class="date-outer">
-						<img src="/assets/about/Human-centered process.png">
+						<span class="date">
+							<span class="month">1</span>
+							<span class="year">_</span>
+						</span>
 						</div>
 					</div>
 					<div class="timeline-content">
@@ -336,6 +337,10 @@ permalink: /about/how-it-works
 					<div class="icon"></div>
 					<div class="date-content">
 						<div class="date-outer">
+						<span class="date">
+							<span class="month">2</span>
+							<span class="year">_</span>
+						</span>
 						</div>
 					</div>
 					<div class="timeline-content">
@@ -366,8 +371,8 @@ permalink: /about/how-it-works
 					<div class="date-content">
 						<div class="date-outer">
 							<span class="date">
-								<span class="month">2 Years</span>
-								<span class="year">2016</span>
+								<span class="month">3</span>
+								<span class="year">_</span>
 							</span>
 						</div>
 					</div>
@@ -429,8 +434,8 @@ permalink: /about/how-it-works
 					<div class="date-content">
 						<div class="date-outer">
 							<span class="date">
-								<span class="month">2 Years</span>
-								<span class="year">2018</span>
+								<span class="month">5</span>
+								<span class="year">_</span>
 							</span>
 						</div>
 					</div>
@@ -457,8 +462,8 @@ permalink: /about/how-it-works
 					<div class="date-content">
 						<div class="date-outer">
 							<span class="date">
-								<span class="month">2 Years</span>
-								<span class="year">2018</span>
+								<span class="month">6</span>
+								<span class="year">_</span>
 							</span>
 						</div>
 					</div>
