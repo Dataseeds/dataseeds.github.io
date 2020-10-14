@@ -336,7 +336,6 @@ permalink: /about/how-it-works
 					<div class="icon"></div>
 					<div class="date-content">
 						<div class="date-outer">
-
 						</div>
 					</div>
 					<div class="timeline-content">
@@ -399,8 +398,8 @@ permalink: /about/how-it-works
 					<div class="date-content">
 						<div class="date-outer">
 							<span class="date">
-								<span class="month">2 Years</span>
-								<span class="year">2018</span>
+								<span class="month">4</span>
+								<span class="year">_</span>
 							</span>
 						</div>
 					</div>
