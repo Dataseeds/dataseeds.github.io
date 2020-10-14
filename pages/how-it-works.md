@@ -108,12 +108,14 @@ permalink: /about/how-it-works
 		}
 
 		.main-timeline .date-outer {
+			img {
 			width: 125px;
 			height: 125px;
 			font-size: 16px;
 			text-align: center;
 			margin: auto;
 			z-index: 1
+			}
 		}
 
 		.main-timeline .date-outer:before,
@@ -334,10 +336,7 @@ permalink: /about/how-it-works
 					<div class="icon"></div>
 					<div class="date-content">
 						<div class="date-outer">
-							<span class="date">
-								<span class="month">1 Years</span>
-								<span class="year">2015</span>
-							</span>
+
 						</div>
 					</div>
 					<div class="timeline-content">
