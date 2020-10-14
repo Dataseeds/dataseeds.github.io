@@ -301,6 +301,7 @@ permalink: /about/how-it-works
 					<div class="icon"></div>
 					<div class="date-content">
 						<div class="date-outer">
+						<img src="/assets/about/Human-centered process.png">
 						</div>
 					</div>
 					<div class="timeline-content">
