@@ -13,19 +13,24 @@ permalink: /waste/data
 	</div>
 	<div class="flex-container">
 		<p>
-			An important element in circular economies is waste reduction and waste management. Yet <b>waste prevention is
-			the most desirable option</b>. The success of the EU moving towards a green economy thus rests to a large extent
+			An important element in circular economies is waste reduction and waste management. Yet <b>waste prevention
+				is
+				the most desirable option</b>. The success of the EU moving towards a green economy thus rests to a
+			large extent
 			on conducting research and giving priority to monitoring and choosing adapted solutions to achieve a
 			sustainable production avoiding food losses and pollution. EU open data on waste management is beneficial to
 			optimise existing techniques and mechanisms by using the information different EU institutions and agencies
-			have stored. SMEs can use it to enhance their waste models to <span class="highlighted">move through the path of a circular economy
-			hand in hand with EU principles, innovation and resources</span>. Waste prevention will contribute to the efforts
+			have stored. SMEs can use it to enhance their waste models to <span class="highlighted">move through the
+				path of a circular economy
+				hand in hand with EU principles, innovation and resources</span>. Waste prevention will contribute to
+			the efforts
 			made to comply with several Sustainable Development Goals (SDGs) and the Agenda 2030. Production patterns
 			need to move towards a responsible and circular model (SDG 12) to protect Life on land (SDG 15) and as a way
 			of reducing climate change negative impacts (SDG 13).
 		</p>
 		<p>
-			The map below allows for a quick <span class="highlighted">overview of the amount of waste produced per country per year</span>. Moreover,
+			The map below allows for a quick <span class="highlighted">overview of the amount of waste produced per
+				country per year</span>. Moreover,
 			the interactive map also gives access to the most recent reports on
 			<a class="underlined" href="https://www.eea.europa.eu/themes/waste/waste-prevention/countries">
 				waste reduction</a> and
@@ -65,12 +70,6 @@ permalink: /waste/data
 		<div class="centered-title">
 			<h2>REPORTS</h2>
 		</div>
-		<p>
-				Underneath the map, two folders give access to different reports on waste‐related challenges and best
-				practices across the EU. The folder on the left gathers reports made by the European Publications
-				Office, the European Commission, the European Environment Agency and the EU Platform on Food Losses and
-				Food Waste. On the right, several partnerships and online networks can be found.
-		</p>
 		<div class="extrainfo-wrapper">
 			<ul>
 				<li>
