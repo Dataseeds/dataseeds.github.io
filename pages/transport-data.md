@@ -42,3 +42,32 @@ permalink: /transport/data
 		{% include_relative transport-graph.html %}
 	</div>
 </div>
+
+
+<div class="extrainfo-container">
+	<div class="centered-title">
+		<h2>REPORTS</h2>
+	</div>
+	<p>
+			Underneath the map, two folders give access to different reports on waste‐related challenges and best
+			practices across the EU. The folder on the left gathers reports made by the European Publications
+			Office, the European Commission, the European Environment Agency and the EU Platform on Food Losses and
+			Food Waste. On the right, several partnerships and online networks can be found.
+	</p>
+	<div class="extrainfo-wrapper">
+		<ul>
+			<li>
+				<div class="extrainfo-text">
+					<h4>Air pollution: agriculture and transport emissions continue to pose problems in meeting agreed limits (2020)</h4>
+					<p>
+						Emissions from agriculture and transport continue to pose problems for European Union Member States in meeting EU and United Nations air pollution limits, according to updated data published by the European Environment Agency (EEA) today. While emissions of most air pollutants remain on a downward trend, ammonia emissions continued to rise in 2016. <a class="underlined"
+							href="https://www.eea.europa.eu/highlights/air-pollution-agriculture-and-transport">report</a>
+						for more information on existing regulatory and policy measures impacting food
+						redistribution.<br>
+						<br>
+						Source: <a class="underlined" href="https://www.eea.europa.eu/">European Enviroment Agency</a>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
