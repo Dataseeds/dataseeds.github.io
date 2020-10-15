@@ -66,12 +66,10 @@ permalink: /waste/data
 			<h2>REPORTS</h2>
 		</div>
 		<p>
-			<span class="temp">
 				Underneath the map, two folders give access to different reports on waste‐related challenges and best
 				practices across the EU. The folder on the left gathers reports made by the European Publications
 				Office, the European Commission, the European Environment Agency and the EU Platform on Food Losses and
 				Food Waste. On the right, several partnerships and online networks can be found.
-			</span>
 		</p>
 		<div class="extrainfo-wrapper">
 			<ul>
